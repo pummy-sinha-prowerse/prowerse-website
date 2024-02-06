@@ -7,7 +7,7 @@ export default function Navbar() {
       <ul>
         <li>
           <CustomLink className="nav-link scrollto" to="/">
-            Main Hub
+            Home
           </CustomLink>
         </li>
         <li>
