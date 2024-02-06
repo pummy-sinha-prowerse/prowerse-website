@@ -320,7 +320,7 @@ const Home = () => {
                     data-aos-delay="200"
                   >
                     <img
-                      src="assets/img/tabs-1.jpg"
+                      src="prowerse-website/assets/img/tabs-1.jpg"
                       alt=""
                       className="img-fluid"
                     />
