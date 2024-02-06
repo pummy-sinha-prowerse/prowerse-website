@@ -370,7 +370,7 @@ const Home = () => {
                   </div>
                   <div className="col-lg-6 order-1 order-lg-2 text-center">
                     <img
-                      src="assets/img/tabs-2.jpg"
+                      src="prowerse-website/assets/img/tabs-2.jpg"
                       alt=""
                       className="img-fluid"
                     />
@@ -422,7 +422,7 @@ const Home = () => {
                   </div>
                   <div className="col-lg-6 order-1 order-lg-2 text-center">
                     <img
-                      src="assets/img/tabs-3.jpg"
+                      src="prowerse-website/assets/img/tabs-3.jpg"
                       alt=""
                       className="img-fluid"
                     />
@@ -475,7 +475,7 @@ const Home = () => {
                   </div>
                   <div className="col-lg-6 order-1 order-lg-2 text-center">
                     <img
-                      src="assets/img/tabs-4.jpg"
+                      src="prowerse-website/assets/img/tabs-4.jpg"
                       alt=""
                       className="img-fluid"
                     />
@@ -1214,7 +1214,7 @@ const Home = () => {
                 <article > 
                   <div className="post-img">
                     <img
-                      src="assets/img/blog/blog-1.png"
+                      src="prowerse-website/assets/img/blog/blog-1.png"
                       alt=""
                       className="img-fluid"
                     />
@@ -1252,7 +1252,7 @@ const Home = () => {
                 <article>
                   <div className="post-img">
                     <img
-                      src="assets/img/blog/blog-2.png"
+                      src="prowerse-website/assets/img/blog/blog-2.png"
                       alt=""
                       className="img-fluid"
                     />
@@ -1291,7 +1291,7 @@ const Home = () => {
                 <article>
                   <div className="post-img">
                     <img
-                      src="assets/img/blog/blog-3.png"
+                      src="prowerse-website/assets/img/blog/blog-3.png"
                       alt=""
                       className="img-fluid"
                     />
@@ -1330,7 +1330,7 @@ const Home = () => {
       {/* <!-- End #main --> */}
       {/* <!-- Call-to-action Section - Home Page --> */}
       <section id="call-to-action" className="call-to-action">
-        <img src="assets/img/cta-bg.jpg" alt="" />
+        <img src="prowerse-website/assets/img/cta-bg.jpg" alt="" />
 
         <div className="container">
           <div
