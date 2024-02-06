@@ -3190,20 +3190,17 @@ ul.hire-team-process li:first-child {
   border-left: none;
 }
 .project-requirment {
-  background: url(../img/post-project-requirements.png)
-    no-repeat center center/85px;
+  background: url(../img/post-project-requirements.png) no-repeat center
+    center/85px;
 }
 .discuss-project {
-  background: url(../img/discuss-project.png)
-    no-repeat 50% 47%/90px;
+  background: url(../img/discuss-project.png) no-repeat 50% 47%/90px;
 }
 .terms-n-timelines {
-  background: url(../img/engagement-terms.png)
-    no-repeat center center/auto;
+  background: url(../img/engagement-terms.png) no-repeat center center/auto;
 }
 .get-started {
-  background: url(../img/secure-payment.png)
-    no-repeat 50% 60%/95px;
+  background: url(../img/secure-payment.png) no-repeat 50% 60%/95px;
 }
 .dashed-circle {
   width: 200px;
@@ -3261,22 +3258,18 @@ ul.hire-team-process li:last-child:after {
 
 @media screen and (max-width: 567px) {
   .project-requirment {
-    background: url(../img/engagement-terms.png)
-      no-repeat center center/60px;
+    background: url(../img/engagement-terms.png) no-repeat center center/60px;
   }
   .discuss-project {
-    background: url(../img/discuss-project.png)
-      no-repeat 49% 46%/60px;
+    background: url(../img/discuss-project.png) no-repeat 49% 46%/60px;
   }
 
   .get-started {
-    background: url(../img/secure-payment.png)
-      no-repeat 50% 60%/65px;
+    background: url(../img/secure-payment.png) no-repeat 50% 60%/65px;
   }
 
   .terms-n-timelines {
-    background: url(../img/engagement-terms.png)
-      no-repeat center center/60px;
+    background: url(../img/engagement-terms.png) no-repeat center center/60px;
   }
   .dashed-circle {
     width: 140px;
@@ -3575,4 +3568,113 @@ ul.hire-team-process li:last-child:after {
   height: 111px;
   background: linear-gradient(to left, #e1393b, #ff7f509e);
   content: "";
+}
+
+/* casestudy */
+.inner-cols::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.1);
+  left: 0;
+  right: 0;
+}
+.inner-cols {
+  width: 100%;
+  height: 65vh;
+  background: #ccc;
+  text-align: center;
+  position: relative;
+}
+.banner4 {
+  background: url(https://www.xicom.biz/images/case-studies/banner4.webp)
+    no-repeat center center/cover;
+}
+.banner-col-content {
+  position: absolute;
+  bottom: 25px;
+  width: 100%;
+}
+.col-logo {
+  width: auto;
+  display: inline-block;
+  position: relative;
+  margin: 0 auto 20px;
+}
+.inner-cols .para {
+  position: relative;
+  color: #fff;
+  display: none;
+  opacity: 0;
+  padding: 0 30px;
+  line-height: 1.4;
+  font-size: 16px;
+}
+.banner-col-content .red-btn {
+  display: none;
+  background: #090909;
+}
+.circle-btn,
+.circle-btn:hover {
+  margin: 40px auto 0;
+  display: inline-block;
+  background: #023575;
+  color: #fff;
+  padding: 12px 25px 12px 48px;
+  font-size: 15px;
+  transition: all 0.2s;
+}
+.inner-cols:hover .banner-col-content {
+  width: 100%;
+  top: 50%;
+  bottom: auto;
+  transform: translate(0, -50%);
+}
+.inner-cols:hover:before {
+  background: linear-gradient(to left, #e1393b, #ff7f509e);
+
+  transition: all 0.2s;
+}
+.circle-btn,
+.circle-btn:hover {
+  margin: 40px auto 0;
+  display: inline-block;
+  background: #023575;
+  color: #fff;
+  padding: 12px 25px 12px 48px;
+  font-size: 15px;
+  transition: all 0.2s;
+}
+.inner-cols:hover .para,
+.inner-cols:hover .red-btn {
+  display: inline-block;
+  opacity: 1;
+}
+
+.red-btn,
+.red-btn:hover,
+.app-developer .red-btn,
+.app-developer .red-btn:hover {
+  background: #090909;
+  color: #fff;
+  font-size: 18px;
+  padding: 12px 32px;
+  text-decoration: none;
+  font-weight: 700;
+  text-transform: uppercase;
+  display: inline-block;
+  font-family: poppins, sans-serif;
+  position: relative;
+}
+.circle-btn:hover:before {
+  box-shadow: 0 0 0 30px transparent;
+}
+.circle-btn:hover::after {
+  box-shadow: inset 0 0 0 5px #fff;
+}
+.contact-number, .contact-number:hover, .circle-btn, .circle-btn.wht, .circle-btn:hover {
+  border-radius: 25px;
+  overflow: hidden;
 }
