@@ -23,10 +23,16 @@ export default function Navbar() {
 
           <ul class="dd-box-shadow">
             <li>
-              <a href="#">Build your own team</a>
+              <CustomLink className="nav-link scrollto" to="/buildyourteam">
+                Build Your Own Team
+              </CustomLink>
+              {/* <a href="/buildyourteam">Build Your Own Team</a> */}
             </li>
             <li>
-              <a href="#">Product Engineering</a>
+              <CustomLink className="nav-link scrollto" to="/product">
+                Product Engineering
+              </CustomLink>
+              {/* <a href="/product">Product Engineering</a> */}
             </li>
             <li>
               <a href="#">Test Automation</a>

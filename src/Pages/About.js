@@ -7,42 +7,7 @@ function About() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-  // const data = {
-  //   counts: [
-  //     {
-  //       id: "001",
-  //       label: "Years of Industry Experience",
-  //       number: "15",
-  //       duration: "5",
-  //       type: "",
-  //       icon: "bi bi-emoji-smile",
-  //     },
-  //     {
-  //       id: "002",
-  //       label: "Client Retention Rate",
-  //       number: "92",
-  //       duration: "5",
-  //       type: "%",
-  //       icon: "bi bi-journal-richtext",
-  //     },
-  //     {
-  //       id: "003",
-  //       label: "Projects Executed",
-  //       number: "500",
-  //       duration: "5",
-  //       type: "+",
-  //       icon: "bi bi-headset",
-  //     },
-  //     {
-  //       id: "004",
-  //       label: "Reduction In Your IT Budgets",
-  //       number: "50",
-  //       duration: "5",
-  //       type: "%",
-  //       icon: "bi bi-people",
-  //     },
-  //   ],
-  // };
+ 
   return (
     <>
       <section id="hero-about" className="d-flex align-items-center">
@@ -63,6 +28,178 @@ function About() {
               {/* <a href="#about" className="btn-get-started scrollto">
                 Get Started
               </a> */}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* <!-- ======= CaseStudy Section ======= --> */}
+      <section id="team" className="team">
+        <div className="container" data-aos="fade-up">
+          <div className="section-title text-center position-relative pb-3 mx-auto">
+            <h2>CaseStudy</h2>
+          </div>
+          <div className="sub-section-title">
+            <p>
+              CASE STUDIES OF HOW OUR CLIENTS HAVE EXPERIENCED{" "}
+              <span>COMPETITIVE</span>
+              ADVANTAGE
+            </p>
+          </div>
+
+          <div className="row">
+            <div
+              className="case-studies-banner row mr0 aos-init aos-animate"
+              data-aos="fade-up"
+            >
+              <div className="item col-lg-4 col-sm-6 aos-init aos-animat">
+                <div className="inner-cols banner4">
+                  <div className="banner-col-content">
+                    <div className="col-logo">
+                      <img
+                        src="https://www.xicom.biz/images/case-studies/logo4.png"
+                        alt=""
+                      />
+                    </div>
+                    <p className="para">
+                      AlgoTrader is the first fully-integrated algorithmic
+                      trading software solution for quantitative hedge funds.
+                    </p>
+                    <a
+                      // href="https://www.xicom.biz/case-studies/algo-trader.html"
+                      className="red-btn circle-btn"
+                    >
+                      {" "}
+                      View Case Study{" "}
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div className="item col-lg-4 col-sm-6 aos-init aos-animat">
+                <div className="inner-cols banner4">
+                  <div className="banner-col-content">
+                    <div className="col-logo">
+                      <img
+                        src="https://www.xicom.biz/images/case-studies/logo4.png"
+                        alt=""
+                      />
+                    </div>
+                    <p className="para">
+                      AlgoTrader is the first fully-integrated algorithmic
+                      trading software solution for quantitative hedge funds.
+                    </p>
+                    <a
+                      // href="https://www.xicom.biz/case-studies/algo-trader.html"
+                      className="red-btn circle-btn"
+                    >
+                      {" "}
+                      View Case Study{" "}
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div className="item col-lg-4 col-sm-6 aos-init aos-animat">
+                <div className="inner-cols banner4">
+                  <div className="banner-col-content">
+                    <div className="col-logo">
+                      <img
+                        src="https://www.xicom.biz/images/case-studies/logo4.png"
+                        alt=""
+                      />
+                    </div>
+                    <p className="para">
+                      AlgoTrader is the first fully-integrated algorithmic
+                      trading software solution for quantitative hedge funds.
+                    </p>
+                    <a
+                      // href="https://www.xicom.biz/case-studies/algo-trader.html"
+                      className="red-btn circle-btn"
+                    >
+                      {" "}
+                      View Case Study{" "}
+                    </a>
+                  </div>
+                </div>
+              </div>
+            
+            </div>
+          </div>
+
+          <div className="row">
+            <div
+              class="case-studies-banner row mr0 aos-init aos-animate"
+              data-aos="fade-up"
+            >
+             
+             <div className="item col-lg-4 col-sm-6 aos-init aos-animat">
+                <div className="inner-cols banner4">
+                  <div className="banner-col-content">
+                    <div className="col-logo">
+                      <img
+                        src="https://www.xicom.biz/images/case-studies/logo4.png"
+                        alt=""
+                      />
+                    </div>
+                    <p className="para">
+                      AlgoTrader is the first fully-integrated algorithmic
+                      trading software solution for quantitative hedge funds.
+                    </p>
+                    <a
+                      // href="https://www.xicom.biz/case-studies/algo-trader.html"
+                      className="red-btn circle-btn"
+                    >
+                      {" "}
+                      View Case Study{" "}
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div className="item col-lg-4 col-sm-6 aos-init aos-animat">
+                <div className="inner-cols banner4">
+                  <div className="banner-col-content">
+                    <div className="col-logo">
+                      <img
+                        src="https://www.xicom.biz/images/case-studies/logo4.png"
+                        alt=""
+                      />
+                    </div>
+                    <p className="para">
+                      AlgoTrader is the first fully-integrated algorithmic
+                      trading software solution for quantitative hedge funds.
+                    </p>
+                    <a
+                      // href="https://www.xicom.biz/case-studies/algo-trader.html"
+                      className="red-btn circle-btn"
+                    >
+                      {" "}
+                      View Case Study{" "}
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div className="item col-lg-4 col-sm-6 aos-init aos-animat">
+                <div className="inner-cols banner4">
+                  <div className="banner-col-content">
+                    <div className="col-logo">
+                      <img
+                        src="https://www.xicom.biz/images/case-studies/logo4.png"
+                        alt=""
+                      />
+                    </div>
+                    <p className="para">
+                      AlgoTrader is the first fully-integrated algorithmic
+                      trading software solution for quantitative hedge funds.
+                    </p>
+                    <a
+                      // href="https://www.xicom.biz/case-studies/algo-trader.html"
+                      className="red-btn circle-btn"
+                    >
+                      {" "}
+                      View Case Study{" "}
+                    </a>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>

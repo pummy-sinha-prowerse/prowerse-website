@@ -12,7 +12,9 @@ import Careers from './Pages/Careers';
 import Blog from "./Pages/Blog";
 import Post1 from "./Pages/post-1";
 import Post3 from "./Pages/post-3";
-import Post2 from "./Pages/post-3";
+import Post2 from "./Pages/post-2";
+import ProductEngineering from "./Pages/ProductEngineering";
+import BuildYourTeam from "./Pages/BuildYourTeam";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 function App() {
@@ -42,11 +44,14 @@ function App() {
         <Route path="/contact" element={<ContactUS />} />
         <Route path="/testimonials" element={<Testimonials />} />
         <Route path="/blog" element={<Blog />} />
-        <Route path="/blog/post-1" element={<Post1 />} />
-        <Route path="/blog/post-2" element={<Post2 />} />
-        <Route path="/blog/post-3" element={<Post3 />} />
+        <Route path="/blog-product" element={<Post1 />} />
+        <Route path="/blog-infra" element={<Post2 />} />
+        <Route path="/blog-cloud" element={<Post3 />} />
         <Route path="/hire-developers" element={<Post3 />} />
         <Route path="/careers" element={<Careers />} />
+        <Route path="/product" element={<ProductEngineering/>}/>
+        <Route path="/buildyourteam" element={<BuildYourTeam/>}/>
+
       </Routes>
     </>
     // </div>

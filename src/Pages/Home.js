@@ -1211,7 +1211,7 @@ const Home = () => {
                 data-aos="fade-up"
                 data-aos-delay="100"
               >
-                <article>
+                <article > 
                   <div className="post-img">
                     <img
                       src="assets/img/blog/blog-1.png"
@@ -1223,7 +1223,7 @@ const Home = () => {
                   <p className="post-category">Product Engineering</p>
 
                   <h2 className="title">
-                    <a href="blog-details.html">
+                    <a href="/blog-product">
                       The importance of effective product engineering strategy
                     </a>
                   </h2>
@@ -1261,7 +1261,7 @@ const Home = () => {
                   <p className="post-category">Infrastructure</p>
 
                   <h2 className="title">
-                    <a href="blog-details.html">
+                    <a href="blog-infra">
                       Infrastructure As Code and it's Relevance
                     </a>
                   </h2>
@@ -1300,7 +1300,7 @@ const Home = () => {
                   <p className="post-category">Cloud</p>
 
                   <h2 className="title">
-                    <a href="blog-details.html">
+                  <a href="/blog-cloud">
                       Hybrid Cloud - What, Why & How?
                     </a>
                   </h2>
