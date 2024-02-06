@@ -256,7 +256,7 @@ function About() {
               <div className="member" data-aos="fade-up" data-aos-delay="100">
                 <div className="member-img">
                   <img
-                    src="assets/img/team/pradyuman-zala.jpg"
+                    src="prowerse-website/assets/img/team/pradyuman-zala.jpg"
                     className="img-fluid"
                     alt=""
                   />
