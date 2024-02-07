@@ -16,140 +16,365 @@ function Post3() {
                 dolorum debitis veritatis natus dolores. Quasi ratione sint. Sit
                 quaerat ipsum dolorem.
               </h5>
-              {/* <a href="#about" className="btn-get-started scrollto">
-                Get Started
-              </a> */}
             </div>
           </div>
         </div>
       </section>
 
-      {/* <!-- Blog Section - Blog Page --> */}
-      <section id="recent-posts" className="recent-posts">
-        {/* <!--  Section Title --> */}
-
-        <div className="container">
-          <div className="row gy-4">
-            <div
-              className="col-xl-4 col-md-6"
-              data-aos="fade-up"
-              data-aos-delay="100"
-            >
-              <article>
-                <div className="post-img">
+      {/* <!-- ======= Blog Single Section ======= --> */}
+      <section id="blog" class="blog">
+        <div className="container" data-aos="fade-up">
+          <div className="row">
+            <div className="col-lg-8 entries">
+              <article className="entry entry-single">
+                <div className="entry-img">
                   <img
-                    src="assets/img/blog/blog-1.png"
+                    src="prowerse-website/assets/img/blog/blog-3.png"
                     alt=""
-                    className="img-fluid"
+                    class="img-fluid"
                   />
                 </div>
 
-                <p className="post-category">Product Engineering</p>
-
-                <h2 className="title">
-                  <a href="blog-details.html">
-                    The importance of effective product engineering strategy
-                  </a>
+                <h2 className="entry-title">
+                  <a href="/blog-cloud">Hybrid Cloud - What, Why & How?</a>
                 </h2>
 
-                <div className="d-flex align-items-center">
-                  <img
-                    src="assets/img/blog/pradyuman-zala.jpg"
-                    alt=""
-                    className="img-fluid post-author-img flex-shrink-0"
-                  />
-                  <div className="post-meta">
-                    <p className="post-author">Pradyuman Zala</p>
-                    <p className="post-date">
-                      <time dateTime="2022-01-01">Aug 06, 2021</time>
+                <div className="entry-meta">
+                  <ul>
+                    <li className="d-flex align-items-center">
+                      <i className="bi bi-person"></i> Pradyuman Zala
+                    </li>
+                    <li className="d-flex align-items-center">
+                      <i className="bi bi-clock"></i>{" "}
+                      <time datetime="2020-01-01">Oct 25, 20224</time>
+                    </li>
+                  </ul>
+                </div>
+
+                <div className="entry-content">
+                  <p>
+                    <h3>What is Hybrid Cloud?</h3>
+                  </p>
+
+                  <p>
+                    A Hybrid Cloud amalgamates multiple cloud stacks to work
+                    seamlessly. Hybrid Cloud workload combine public and private
+                    clouds. It also includes on-premises infrastructure with
+                    cloud workloads. All practical Hybrid Clouds contain
+                    different cloud environments which are tightly
+                    interconnected with each other.
+                  </p>
+                  <p>
+                    Word 'hybrid' has its inspiration from concept of hybrid
+                    cars! Hybrid cars offer drivability through two different
+                    engines. A petrol and an electric motor. Each engine
+                    operates differently, but together both results in moving
+                    car in frugal way. Similarly, Hybrid Clouds leverage the
+                    benefits of multiple clouds for given scenario. For e.g.,
+                    using SES from AWS and MS-SQL from Azure.
+                  </p>
+
+                  <blockquote>
+                    <p>
+                      Effective product engineering strategy is crucial for
+                      businesses for several reasons. It enables the development
+                      of products that outperform competitors and responds
+                      quickly to market demands.
                     </p>
+                  </blockquote>
+
+                  <h3>Why is Hybrid Cloud required?</h3>
+                  <p>
+                    <b>
+                      Hybrid Clouds solves many use cases. Following are few:
+                    </b>
+                  </p>
+                  <p>
+                    1. Direct move from legacy to public cloud may not be
+                    practical move in many scenarios. Here migration can start
+                    with moving less risky components such as storage, emailers
+                    etc.
+                  </p>
+                  <p>
+                    2. Many times, public cloud offers services which are not
+                    possible in private infrastructure. Hybrid approach is best
+                    suited for such scenarios.
+                  </p>
+                  <p>
+                    3. To reduce dependency on single independent public cloud
+                    service provider. It’s very risky to put service monitoring
+                    solution on same region/zone/cloud service provider. Hybrid
+                    Cloud resolves this by having monitoring stack in some other
+                    public cloud infrastructure.
+                  </p>
+                  <p>
+                    4. Making public cloud infrastructure exposed to internet &
+                    then exposing private cloud to public cloud is very well
+                    accepted security trade-off.
+                  </p>
+
+                  <p>
+                    5. Greater control over cost by choosing best suited option
+                    from all cloud providers.
+                  </p>
+                  <h3>How Hybrid Cloud works?</h3>
+                  <p>
+                    So how Hybrid Cloud communicate within? For a Hybrid Cloud
+                    to work well, the connection between the separate clouds is
+                    key. Public clouds, private clouds, and on-premises
+                    infrastructure can connect to each other by API, VPN or WAN.
+                    Hybrid Cloud is all about mixing many types of hosting
+                    options. Following are usual cases of different type of
+                    environments. Any combination of infrastructure is known as
+                    Hybrid Cloud.
+                  </p>
+
+                  <p>
+                    1. <span style={{ color: "#ff8050",fontStyle:"italic" }}>Public Cloud:</span> A
+                    public cloud is a cloud service run by an independent
+                    company with multiple data centers. Public clouds usually
+                    offer 'slice' of infrastructure from much bigger
+                    infrastructure. AWS, Azure, GCP are popular Public Clouds.
+                  </p>
+                  <p>
+                    2.{" "}
+                    <span style={{ color: "#ff8050",fontStyle:"italic" }}>
+                      Hosted Private Cloud:
+                    </span>{" "}
+                    In contrast to Public Cloud, HPCs don't ger 'slice' of
+                    infra. Instead, they get the whole fruit. Usually, complete
+                    infrastructure is reserved for one customer. There are
+                    independent hosting providers offering service to host
+                    private cloud.
+                  </p>
+                  <p>
+                    3.{" "}
+                    <span style={{ color: "#ff8050",fontStyle:"italic" }}>
+                      On-premises Private Cloud:
+                    </span>{" "}
+                    These are like HPCs. Only difference here is that owner of
+                    infrastructure maintains it by themselves in private
+                    instance of Data Centre. Usually, financial data sets are a
+                    best case for these types of clouds.
+                  </p>
+                  <p>
+                    4.{" "}
+                    <span style={{ color: "#ff8050" ,fontStyle:"italic"}}>
+                      On-premises Non-cloud:
+                    </span>{" "}
+                    This is the model used by legacy systems. Owner of
+                    infrastructure buys software licenses, installs, and
+                    maintains hardware in private data center computers.
+                  </p>
+                </div>
+
+                {/* <div class="entry-footer">
+                  <i class="bi bi-folder"></i>
+                  <ul class="cats">
+                    <li>
+                      <a href="#">Business</a>
+                    </li>
+                  </ul>
+
+                  <i class="bi bi-tags"></i>
+                  <ul class="tags">
+                    <li>
+                      <a href="#">Creative</a>
+                    </li>
+                    <li>
+                      <a href="#">Tips</a>
+                    </li>
+                    <li>
+                      <a href="#">Marketing</a>
+                    </li>
+                  </ul>
+                </div> */}
+              </article>
+              {/* <!-- End blog entry --> */}
+
+              {/* <div className="blog-author d-flex align-items-center">
+                <img
+                  src="assets/img/blog/blog-author.jpg"
+                  className="rounded-circle float-left"
+                  alt=""
+                />
+                <div>
+                  <h4>Jane Smith</h4>
+                  <div className="social-links">
+                    <a href="https://twitters.com/#">
+                      <i className="bi bi-twitter"></i>
+                    </a>
+                    <a href="https://facebook.com/#">
+                      <i className="bi bi-facebook"></i>
+                    </a>
+                    <a href="https://instagram.com/#">
+                      <i className="biu bi-instagram"></i>
+                    </a>
+                  </div>
+                  <p>
+                    Itaque quidem optio quia voluptatibus dolorem dolor. Modi
+                    eum sed possimus accusantium. Quas repellat voluptatem
+                    officia numquam sint aspernatur voluptas. Esse et
+                    accusantium ut unde voluptas.
+                  </p>
+                </div>
+              </div> */}
+              {/* <!-- End blog author bio --> */}
+            </div>
+            {/* <!-- End blog entries list --> */}
+
+            <div className="col-lg-4">
+              <div className="sidebar">
+                <div id="text-11" class="widgetContainer widget_text">
+                  {" "}
+                  <div class="textwidget">
+                    <div class="contact-bar">
+                      <h3>
+                        Looking for
+                        <br /> Certified &amp; <br />
+                        Experienced <br />
+                        <span class="red-text">Developers</span>
+                      </h3>
+                      <ul>
+                        <li>50+ Experts</li>
+                        <li>Flexible Engagement</li>
+                        <li>NDA Protection</li>
+                        <li>100% Satisfaction</li>
+                        <li>24X7 Support</li>
+                        <li>Moneyback Guarantee</li>
+                      </ul>
+                      <div class="contact-bttn">
+                        <a href="/contact">
+                          Contact Now!
+                        </a>
+                      </div>
+                    </div>
                   </div>
                 </div>
-              </article>
-            </div>
-
-            <div
-              className="col-xl-4 col-md-6"
-              data-aos="fade-up"
-              data-aos-delay="200"
-            >
-              <article>
-                <div className="post-img">
-                  <img
-                    src="assets/img/blog/blog-2.png"
-                    alt=""
-                    className="img-fluid"
-                  />
+                {/* <h3 className="sidebar-title">Search</h3> */}
+                <div className="sidebar-item search-form">
+                  {/* <form action="">
+                    <input type="text" />
+                    <button type="submit">
+                      <i className="bi bi-search"></i>
+                    </button>
+                  </form> */}
                 </div>
+                {/* <!-- End sidebar search formn--> */}
 
-                <p className="post-category">Infrastructure</p>
+                <h3 className="sidebar-title">Categories</h3>
+                <div className="sidebar-item categories">
+                  <ul>
+                    <li>
+                      <a href="/blog-product">
+                        Product Engineering
+                        {/* <span>(1)</span> */}
+                      </a>
+                    </li>
+                    <li>
+                      <a href="/blog-infra">
+                        Infrastructure
+                        {/* <span>(1)</span> */}
+                      </a>
+                    </li>
+                    <li>
+                      <a href="/blog-cloud">
+                        Cloud
+                        {/* <span>(1)</span> */}
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                {/* <!-- End sidebar categories--> */}
 
-                <h2 className="title">
-                  <a href="blog-details.html">
-                    Infrastructure As Code and it's Relevance
-                  </a>
-                </h2>
+                <h3 className="sidebar-title">Recent Posts</h3>
+                <div className="sidebar-item recent-posts">
+                  <div className="post-item clearfix">
+                    <img
+                      src="prowerse-website/assets/img/blog/blog-1.png"
+                      alt=""
+                    />
+                    <h4>
+                      <a href="/blog-product">
+                        The importance of effective product engineering strategy
+                      </a>
+                    </h4>
+                    <time datetime="2020-01-01">Jan 3, 2024</time>
+                  </div>
 
-                <div className="d-flex align-items-center">
-                  <img
-                    src="assets/img/blog/pradyuman-zala.jpg"
-                    alt=""
-                    className="img-fluid post-author-img flex-shrink-0"
-                  />
-                  <div className="post-meta">
-                    <p className="post-author">Pradyuman Zala</p>
-                    <p className="post-date">
-                      <time dateTime="2022-01-01">July 29, 2021</time>
-                    </p>
+                  <div className="post-item clearfix">
+                    <img
+                      src="prowerse-website/assets/img/blog/blog-2.png"
+                      alt=""
+                    />
+                    <h4>
+                      <a href="/blog-infra">
+                        Infrastructure As Code and it's Relevance
+                      </a>
+                    </h4>
+                    <time datetime="2020-01-01">Sept 17, 2023</time>
+                  </div>
+
+                  <div className="post-item clearfix">
+                    <img
+                      src="prowerse-website/assets/img/blog/blog-3.png"
+                      alt=""
+                    />
+                    <h4>
+                      <a href="/blog-cloud">Hybrid Cloud - What, Why & How?</a>
+                    </h4>
+                    <time datetime="2020-01-01">Oct 25, 2022</time>
                   </div>
                 </div>
-              </article>
+                {/* <!-- End sidebar recent posts--> */}
+
+                {/* <h3 class="sidebar-title">Tags</h3>
+                <div class="sidebar-item tags">
+                  <ul>
+                    <li>
+                      <a href="#">App</a>
+                    </li>
+                    <li>
+                      <a href="#">IT</a>
+                    </li>
+                    <li>
+                      <a href="#">Business</a>
+                    </li>
+                    <li>
+                      <a href="#">Mac</a>
+                    </li>
+                    <li>
+                      <a href="#">Design</a>
+                    </li>
+                    <li>
+                      <a href="#">Office</a>
+                    </li>
+                    <li>
+                      <a href="#">Creative</a>
+                    </li>
+                    <li>
+                      <a href="#">Studio</a>
+                    </li>
+                    <li>
+                      <a href="#">Smart</a>
+                    </li>
+                    <li>
+                      <a href="#">Tips</a>
+                    </li>
+                    <li>
+                      <a href="#">Marketing</a>
+                    </li>
+                  </ul>
+                </div> */}
+                {/* <!-- End sidebar tags--> */}
+              </div>
+              {/* <!-- End sidebar --> */}
             </div>
-            {/* <!-- End post list item --> */}
-
-            <div
-              className="col-xl-4 col-md-6"
-              data-aos="fade-up"
-              data-aos-delay="300"
-            >
-              <article>
-                <div className="post-img">
-                  <img
-                    src="assets/img/blog/blog-3.png"
-                    alt=""
-                    className="img-fluid"
-                  />
-                </div>
-
-                <p className="post-category">Cloud</p>
-
-                <h2 className="title">
-                  <a href="blog-details.html">
-                    Hybrid Cloud - What, Why & How?
-                  </a>
-                </h2>
-
-                <div className="d-flex align-items-center">
-                  <img
-                    src="assets/img/blog/pradyuman-zala.jpg"
-                    alt=""
-                    className="img-fluid post-author-img flex-shrink-0"
-                  />
-                  <div className="post-meta">
-                    <p className="post-author">Pradyuman Zala</p>
-                    <p className="post-date">
-                      <time dateTime="2022-01-01">July 06, 2021</time>
-                    </p>
-                  </div>
-                </div>
-              </article>
-            </div>
-            {/* <!-- End post list item --> */}
+            {/* <!-- End blog sidebar --> */}
           </div>
-          {/* <!-- End recent posts list --> */}
         </div>
       </section>
-      {/* <!-- End Blog Section --> */}
+      {/* <!-- End Blog Single Section --> */}
 
       {/* <!-- ======= Footer ======= --> */}
       <Footer />

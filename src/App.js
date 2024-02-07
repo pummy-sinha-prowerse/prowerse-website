@@ -15,6 +15,7 @@ import Post3 from "./Pages/post-3";
 import Post2 from "./Pages/post-2";
 import ProductEngineering from "./Pages/ProductEngineering";
 import BuildYourTeam from "./Pages/BuildYourTeam";
+import ViewCaseStudy from "./Pages/ViewCaseStudy";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 function App() {
@@ -51,6 +52,7 @@ function App() {
         <Route path="/careers" element={<Careers />} />
         <Route path="/product" element={<ProductEngineering/>}/>
         <Route path="/buildyourteam" element={<BuildYourTeam/>}/>
+        <Route path="/algo-trader" element={<ViewCaseStudy/>}/>
 
       </Routes>
     </>

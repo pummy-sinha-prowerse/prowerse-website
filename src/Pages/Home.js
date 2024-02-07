@@ -1261,7 +1261,7 @@ const Home = () => {
                   <p className="post-category">Infrastructure</p>
 
                   <h2 className="title">
-                    <a href="blog-infra">
+                    <a href="/blog-infra">
                       Infrastructure As Code and it's Relevance
                     </a>
                   </h2>

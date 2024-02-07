@@ -57,7 +57,7 @@ function About() {
                   <div className="banner-col-content">
                     <div className="col-logo">
                       <img
-                        src="https://www.xicom.biz/images/case-studies/logo4.png"
+                        src="prowerse-website/assets/img/casestudies/logo4.png"
                         alt=""
                       />
                     </div>
@@ -66,7 +66,7 @@ function About() {
                       trading software solution for quantitative hedge funds.
                     </p>
                     <a
-                      // href="https://www.xicom.biz/case-studies/algo-trader.html"
+                      href="#"
                       className="red-btn circle-btn"
                     >
                       {" "}
@@ -80,7 +80,7 @@ function About() {
                   <div className="banner-col-content">
                     <div className="col-logo">
                       <img
-                        src="https://www.xicom.biz/images/case-studies/logo4.png"
+                        src="prowerse-website/assets/img/casestudies/logo4.png"
                         alt=""
                       />
                     </div>
@@ -89,7 +89,7 @@ function About() {
                       trading software solution for quantitative hedge funds.
                     </p>
                     <a
-                      // href="https://www.xicom.biz/case-studies/algo-trader.html"
+                      href="#"
                       className="red-btn circle-btn"
                     >
                       {" "}
@@ -103,7 +103,7 @@ function About() {
                   <div className="banner-col-content">
                     <div className="col-logo">
                       <img
-                        src="https://www.xicom.biz/images/case-studies/logo4.png"
+                        src="prowerse-website/assets/img/casestudies/logo4.png"
                         alt=""
                       />
                     </div>
@@ -112,7 +112,7 @@ function About() {
                       trading software solution for quantitative hedge funds.
                     </p>
                     <a
-                      // href="https://www.xicom.biz/case-studies/algo-trader.html"
+                      href="#"
                       className="red-btn circle-btn"
                     >
                       {" "}
