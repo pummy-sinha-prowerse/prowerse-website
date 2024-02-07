@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/prowerse-website/static/css/main.0805de2b.css",
-    "main.js": "/prowerse-website/static/js/main.f81626b2.js",
+    "main.js": "/prowerse-website/static/js/main.4dd46ad2.js",
     "static/js/592.2ee4336b.chunk.js": "/prowerse-website/static/js/592.2ee4336b.chunk.js",
     "index.html": "/prowerse-website/index.html",
     "main.0805de2b.css.map": "/prowerse-website/static/css/main.0805de2b.css.map",
-    "main.f81626b2.js.map": "/prowerse-website/static/js/main.f81626b2.js.map",
+    "main.4dd46ad2.js.map": "/prowerse-website/static/js/main.4dd46ad2.js.map",
     "592.2ee4336b.chunk.js.map": "/prowerse-website/static/js/592.2ee4336b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.0805de2b.css",
-    "static/js/main.f81626b2.js"
+    "static/js/main.4dd46ad2.js"
   ]
 }

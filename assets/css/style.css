@@ -2809,7 +2809,73 @@ section {
   color: #aaaaaa;
   font-size: 14px;
 }
+/* ------------------------------------------------------------
+# blog details
+---------------------------------------------------------------*/
 
+.widgetContainer {
+  background: linear-gradient(to left, #e1393b, #ff7f509e);
+}
+.contact-bar h3 {
+  float: left;
+  width: 100%;
+  padding: 35px 40px 30px;
+  box-sizing: border-box;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 800;
+  font-size: 33px;
+  line-height: 34px;
+  border-bottom: 1px solid #fff;
+}
+.contact-bar ul {
+  float: left;
+  width: 100%;
+  padding: 28px 40px 25px;
+  box-sizing: border-box;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  border-bottom: 1px solid #fff;
+}
+.contact-bar ul li {
+  float: left;
+  width: 100%;
+  font-size: 16px;
+  padding-left: 17px;
+}
+.contact-bar .contact-bttn {
+  width: 100%;
+  padding: 35px 40px 35px;
+  box-sizing: border-box;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 800;
+  border-bottom: 1px solid #ff7f509e;
+}
+.contact-bar .contact-bttn a {
+  padding: 12px 0px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  border-radius: 25px !important;
+  cursor: pointer;
+  transition: all 0.3s;
+  width: 100%;
+  border: 0;
+  background: linear-gradient(to left, #ff7f509e, #e1393b);
+  /* background-color: rgb(0, 153, 218); */
+  color: #fff;
+  text-transform: uppercase;
+  margin: 10px auto 0;
+  display: inline-block;
+  text-align: center;
+  margin-top: 0;
+  letter-spacing: 0px;
+}
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
@@ -3589,7 +3655,7 @@ ul.hire-team-process li:last-child:after {
   position: relative;
 }
 .banner4 {
-  background: url(https://www.xicom.biz/images/case-studies/banner4.webp)
+  background: url(../img/casestudies/banner4.webp)
     no-repeat center center/cover;
 }
 .banner-col-content {
