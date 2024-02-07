@@ -9,7 +9,7 @@ function ViewCaseStudy() {
         <div className="container" data-aos="zoom-out" data-aos-delay="100">
           <div className="row">
             <div className="col-xl-6">
-              <h1>#CASE STUDIES</h1>
+              <h1>#Case Studies</h1>
               <h5>
                 Prowerse provides software development and mobile app
                 development services that are driven by the ambition to help you
@@ -30,7 +30,7 @@ function ViewCaseStudy() {
             <div className="col-lg-8 entries">
               <article className="entry entry-single">
                 <h4 className="entry-title">
-                  <a href="/blog-product"><span style={{ color: "#ff8050" }}>ABOUT ALGOTRADER</span></a>
+                  <span style={{ color: "#ff8050" }}>ABOUT ALGOTRADER</span>
                 </h4>
 
                 <div className="entry-content">
@@ -52,7 +52,9 @@ function ViewCaseStudy() {
                     strategies and already has more than 80 clients and 400+
                     supported brokers and exchanges.
                   </p>
-                  <h3 className="sidebar-title"><span style={{ color: "#ff8050" }}>KEY CHALLENGES</span></h3>
+                  <h3 className="sidebar-title">
+                    <span style={{ color: "#ff8050" }}>KEY CHALLENGES</span>
+                  </h3>
                   <ul>
                     <li>
                       AlgoTrader company already had an old site with an
@@ -82,13 +84,16 @@ function ViewCaseStudy() {
                       wanted it to be pixel perfect.
                     </li>
                   </ul>
-                  <h3 className="sidebar-title"><span style={{ color: "#ff8050" }}>PROPOSITION & SOLUTION</span></h3>
+                  <h3 className="sidebar-title">
+                    <span style={{ color: "#ff8050" }}>
+                      PROPOSITION & SOLUTION
+                    </span>
+                  </h3>
 
                   <p>
-                  Prowerse has worked on many projects similar to AlgoTrader
+                    Prowerse has worked on many projects similar to AlgoTrader
                     before. Hence, we presented the following solution to the
                     owners of AlgoTrader:
-                    
                   </p>
                   <ul>
                     <li>
@@ -116,12 +121,14 @@ function ViewCaseStudy() {
                       devices as per the specific needs of the client.
                     </li>
                   </ul>
-                  <h3 className="sidebar-title"><span style={{ color: "#ff8050" }}>RESULTS & BENEFITS</span></h3>
+                  <h3 className="sidebar-title">
+                    <span style={{ color: "#ff8050" }}>RESULTS & BENEFITS</span>
+                  </h3>
                   <p>
-                    The solution designed and developed by Prowerse met all of the
-                    expectations of the AlgoTrader website owner regarding the
-                    new fully responsive website which works perfectly on all
-                    kinds of mobile devices and desktop computers. Today, so
+                    The solution designed and developed by Prowerse met all of
+                    the expectations of the AlgoTrader website owner regarding
+                    the new fully responsive website which works perfectly on
+                    all kinds of mobile devices and desktop computers. Today, so
                     many of AlgoTrader clients which are hedge funds or other
                     brokerage firms work from mobile platforms hence newly build
                     AlgoTrader website was fit for them as it was attractive as
@@ -129,11 +136,34 @@ function ViewCaseStudy() {
                     contractor successfully provided to AlgoTader.
                   </p>
                   <ul>
-                    <li>AlgoTrader was delivered the product on time thus allowing them with appropriate time to market their product.</li>
-                    <li>AlgoTrader is extremely satisfied with the deliverables provided on time and within their budget.</li>
-                    <li>New features introduced within the AlgoTrader system were taken up and Prowerse ensured the faster delivery for the same to take the system to the next level. This overall dedicated effort from Xicom along with the overall software quality increased the customer satisfaction level, thereby increasing our client’s revenue and customer retention by huge margin.</li>
-                    <li>The website developed by Prowerse has been appreciated a lot from all kinds of users i.e. hedge funds, traders, individual investors, brokerage firms, investment firms etc. further strengthening AlgoTrader’s relationship with its customers.</li>
-                    <li>AlgoTrader was extremely satisfied with the Quality Assurance Analysis (QA) efforts provided by Prowerse.</li>
+                    <li>
+                      AlgoTrader was delivered the product on time thus allowing
+                      them with appropriate time to market their product.
+                    </li>
+                    <li>
+                      AlgoTrader is extremely satisfied with the deliverables
+                      provided on time and within their budget.
+                    </li>
+                    <li>
+                      New features introduced within the AlgoTrader system were
+                      taken up and Prowerse ensured the faster delivery for the
+                      same to take the system to the next level. This overall
+                      dedicated effort from Xicom along with the overall
+                      software quality increased the customer satisfaction
+                      level, thereby increasing our client’s revenue and
+                      customer retention by huge margin.
+                    </li>
+                    <li>
+                      The website developed by Prowerse has been appreciated a
+                      lot from all kinds of users i.e. hedge funds, traders,
+                      individual investors, brokerage firms, investment firms
+                      etc. further strengthening AlgoTrader’s relationship with
+                      its customers.
+                    </li>
+                    <li>
+                      AlgoTrader was extremely satisfied with the Quality
+                      Assurance Analysis (QA) efforts provided by Prowerse.
+                    </li>
                   </ul>
                 </div>
 
@@ -205,7 +235,7 @@ function ViewCaseStudy() {
                         shortly.
                       </p>
                       <div class="contact-bttn">
-                        <a href="/contact">Contact Now!</a>
+                        <Link to="/contact">Contact Now!</Link>
                       </div>
                     </div>
                   </div>
@@ -221,7 +251,9 @@ function ViewCaseStudy() {
                 </div>
                 {/* <!-- End sidebar search formn--> */}
 
-                <h3 className="sidebar-title"><span style={{ color: "#ff8050" }}>TECHNOLOGIES</span></h3>
+                <h3 className="sidebar-title">
+                  <span style={{ color: "#ff8050" }}>TECHNOLOGIES</span>
+                </h3>
                 <div className="sidebar-item categories">
                   <p>
                     WordPress CMS, JQuery, Mailchimp, Yoast plugin for SEO,
@@ -230,7 +262,9 @@ function ViewCaseStudy() {
                 </div>
                 {/* <!-- End sidebar categories--> */}
 
-                <h3 className="sidebar-title"><span style={{ color: "#ff8050" }}>CLIENT REVIEWS</span></h3>
+                <h3 className="sidebar-title">
+                  <span style={{ color: "#ff8050" }}>CLIENT REVIEWS</span>
+                </h3>
                 <div className="sidebar-item recent-posts">
                   <p>
                     We have found Prowerse through internet search and right now

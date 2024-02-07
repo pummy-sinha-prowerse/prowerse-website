@@ -266,22 +266,22 @@ function Post3() {
                 <div className="sidebar-item categories">
                   <ul>
                     <li>
-                      <a href="/blog-product">
+                      <Link to="/blog-product">
                         Product Engineering
                         {/* <span>(1)</span> */}
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="/blog-infra">
+                      <Link to="/blog-infra">
                         Infrastructure
                         {/* <span>(1)</span> */}
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="/blog-cloud">
+                      <Link to="/blog-cloud">
                         Cloud
                         {/* <span>(1)</span> */}
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </div>
@@ -295,9 +295,9 @@ function Post3() {
                       alt=""
                     />
                     <h4>
-                      <a href="/blog-product">
+                      <Link to="/blog-product">
                         The importance of effective product engineering strategy
-                      </a>
+                      </Link>
                     </h4>
                     <time datetime="2020-01-01">Jan 3, 2024</time>
                   </div>
@@ -308,9 +308,9 @@ function Post3() {
                       alt=""
                     />
                     <h4>
-                      <a href="/blog-infra">
+                      <Link to="/blog-infra">
                         Infrastructure As Code and it's Relevance
-                      </a>
+                      </Link>
                     </h4>
                     <time datetime="2020-01-01">Sept 17, 2023</time>
                   </div>
@@ -321,7 +321,7 @@ function Post3() {
                       alt=""
                     />
                     <h4>
-                      <a href="/blog-cloud">Hybrid Cloud - What, Why & How?</a>
+                      <Link to="/blog-cloud">Hybrid Cloud - What, Why & How?</Link>
                     </h4>
                     <time datetime="2020-01-01">Oct 25, 2022</time>
                   </div>

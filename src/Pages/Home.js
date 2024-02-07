@@ -1126,7 +1126,7 @@ const Home = () => {
           </div>
         </section>
         {/* <!-- ======= Service Section ======= --> */}
-        <section id="pricing" className="pricing section-bg">
+        {/* <section id="pricing" className="pricing section-bg">
           <div className="container" data-aos="fade-up">
             <div className="section-title text-center position-relative pb-3 mx-auto">
               <h2>Software Product Development</h2>
@@ -1189,7 +1189,7 @@ const Home = () => {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
         <section id="recent-posts" className="recent-posts">
           {/* <!--  Section Title --> */}
           <div className="container section-title text-center position-relative pb-3 mx-auto" data-aos="fade-up">
@@ -1223,9 +1223,9 @@ const Home = () => {
                   <p className="post-category">Product Engineering</p>
 
                   <h2 className="title">
-                    <a href="/blog-product">
+                    <Link to="/blog-product">
                       The importance of effective product engineering strategy
-                    </a>
+                    </Link>
                   </h2>
 
                   {/* <div className="d-flex align-items-center">
@@ -1261,9 +1261,9 @@ const Home = () => {
                   <p className="post-category">Infrastructure</p>
 
                   <h2 className="title">
-                    <a href="/blog-infra">
+                    <Link to="/blog-infra">
                       Infrastructure As Code and it's Relevance
-                    </a>
+                    </Link>
                   </h2>
 
                   {/* <div className="d-flex align-items-center">
@@ -1300,9 +1300,9 @@ const Home = () => {
                   <p className="post-category">Cloud</p>
 
                   <h2 className="title">
-                  <a href="/blog-cloud">
+                  <Link to="/blog-cloud">
                       Hybrid Cloud - What, Why & How?
-                    </a>
+                    </Link>
                   </h2>
 
                   {/* <div className="d-flex align-items-center">

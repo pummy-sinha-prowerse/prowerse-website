@@ -1,13 +1,14 @@
 // About.js
 import React, { useState, useEffect } from "react";
 import Footer from "./Footer";
+import { Link } from "react-router-dom";
 // import Count from "../Component/Count";
 
 function About() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
- 
+
   return (
     <>
       <section id="hero-about" className="d-flex align-items-center">
@@ -65,13 +66,11 @@ function About() {
                       AlgoTrader is the first fully-integrated algorithmic
                       trading software solution for quantitative hedge funds.
                     </p>
-                    <a
-                      href="/algo-trader"
+                    <Link
+                      to="/algo-trader"
                       className="red-btn circle-btn"
-                    >
-                      {" "}
-                      View Case Study{" "}
-                    </a>
+                    ></Link>
+                    View Case Study{" "}
                   </div>
                 </div>
               </div>
@@ -88,13 +87,10 @@ function About() {
                       AlgoTrader is the first fully-integrated algorithmic
                       trading software solution for quantitative hedge funds.
                     </p>
-                    <a
-                      href="/algo-trader"
-                      className="red-btn circle-btn"
-                    >
+                    <Link to="/algo-trader" className="red-btn circle-btn">
                       {" "}
                       View Case Study{" "}
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -111,21 +107,15 @@ function About() {
                       AlgoTrader is the first fully-integrated algorithmic
                       trading software solution for quantitative hedge funds.
                     </p>
-                    <a
-                      href="/algo-trader"
-                      className="red-btn circle-btn"
-                    >
+                    <Link to="/algo-trader" className="red-btn circle-btn">
                       {" "}
                       View Case Study{" "}
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
-            
             </div>
           </div>
-
-          
         </div>
       </section>
 
@@ -261,7 +251,7 @@ function About() {
                     alt=""
                   />
                   <div className="social">
-                    <a href="https://www.linkedin.com/in/zalaps/">
+                    <a href="https://www.linkedin.com/in/zalaps/" target="_blank">
                       <i className="bi bi-linkedin"></i>
                     </a>
                     {/* <a href="">
