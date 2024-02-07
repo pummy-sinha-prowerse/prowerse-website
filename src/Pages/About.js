@@ -66,7 +66,7 @@ function About() {
                       trading software solution for quantitative hedge funds.
                     </p>
                     <a
-                      href="#"
+                      href="/algo-trader"
                       className="red-btn circle-btn"
                     >
                       {" "}
@@ -89,7 +89,7 @@ function About() {
                       trading software solution for quantitative hedge funds.
                     </p>
                     <a
-                      href="#"
+                      href="/algo-trader"
                       className="red-btn circle-btn"
                     >
                       {" "}
@@ -112,7 +112,7 @@ function About() {
                       trading software solution for quantitative hedge funds.
                     </p>
                     <a
-                      href="#"
+                      href="/algo-trader"
                       className="red-btn circle-btn"
                     >
                       {" "}
