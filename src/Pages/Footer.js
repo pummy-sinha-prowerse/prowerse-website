@@ -84,13 +84,13 @@ function Footer() {
                 <p>
                   {" "}
                   <div className="social-links ">
-                  <a
-                    href="https://www.linkedin.com/company/prowerse/mycompany/"
+                  <Link
+                    to="https://www.linkedin.com/company/prowerse/mycompany/"
                     target="_blank"
                     className="linkedin"
                   >
                     <i className="bx bxl-linkedin"></i>
-                  </a>
+                  </Link>
                   </div>
                 </p>
                 {/* <p>
@@ -140,12 +140,12 @@ function Footer() {
           </div>
         </div>
       </footer>
-      <a
+      <Link
         href="#"
         className="back-to-top d-flex align-items-center justify-content-center"
       >
         <i className="bi bi-arrow-up-short"></i>
-      </a>
+      </Link>
     </>
   );
 }
