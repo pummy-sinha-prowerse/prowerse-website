@@ -2823,7 +2823,7 @@ section {
   box-sizing: border-box;
   color: #fff;
   text-transform: uppercase;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 800;
   font-size: 33px;
   line-height: 34px;
@@ -2836,7 +2836,7 @@ section {
   box-sizing: border-box;
   color: #fff;
   text-transform: uppercase;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 600;
   border-bottom: 1px solid #fff;
 }
@@ -2852,13 +2852,13 @@ section {
   box-sizing: border-box;
   color: #fff;
   text-transform: uppercase;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 800;
   border-bottom: 1px solid #ff7f509e;
 }
 .contact-bar .contact-bttn a {
   padding: 12px 0px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 700;
   font-size: 17px;
   border-radius: 25px !important;
@@ -2875,6 +2875,13 @@ section {
   text-align: center;
   margin-top: 0;
   letter-spacing: 0px;
+}
+.contact-bar .text-inner {
+  float: left;
+  width: 100%;
+  font-size: 16px;
+  color: #fff;
+  padding: 0px 47px;
 }
 /*--------------------------------------------------------------
 # Footer
@@ -3655,8 +3662,7 @@ ul.hire-team-process li:last-child:after {
   position: relative;
 }
 .banner4 {
-  background: url(../img/casestudies/banner4.webp)
-    no-repeat center center/cover;
+  background: url(../img/casestudies/banner4.webp) no-repeat center center/cover;
 }
 .banner-col-content {
   position: absolute;
@@ -3740,7 +3746,11 @@ ul.hire-team-process li:last-child:after {
 .circle-btn:hover::after {
   box-shadow: inset 0 0 0 5px #fff;
 }
-.contact-number, .contact-number:hover, .circle-btn, .circle-btn.wht, .circle-btn:hover {
+.contact-number,
+.contact-number:hover,
+.circle-btn,
+.circle-btn.wht,
+.circle-btn:hover {
   border-radius: 25px;
   overflow: hidden;
 }
