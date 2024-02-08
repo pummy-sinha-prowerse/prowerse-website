@@ -58,19 +58,19 @@ function Footer() {
                 <ul>
                   <li>
                     <i className="bx bx-chevron-right"></i>{" "}
-                    <a href="#">Product Engineering</a>
+                    <Link to="/buildyourteam">Build Your Own Team</Link>
                   </li>
                   <li>
                     <i className="bx bx-chevron-right"></i>{" "}
-                    <a href="#">Test Automation</a>
+                    <Link to="/product">Product Engineering </Link>
                   </li>
                   <li>
                     <i className="bx bx-chevron-right"></i>{" "}
-                    <a href="#">DevOps</a>
+                    <Link to="#">DevOps</Link>
                   </li>
                   <li>
                     <i className="bx bx-chevron-right"></i>{" "}
-                    <a href="#">Build your own team</a>
+                    <Link to="#">Test Automation</Link>
                   </li>
                   {/* <li>
                     <i className="bx bx-chevron-right"></i>{" "}

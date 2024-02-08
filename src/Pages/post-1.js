@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 function Post1() {
   return (
     <>
-      <section id="hero" className="d-flex align-items-center">
+      <section id="hero-blog" className="d-flex align-items-center">
         <div className="container" data-aos="zoom-out" data-aos-delay="100">
           <div className="row">
             <div className="col-xl-6">

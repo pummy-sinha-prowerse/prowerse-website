@@ -7,7 +7,7 @@ function ProductEngineering() {
   }, []);
   return (
     <>
-      <section id="service-about" className="d-flex align-items-center">
+      <section id="service-product-engg" className="d-flex align-items-center">
         <div className="container" data-aos="zoom-out" data-aos-delay="100">
           <div className="row">
             <div className="col-xl-6">
