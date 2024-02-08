@@ -148,7 +148,7 @@ function ViewCaseStudy() {
                       New features introduced within the AlgoTrader system were
                       taken up and Prowerse ensured the faster delivery for the
                       same to take the system to the next level. This overall
-                      dedicated effort from Xicom along with the overall
+                      dedicated effort from Prowerse along with the overall
                       software quality increased the customer satisfaction
                       level, thereby increasing our client’s revenue and
                       customer retention by huge margin.
