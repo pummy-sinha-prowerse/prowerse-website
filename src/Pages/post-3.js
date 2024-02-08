@@ -76,10 +76,9 @@ function Post3() {
 
                   <blockquote>
                     <p>
-                      Effective product engineering strategy is crucial for
-                      businesses for several reasons. It enables the development
-                      of products that outperform competitors and responds
-                      quickly to market demands.
+                      Hybrid Cloud combines public and private cloud resources
+                      for flexibility and security. It optimizes costs while
+                      ensuring scalability and control over sensitive data.
                     </p>
                   </blockquote>
 
@@ -130,15 +129,18 @@ function Post3() {
                   </p>
 
                   <p>
-                    1. <span style={{ color: "#ff8050",fontStyle:"italic" }}>Public Cloud:</span> A
-                    public cloud is a cloud service run by an independent
+                    1.{" "}
+                    <span style={{ color: "#ff8050", fontStyle: "italic" }}>
+                      Public Cloud:
+                    </span>{" "}
+                    A public cloud is a cloud service run by an independent
                     company with multiple data centers. Public clouds usually
                     offer 'slice' of infrastructure from much bigger
                     infrastructure. AWS, Azure, GCP are popular Public Clouds.
                   </p>
                   <p>
                     2.{" "}
-                    <span style={{ color: "#ff8050",fontStyle:"italic" }}>
+                    <span style={{ color: "#ff8050", fontStyle: "italic" }}>
                       Hosted Private Cloud:
                     </span>{" "}
                     In contrast to Public Cloud, HPCs don't ger 'slice' of
@@ -149,7 +151,7 @@ function Post3() {
                   </p>
                   <p>
                     3.{" "}
-                    <span style={{ color: "#ff8050",fontStyle:"italic" }}>
+                    <span style={{ color: "#ff8050", fontStyle: "italic" }}>
                       On-premises Private Cloud:
                     </span>{" "}
                     These are like HPCs. Only difference here is that owner of
@@ -159,7 +161,7 @@ function Post3() {
                   </p>
                   <p>
                     4.{" "}
-                    <span style={{ color: "#ff8050" ,fontStyle:"italic"}}>
+                    <span style={{ color: "#ff8050", fontStyle: "italic" }}>
                       On-premises Non-cloud:
                     </span>{" "}
                     This is the model used by legacy systems. Owner of
@@ -244,9 +246,7 @@ function Post3() {
                         <li>Moneyback Guarantee</li>
                       </ul>
                       <div class="contact-bttn">
-                        <a href="/contact">
-                          Contact Now!
-                        </a>
+                        <a href="/contact">Contact Now!</a>
                       </div>
                     </div>
                   </div>
@@ -321,7 +321,9 @@ function Post3() {
                       alt=""
                     />
                     <h4>
-                      <Link to="/blog-cloud">Hybrid Cloud - What, Why & How?</Link>
+                      <Link to="/blog-cloud">
+                        Hybrid Cloud - What, Why & How?
+                      </Link>
                     </h4>
                     <time datetime="2020-01-01">Oct 25, 2022</time>
                   </div>
