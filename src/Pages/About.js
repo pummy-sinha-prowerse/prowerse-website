@@ -69,8 +69,8 @@ function About() {
                     <Link
                       to="/algo-trader"
                       className="red-btn circle-btn"
-                    ></Link>
-                    View Case Study{" "}
+                    >View Case Study{" "}</Link>
+                    
                   </div>
                 </div>
               </div>
