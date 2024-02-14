@@ -3,7 +3,7 @@ import "./App.css";
 import React from "react";
 import About from "./Pages/About";
 import Navbar from "./Pages/NavBar";
-import { Route, Routes, Link } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import Home from "./Pages/Home";
 import Service from "./Pages/Services";
 import ContactUS from "./Pages/ContactUs";
@@ -19,24 +19,23 @@ import ViewCaseStudy from "./Pages/ViewCaseStudy";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 function App() {
+
   return (
     // <div className="App">
     <>
-      <header id="header" className="fixed-top d-flex align-items-center">
+    <Navbar />
+      {/* <header id="header" className={`fixed-top d-flex align-items-center  ${isMenuOpen ? 'header-scrolled' : ''}`}>
         <div className="container d-flex align-items-center">
-          {/* <h1 ClassName="logo me-auto"><a href="index.html">Presento<span>.</span></a></h1> */}
-          {/* <!-- Uncomment below if you prefer to use an image logo --> */}
-
+         
           <Link to="/" className="logo me-auto">
             <img src="assets/img/prowerse.png" alt="logo" />
           </Link>
-          {/* <!-- .navbar --> */}
           <Navbar />
           <Link to="/contact" className="get-started-btn scrollto">
             Let's Talk
           </Link>
         </div>
-      </header>
+      </header> */}
 
       <Routes>
         <Route path="/" element={<Home />} />

@@ -49,7 +49,7 @@ function Careers() {
         <div className="container" data-aos="zoom-out" data-aos-delay="100">
           <div className="row">
             <div className="col-xl-6">
-              <h1>#Become a Part of Prowerse Family</h1>
+              <h1>Become a Part of Prowerse Family</h1>
               <br/>
               <br/>
               <br/>
@@ -96,11 +96,11 @@ function Careers() {
           </div>
         </section> */}
         {/* <!-- ======= About Section ======= --> */}
-        <section id="services" className="services section-bg">
+        {/* <section id="services" className="services section-bg">
         <div className="container" data-aos="fade-up">
           <div className="section-title text-center position-relative pb-3 mx-auto">
             <h2>We Care For Our Team</h2>
-            {/* <p>Software Development Outsourcing</p> */}
+            
           </div>
 
           <div className="row" style={{marginTop: "20px"}}>
@@ -119,10 +119,7 @@ function Careers() {
                 <h4>
                   <a href="#">Festive Celebrations</a>
                 </h4>
-                {/* <p className="service-fill">
-                  Our team will reach out to discuss project related queries and
-                  to offer the best solution for given business scenario.
-                </p> */}
+               
               </div>
             </div>
             <div className="col-md-4">
@@ -163,7 +160,7 @@ function Careers() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
      
       <section id="services" className="services ">
         <div className="container" data-aos="fade-up">

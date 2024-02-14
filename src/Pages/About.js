@@ -66,11 +66,9 @@ function About() {
                       AlgoTrader is the first fully-integrated algorithmic
                       trading software solution for quantitative hedge funds.
                     </p>
-                    <Link
-                      to="/algo-trader"
-                      className="red-btn circle-btn"
-                    >View Case Study{" "}</Link>
-                    
+                    <Link to="/algo-trader" className="red-btn circle-btn">
+                      View Case Study{" "}
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -234,10 +232,10 @@ function About() {
           </div>
           <div className="sub-section-title">
             <p>
-              Meet our dynamic team of innovative minds, dedicated to
-              transforming ideas into cutting-edge software solutions. With
-              diverse expertise and a passion for excellence, we collaborate
-              seamlessly to elevate your digital experience.
+              Meet our dynamic team dedicated to transforming ideas into
+              cutting-edge software solutions. With diverse expertise and
+              knowledge in their respective fields, we collaborate seamlessly to
+              elevate your experience of engaging with Prowerse.
             </p>
           </div>
 
@@ -251,7 +249,10 @@ function About() {
                     alt=""
                   />
                   <div className="social">
-                    <a href="https://www.linkedin.com/in/zalaps/" target="_blank">
+                    <a
+                      href="https://www.linkedin.com/in/zalaps/"
+                      target="_blank"
+                    >
                       <i className="bi bi-linkedin"></i>
                     </a>
                     {/* <a href="">
@@ -336,10 +337,10 @@ function About() {
           </div>
           <div className="sub-section-title">
             <p>
-              We deliver highest level of customer service by deploying
+              We strive to deliver highest level of customer service through
               innovative and collaborative project management systems to build
-              the most professional, robust and highly scalable web & mobile
-              solutions with highest quality standards.
+              robust, secure and highly scalable digital solutions with superior
+              quality standards.
             </p>
           </div>
           <div className="row">
@@ -347,11 +348,14 @@ function About() {
               <li className="step1">
                 <div className="dashed-circle project-requirment"></div>
                 <div className="figcaption">
-                  <h4 className="heading">Post Your Project Requirements</h4>
+                  <h4 className="heading">
+                    {" "}
+                    SHARE YOUR PROJECT &amp; REQUIREMENTS
+                  </h4>
                   <p className="sub-title-area">
-                    Our analysts will thoroughly review your project
-                    requirements and select the most experienced developers best
-                    suited for your project.
+                    Our team will analyze the project requirements and select
+                    relevant engineers suited for the project. We also offer our
+                    clients to screen our engineers as per their set criteria.
                   </p>
                 </div>
               </li>
@@ -359,12 +363,10 @@ function About() {
                 <div className="dashed-circle discuss-project"></div>
                 <div className="figcaption">
                   <h4 className="heading">
-                    Discuss Project Details with our Analysts
+                  DISCUSS PROJECT DETAILS WITH OUR ANALYSTS
                   </h4>
                   <p className="sub-title-area">
-                    Our experts will contact you within no time to discuss your
-                    project related queries and to offer the best solution for
-                    your project development.
+                  Our team will contact you within 1-2 business days to discuss the project and its execution plan in depth, and to offer the best suited solution for the given business scenario. 
                   </p>
                 </div>
               </li>
@@ -372,12 +374,10 @@ function About() {
                 <div className="dashed-circle terms-n-timelines"></div>
                 <div className="figcaption">
                   <h4 className="heading">
-                    Choose Engagement Terms &amp; Timelines
+                  REVIEW ENGAGEMENT TERMS & TIMELINES
                   </h4>
                   <p className="sub-title-area">
-                    Based on the project consultation provided by our experts,
-                    you can choose the engagement timelines for your project
-                    execution.
+                  Based on the initial discussions and requirements review, we can discuss and agree on the relevant engagement model for project execution. Timelines would be transparently discussed and mutually agreed upon before the project kick-off.
                   </p>
                 </div>
               </li>
@@ -385,12 +385,10 @@ function About() {
                 <div className="dashed-circle get-started"></div>
                 <div className="figcaption">
                   <h4 className="heading">
-                    Securely Pay Online and Get Started!
+                  LETS CREATE ANOTHER SUCCESS-STORY
                   </h4>
                   <p className="sub-title-area">
-                    Make payment through our 100% secure online system and our
-                    team shall immediately get started on your project within 24
-                    hours.
+                  We mutually agree on the engagement terms, defining milestones and moving forward to creating another success-story.
                   </p>
                 </div>
               </li>

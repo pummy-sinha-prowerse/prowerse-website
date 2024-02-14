@@ -14,7 +14,6 @@ function Service() {
               <h1>#Services</h1>
               {/* <h2>Software Development. Delivered.</h2> */}
               <h5>
-              
                 In the realm of tech services, we're not just providers; we're
                 architects of solutions. From code intricacies to system
                 scalability, our tech services embody precision and
@@ -83,11 +82,9 @@ function Service() {
 
           <div className="sub-section-title">
             <p>
-              In the realm of software product development, we orchestrate
-              brilliance—conceptualizing, coding, and refining to birth
-              seamless, user-centric solutions. Our commitment lies in crafting
-              software that not only meets expectations but exceeds them, one
-              line of code at a time.
+              Crafting innovative solutions through meticulous code and creative
+              design, our product engineering capabilities transforms ideas into
+              tangible, user-centric realities.
             </p>
           </div>
 
@@ -339,88 +336,84 @@ function Service() {
           </div>
         </div>
       </section>
-           {/* <!-- Techstack --> */}
+      {/* <!-- Techstack --> */}
 
-            {/* Table section start */}
+      {/* Table section start */}
       <section id="pricing" className="pricing section-bg dedicated-teams">
         <div className="container" data-aos="fade-up">
           <div className="section-title text-center position-relative pb-3 mx-auto">
-            <h2>BENEFITS OF OUR DEDICATED TEAMS MODEL</h2>
+            <h2>BUILD YOUR DEDICATED TEAM</h2>
           </div>
 
-          <div className="row" style={{marginTop: "20px"}}>
+          <div className="row" style={{ marginTop: "20px" }}>
             <div className="col-lg-6 col-md-6">
               <div className="box" data-aos="fade-up" data-aos-delay="100">
                 <h3>
-                  EASY & COST EFFECTIVE SOLUTION FOR ENGAGING DIFFERENT KINDS OF
-                  TECHNICAL GROUPS & RESOURCES.
+                  BUILD YOUR DEDICATED TEAM
                 </h3>
+                <h5>Your own agile team for evolving
+                  scope of work</h5>
                 <p>
-                  Dedicated Teams Model is an excellent solution if you need a
-                  complete control over human and technical resources involved
-                  into the development process. DTM features a high level of
-                  transparency, security, flexibility and scalability. All
-                  infrastructure and personnel are at your dedicated service as
-                  long as you need them for a fixed monthly fee. DTM is a good
-                  choice if you need a team of highly-qualified professionals
-                  that will exactly match your IT and business needs.
+                  Hire skilled engineers from our rich pool of individuals at
+                  reasonable prices. Avail on-demand, dedicated engineers
+                  through our strong, hand-picked inhouse team of Business
+                  Analysts, Software Engineers, Automation QAs, DevOps,
+                  service-support executives, etc. We support various businesses
+                  in growing their IT teams with fast ramp-up time, keeping
+                  costs in check.
                 </p>
               </div>
+              
             </div>
+            
 
             <div className="col-lg-6 col-md-6 mt-4 mt-md-0">
               <div className="box" data-aos="fade-up" data-aos-delay="200">
                 <div className="row column-box">
                   <div className="col-lg-12 col-sm-6 sm-cols">
                     <h6 className="heading">
-                      <span className="benefits">BENEFITS</span> OF OUR
-                      DEDICATED TEAMS MODEL
+                      <span className="benefits">VALUE FOR YOU…!!!</span> 
+                      
                     </h6>
                   </div>
                   <div className="col-lg-4 col-sm-6 sm-cols">
                     <p>
-                      ACCESS TO A WIDE RANGE OF EXPERT IT RESOURCES WITH DIVERSE
-                      SKILL SETS.
+                    ACCESS TO A WIDE RANGE OF EXPERIENCED IT ENGINEERS WITH DIVERSE SKILL SETS.
                     </p>
                   </div>
                   <div className="col-lg-4 col-sm-6 sm-cols">
                     <p>
-                      READY TO USE IT INFRASTRUCTURE WITH BEST IN CLASS
-                      FACILITIES.
+                    RIGHT TO CHOOSE TEAM AS PER YOUR SET CRITERIA. 
                     </p>
                   </div>
 
                   <div className="col-lg-4 col-sm-6 sm-cols">
-                    <p>DEDICATED PROJECT MANAGER AS SINGLE POINT OF CONTACT.</p>
+                    <p>FAST RAMP-UP, RAMP-DOWN TIME.</p>
                   </div>
 
                   <div className="col-lg-4 col-sm-6 sm-cols">
                     <p>
-                      COMPLETE CONTROL OVER THE TEAM STRUCTURE AND PROJECTS
-                      FLOW.
+                    DEDICATED PROJECT MANAGER AS SINGLE POINT OF DELIVERY CONTACT.
                     </p>
                   </div>
 
                   <div className="col-lg-4 col-sm-6 sm-cols">
                     <p>
-                      TRANSPARENT ENGAGEMENT PROCESS & COMPREHENSIVE REPORTING
-                      SYSTEM.
+                    TRANSPARENT ENGAGEMENT MODELS WITH COMPREHENSIVE REPORTING SYSTEM.
                     </p>
                   </div>
 
                   <div className="col-lg-4 col-sm-6 sm-cols">
                     <p>
-                      ESTABLISHED INTELLECTUAL PROPERTY PROTECTION PROCEDURES.
+                    TRUSTED IP PROTECTION MECHANISMS.
                     </p>
                   </div>
-                  <div className="col-lg-12 col-sm-6 sm-cols">
+                  <div className="col-lg-6 col-sm-6 sm-cols">
                     <p>
-                      WE CAN ALSO CUSTOMIZE OUR ENGAGEMENT MODELS TO ADDRESS
-                      YOUR SPECIFIC BUSINESS NEEDS. PLEASE CONTACT US REGARDING
-                      YOUR PROJECT REQUIREMENTS AND ONE OUR REPRESENTATIVE SHALL
-                      GET IN TOUCH WITH YOU SHORTLY.
+                    DIRECT COMMUNICATION CHANNELS THROUGH VARIOUS MODES.
                     </p>
                   </div>
+                  <div className="col-lg-6 col-sm-6 sm-cols"><p>ESCALATION MATRIX.</p></div>
                 </div>
                 {/* <h3>Mobile Applications</h3>
                 <p>
