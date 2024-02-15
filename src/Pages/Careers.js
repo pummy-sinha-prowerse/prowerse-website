@@ -49,6 +49,10 @@ function Careers() {
         <div className="container" data-aos="zoom-out" data-aos-delay="100">
           <div className="row">
             <div className="col-xl-6">
+            <br/>
+              <br/>
+              <br/>
+              <br/>
               <h1>Become a Part of Prowerse Family</h1>
               <br/>
               <br/>
@@ -172,9 +176,9 @@ function Careers() {
           <div className="row" style={{marginTop: "20px"}}>
             <div className="col-md-6 card-first">
               <div className="icon-box" data-aos="fade-up" data-aos-delay="100">
-                <i className="bi bi-filetype-jsx"></i>
+                <i className="bi bi-filetype-py"></i>
                 <h4>
-                  <a href="#">React Js</a>
+                <Link to="/job-description">Python</Link>
                 </h4>
                
               </div>
@@ -183,12 +187,12 @@ function Careers() {
               <div className="icon-box" data-aos="fade-up" data-aos-delay="200">
                 <i className="bi bi-server"></i>
                 <h4>
-                  <a href="#">ASP .Net</a>
+                  <Link to="/job-description"> .Net</Link>
                 </h4>
               
               </div>
             </div>
-            <div className="col-md-6">
+            {/* <div className="col-md-6">
               <div className="icon-box" data-aos="fade-up" data-aos-delay="100">
                 <i className="bi bi-filetype-php"></i>
                 <h4>
@@ -196,12 +200,12 @@ function Careers() {
                 </h4>
                
               </div>
-            </div>
+            </div> */}
             <div className="col-md-6 mt-4 mt-md-0 card-last">
               <div className="icon-box" data-aos="fade-up" data-aos-delay="200">
                 <i className="bi bi-cpu"></i>
                 <h4>
-                  <a href="#">DevOps</a>
+                <Link to="/job-description">DevOps</Link>
                 </h4>
                
               </div>
@@ -211,7 +215,159 @@ function Careers() {
       </section>
       </main>
       {/* <!-- End #main --> */}
+      {/* <!-- ======= Portfolio Section ======= --> */}
+    <section id="portfolio" class="portfolio">
+      <div className="container" data-aos="fade-up">
 
+        <div className="section-title text-center position-relative pb-3 mx-auto">
+          <h2>Portfolio</h2>
+          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.</p>
+        </div>
+
+        {/* <div class="row" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-app">App</li>
+              <li data-filter=".filter-card">Card</li>
+              <li data-filter=".filter-web">Web</li>
+            </ul>
+          </div>
+        </div> */}
+
+        <div className="row portfolio-container" data-aos="fade-up" data-aos-delay="200" style={{marginTop: "20px"}}>
+
+          <div className="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div className="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-1.jpg" className="img-fluid" alt=""/>
+              <div className="portfolio-info">
+                {/* <h4>App 1</h4>
+                <p>App</p> */}
+                <div className="portfolio-links">
+                  <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" className="portfolio-lightbox" title="App 1"><i className="bx bx-plus"></i></a>
+                  {/* <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a> */}
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div className="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-2.jpg" className="img-fluid" alt=""/>
+              <div className="portfolio-info">
+                {/* <h4>Web 3</h4>
+                <p>Web</p> */}
+                <div className="portfolio-links">
+                  <a href="assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery" className="portfolio-lightbox" title="Web 3"><i className="bx bx-plus"></i></a>
+                  {/* <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a> */}
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div className="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-3.jpg" className="img-fluid" alt=""/>
+              <div className="portfolio-info">
+                {/* <h4>App 2</h4>
+                <p>App</p> */}
+                <div className="portfolio-links">
+                  <a href="assets/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery" className="portfolio-lightbox" title="App 2"><i className="bx bx-plus"></i></a>
+                  {/* <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a> */}
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div className="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-4.jpg" className="img-fluid" alt=""/>
+              <div className="portfolio-info">
+                {/* <h4>Card 2</h4>
+                <p>Card</p> */}
+                <div className="portfolio-links">
+                  <a href="assets/img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery" className="portfolio-lightbox" title="Card 2"><i className="bx bx-plus"></i></a>
+                  {/* <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a> */}
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div className="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-5.jpg" className="img-fluid" alt=""/>
+              <div className="portfolio-info">
+                {/* <h4>Web 2</h4>
+                <p>Web</p> */}
+                <div className="portfolio-links">
+                  <a href="assets/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery" className="portfolio-lightbox" title="Web 2"><i className="bx bx-plus"></i></a>
+                  {/* <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a> */}
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div className="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-6.jpg" className="img-fluid" alt=""/>
+              <div className="portfolio-info">
+                {/* <h4>App 3</h4>
+                <p>App</p> */}
+                <div className="portfolio-links">
+                  <a href="assets/img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery" className="portfolio-lightbox" title="App 3"><i className="bx bx-plus"></i></a>
+                  {/* <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a> */}
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div className="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-7.jpg" className="img-fluid" alt=""/>
+              <div className="portfolio-info">
+                {/* <h4>Card 1</h4>
+                <p>Card</p> */}
+                <div className="portfolio-links">
+                  <a href="assets/img/portfolio/portfolio-7.jpg" data-gallery="portfolioGallery" className="portfolio-lightbox" title="Card 1"><i className="bx bx-plus"></i></a>
+                  {/* <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a> */}
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div className="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-8.jpg" className="img-fluid" alt=""/>
+              <div className="portfolio-info">
+                {/* <h4>Card 3</h4>
+                <p>Card</p> */}
+                <div className="portfolio-links">
+                  <a href="assets/img/portfolio/portfolio-8.jpg" data-gallery="portfolioGallery" className="portfolio-lightbox" title="Card 3"><i className="bx bx-plus"></i></a>
+                  {/* <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a> */}
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div className="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-9.jpg" className="img-fluid" alt=""/>
+              <div className="portfolio-info">
+                {/* <h4>Web 3</h4>
+                <p>Web</p> */}
+                <div className="portfolio-links">
+                  <a href="assets/img/portfolio/portfolio-9.jpg" data-gallery="portfolioGallery" className="portfolio-lightbox" title="Web 3"><i className="bx bx-plus"></i></a>
+                  {/* <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a> */}
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+    {/* <!-- End Portfolio Section --> */}
 
       {/* <!-- ======= Footer ======= --> */}
       <Footer />

@@ -46,7 +46,7 @@ export default function Navbar() {
                 <li>
                   <CustomLink
                     className="nav-link scrollto"
-                    to="/about"
+                    to="/build-your-dedicated-team"
                     onClick={toggleMenu}
                   >
                     Build your dedicated team
@@ -111,7 +111,7 @@ export default function Navbar() {
                   </CustomLink>
                 </li>
                 <li>
-                  <CustomLink className="nav-link scrollto" to="/about">
+                  <CustomLink className="nav-link scrollto" to="/build-your-dedicated-team">
                     Build your dedicated team
                   </CustomLink>
                 </li>

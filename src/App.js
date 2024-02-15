@@ -16,6 +16,8 @@ import Post2 from "./Pages/post-2";
 import ProductEngineering from "./Pages/ProductEngineering";
 import BuildYourTeam from "./Pages/BuildYourTeam";
 import ViewCaseStudy from "./Pages/ViewCaseStudy";
+import BuildYourDedicatedTeam from "./Pages/BuildYourDedicatedTeam";
+import JobDescription from "./Pages/job-description";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 function App() {
@@ -52,6 +54,9 @@ function App() {
         <Route path="/product" element={<ProductEngineering/>}/>
         <Route path="/buildyourteam" element={<BuildYourTeam/>}/>
         <Route path="/algo-trader" element={<ViewCaseStudy/>}/>
+        <Route path="/build-your-dedicated-team" element={<BuildYourDedicatedTeam/>}/>
+        <Route path="/job-description" element={<JobDescription/>}/>
+
 
       </Routes>
     </>
