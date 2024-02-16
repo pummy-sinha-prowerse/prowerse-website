@@ -603,6 +603,31 @@ li .active a {
     height: 120vh;
   }
 }
+
+/* -------------------------------------------------------------
+Position design for career page
+---------------------------------------------------------------- */
+.color--text {
+  color: #f5f6f8 !important;
+  padding:2px
+}
+.text-white {
+  color: #f5f6f8 !important;
+  border-radius: 50%;
+  height: 2.5rem;
+  /* width: 2.5rem; */
+  font-size: 1rem;
+  line-height: 2.5rem;
+  padding: 0
+}
+.color--heading {
+  color: #f5f6f8 !important
+}
+.position{
+  top:44px;
+  position: absolute;
+}
+
 /*--------------------------------------------------------------
 # Sections General
 --------------------------------------------------------------*/
