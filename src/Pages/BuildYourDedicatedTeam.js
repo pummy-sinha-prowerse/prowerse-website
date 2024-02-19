@@ -145,7 +145,7 @@ function BuildYourDedicatedTeam() {
                 data-aos="fade-up"
                 data-aos-delay="100"
               >
-                <i className="bi bi-briefcase"></i>
+                <i className="bi bi-card-list"></i>
                 {/* <h4>
                   <a href="#">Lorem Ipsum</a>
                 </h4> */}
@@ -172,7 +172,7 @@ function BuildYourDedicatedTeam() {
                 data-aos="fade-up"
                 data-aos-delay="200"
               >
-                <i className="bi bi-card-checklist"></i>
+                <i className="bi bi-fast-forward"></i>
                 {/* <h4>
                   <a href="#">Dolor Sitema</a>
                 </h4> */}
@@ -200,7 +200,7 @@ function BuildYourDedicatedTeam() {
                 data-aos="fade-up"
                 data-aos-delay="500"
               >
-                <i className="bi bi-brightness-high"></i>
+                <i className="bi bi-transparency"></i>
                 {/* <h4>
                   <a href="#">Magni Dolore</a>
                 </h4> */}
@@ -229,7 +229,7 @@ function BuildYourDedicatedTeam() {
                 data-aos="fade-up"
                 data-aos-delay="500"
               >
-                <i className="bi bi-brightness-high"></i>
+                <i className="bi bi-chat-left-fill"></i>
                 {/* <h4>
                   <a href="#">Magni Dolore</a>
                 </h4> */}
@@ -382,7 +382,7 @@ function BuildYourDedicatedTeam() {
               </div>
             </div>
           </div> */}
-          <div className="row">
+          <div className="row"  style={{ marginTop: "20px" }}>
             <div className="col-12 mt-5 "></div>
             <div className="col-12 col-md-6 col-lg-4">
               <div className="core-expertise-box bg-white position-relative">

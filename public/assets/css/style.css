@@ -627,6 +627,9 @@ Position design for career page
   top:44px;
   position: absolute;
 }
+.position-title{
+  margin-left: 10px;
+}
 /* ------------------------------------------------------------
 Build your dedicated team
 --------------------------------------------------------------- */
@@ -4065,4 +4068,26 @@ casestudy
 .circle-btn:hover {
   border-radius: 25px;
   overflow: hidden;
+}
+/* ------------------------------------------
+post resume
+------------------------------------------- */
+.custom-file-button {
+	input[type="file"] {
+		margin-left: -2px !important;
+
+		&::-webkit-file-upload-button {
+			display: none;
+		}
+		&::file-selector-button {
+			display: none;
+		}
+	}
+
+	&:hover {
+		label {
+			background-color: #dde0e3;
+			cursor: pointer;
+		}
+	}
 }

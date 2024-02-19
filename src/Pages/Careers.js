@@ -206,7 +206,7 @@ function Careers() {
                         {/* <span className="badge badge-circle text-white mr-3"> */}
                         <i className="bi bi-filetype-py"></i>
                         {/* </span>{" "} */}
-                        <span className="position">Python</span>
+                        <span className="position position-title">Python</span>
                         
                       </span>
                       <span className="col-5 col-md-3 my-3 my-sm-0 color--text">
@@ -245,7 +245,7 @@ function Careers() {
                         {/* <span className="badge badge-circle text-white mr-3"> */}
                         <i className="bi bi-server"></i>
                         {/* </span>{" "} */}
-                        <span className="position">.Net</span>
+                        <span className="position position-title">.Net</span>
                         
                       </span>
 
@@ -280,7 +280,7 @@ function Careers() {
                         {/* <span className="badge badge-circle text-white mr-3"> */}
                         <i className="bi bi-cpu"></i>
                         {/* </span>{" "} */}
-                        <span className="position">DevOps</span>
+                        <span className="position position-title">DevOps</span>
                         
                       </span>
 

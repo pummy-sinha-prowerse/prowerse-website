@@ -184,14 +184,20 @@ function PostResume() {
                 </div>
                 <div className="row">
                   <div className="col form-group">
-                    <input
+                    {/* <input
                       type="file"
                       className="form-control"
                       name="subject"
                       id="subject"
                       placeholder="Resume"
                       required
-                    />
+                    /> */}
+                    <div class="input-group custom-file-button">
+		<label class="input-group-text" for="inputGroupFile">Upload Resume</label>
+		<input type="file" class="form-control" id="inputGroupFile"/>
+	</div>
+                    <br/>
+                    <br/>
                      <div className="col form-group">
                       <span>Please confirm that you are human *</span>
                       
