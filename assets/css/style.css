@@ -627,7 +627,58 @@ Position design for career page
   top:44px;
   position: absolute;
 }
+/* ------------------------------------------------------------
+Build your dedicated team
+--------------------------------------------------------------- */
 
+.core-expertise-box {
+  width: 400px;
+  height: 175px;
+  border-radius: 10px;
+  padding: 75px 30px 14px;
+  /* padding: 20px 20px; */
+  box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.1);
+  /* border-radius: 10px; */
+  transition: all 0.3s ease-out 0s;
+  background-color: #fff;
+  display: table;
+}
+.core-expertise-box .core-inner-box {
+  width: 114px;
+  height: 114px;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: coral;
+}
+.core-expertise-box p{
+  color: #fff;
+}
+.text-dark {
+  color: #343a40!important;
+}
+.text-style-2 {
+  padding-top: 27px;
+}
+.hr-text{
+  font-weight: bold;
+}
+.buid-your-team-box{
+  min-height: 200px !important;
+}
+.value-box{
+  background: none !important;
+  color: #ff7f51 ;
+  text-align: center ;
+}
+.heading-value{
+  background: none !important;
+}
 /*--------------------------------------------------------------
 # Sections General
 --------------------------------------------------------------*/
@@ -1207,7 +1258,7 @@ section {
 
 .services .icon-box i {
   float: left;
-  color: #e03a3c;
+  color: #ff7f50;
   font-size: 40px;
   line-height: 0;
 }
