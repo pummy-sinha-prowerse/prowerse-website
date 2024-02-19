@@ -49,7 +49,7 @@ export default function Navbar() {
                     to="/build-your-dedicated-team"
                     onClick={toggleMenu}
                   >
-                    Build your dedicated team
+                    Build Your Dedicated Team
                   </CustomLink>
                 </li>
 
@@ -110,11 +110,7 @@ export default function Navbar() {
                     Company Insights
                   </CustomLink>
                 </li>
-                <li>
-                  <CustomLink className="nav-link scrollto" to="/build-your-dedicated-team">
-                    Build your dedicated team
-                  </CustomLink>
-                </li>
+                
 
                 <li class="dropdown has-dropdown">
                   <CustomLink className="nav-link scrollto" to="/service">
@@ -156,6 +152,11 @@ export default function Navbar() {
                       <a href="#">DevOps</a>
                     </li>
                   </ul>
+                </li>
+                <li>
+                  <CustomLink className="nav-link scrollto" to="/build-your-dedicated-team">
+                  Build Your Dedicated Team
+                  </CustomLink>
                 </li>
                 <li>
                   <CustomLink className="nav-link scrollto" to="/careers">

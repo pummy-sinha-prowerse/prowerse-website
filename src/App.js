@@ -18,6 +18,7 @@ import BuildYourTeam from "./Pages/BuildYourTeam";
 import ViewCaseStudy from "./Pages/ViewCaseStudy";
 import BuildYourDedicatedTeam from "./Pages/BuildYourDedicatedTeam";
 import JobDescription from "./Pages/job-description";
+import PostResume from "./Pages/post-resume";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 function App() {
@@ -56,6 +57,9 @@ function App() {
         <Route path="/algo-trader" element={<ViewCaseStudy/>}/>
         <Route path="/build-your-dedicated-team" element={<BuildYourDedicatedTeam/>}/>
         <Route path="/job-description" element={<JobDescription/>}/>
+        <Route path="/post-resume" element={<PostResume/>}/>
+
+        
 
 
       </Routes>

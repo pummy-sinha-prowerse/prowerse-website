@@ -302,12 +302,12 @@ function Service() {
             </div>
             <div className="col-md-3">
               <div className="icon-box" data-aos="fade-up" data-aos-delay="100">
-                <div class="example-wrap">
-                  <div class="button-wrap-1 example">
-                    <a href class="clicker text-style">
+                <div className="example-wrap">
+                  <div className="button-wrap-1 example">
+                    <a href className="clicker text-style">
                       Databases
                     </a>
-                    <div class="circle"></div>
+                    <div className="circle"></div>
                   </div>
                 </div>
 
@@ -339,7 +339,7 @@ function Service() {
       {/* <!-- Techstack --> */}
 
       {/* Table section start */}
-      <section id="pricing" className="pricing section-bg dedicated-teams">
+      {/* <section id="pricing" className="pricing section-bg dedicated-teams">
         <div className="container" data-aos="fade-up">
           <div className="section-title text-center position-relative pb-3 mx-auto">
             <h2>BUILD YOUR DEDICATED TEAM</h2>
@@ -415,21 +415,12 @@ function Service() {
                   </div>
                   <div className="col-lg-6 col-sm-6 sm-cols"><p>ESCALATION MATRIX.</p></div>
                 </div>
-                {/* <h3>Mobile Applications</h3>
-                <p>
-                  Prowerse brings to life product ideas of native,
-                  cross-platform, and hybrid mobile applications, targeting
-                  smartphones and tablets. Be it e-commerce experience or
-                  geo-tracking of users, Prowerse has delivered such examples
-                  with ease of use. Prowerse can participate from concept screen
-                  sketching till seamless deployments of Apps to the respective
-                  app stores.
-                </p> */}
+               
               </div>
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
       {/* Table section end */}
       {/* <!-- ======= Footer ======= --> */}
       <Footer />
