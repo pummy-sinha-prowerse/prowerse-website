@@ -1,5 +1,5 @@
 import React from "react";
-import Footer from "./Footer";
+import Footer from "../../Pages/Footer";
 import { Link } from "react-router-dom";
 
 function JobDescription() {
@@ -29,13 +29,7 @@ function JobDescription() {
           <div className="row">
             <div className="col-lg-8 entries">
               <article className="entry entry-single">
-                <div className="entry-img">
-                  <img
-                    src="prowerse-website/assets/img/blog/blog-1.png"
-                    alt=""
-                    class="img-fluid"
-                  />
-                </div>
+                
 
                 <h2 className="entry-title">DEVOPS LEAD</h2>
 

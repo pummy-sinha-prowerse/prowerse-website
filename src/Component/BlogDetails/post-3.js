@@ -1,5 +1,5 @@
 import React from "react";
-import Footer from "./Footer";
+import Footer from "../../Pages/Footer";
 import { Link } from "react-router-dom";
 
 function Post3() {
