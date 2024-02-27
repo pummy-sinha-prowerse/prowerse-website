@@ -5,23 +5,39 @@ import ReCAPTCHA from "react-google-recaptcha";
 import AWS from "aws-sdk";
 
 AWS.config.update({
-  accessKeyId: "AKIAZT74NRFUODQ7T2PS",
-  secretAccessKey: "BC8MEbMhXHst4abIorPeCGAVZXycjpd7AiAM3Eh6TJ7x",
-  region: "ap-south-1", // Change to your desired AWS region
+  accessKeyId: process.env.REACT_APP_ACCESS_KEY_ID,
+  secretAccessKey: process.env.REACT_APP_SECRET_ACCESS_KEY,
+  region: process.env.REACT_APP_REGION, // Change to your desired AWS region
 });
 
 function PostResume() {
-    console.log("process.env.REACT_APP_SITE_KEY",process.env.REACT_APP_SITE_KEY)
   const recaptcha = useRef(null);
-  const [toEmail, setToEmail] = useState("digpal.parmar@prowerse.com");
+  const [toEmail, setToEmail] = useState(process.env.REACT_APP_SOURCE);
   const [subject, setSubject] = useState("subject");
   const [message, setMessage] = useState("message");
+  const [resume, setResume] = useState(null);
+  const [Fileresume, setfileResume] = useState(null);
 
-  const ses = new AWS.SES({ apiVersion: "2010-12-01" });
+  const ses = new AWS.SES({ apiVersion: process.env.REACT_APP_API_VERSION });
+  console.log("SOURCE", process.env);
+
+  // const handleFileChange = (event) => {
+  //   const file = event.target.files[0];
+  //   const formData = new FormData();
+  // formData.append('file', file);
+  //   const fileStream = fs.createReadStream(file.path);
+  //   console.log("fileStream",fileStream)
+  //   setResume(file);
+  // };
 
   const SubmitResume = (event) => {
+    console.log("resume", resume.name, resume.type, resume.data);
+    const file = resume;
+    const formData = new FormData();
+    formData.append("file", file);
     event.preventDefault();
     const captchaValue = recaptcha.current.getValue();
+
     if (!captchaValue) {
       alert("Please verify the reCAPTCHA!");
     } else {
@@ -32,35 +48,105 @@ function PostResume() {
     // --------------------------------
     // aws send mail code
     // ---------------------------------
-    const params = {
-      Destination: {
-        ToAddresses: [toEmail],
-      },
-      Message: {
-        Body: {
-          Text: {
-            Data: message,
+    // Read file content
+    const fileReader = new FileReader();
+    fileReader.onload = () => {
+      const fileData = fileReader.result;
+      // const pdfAttachment = fs.readFileSync("path/to/your/pdf/file.pdf");
+      // Define email parameters
+      const params = {
+        Source: process.env.REACT_APP_SOURCE, // Replace with your verified email address in AWS SES
+        Destination: {
+          ToAddresses: [toEmail],
+        },
+        Attachments: [
+          {
+            Filename: resume.name,
+            Content: formData,
+            ContentType: "application/octet-stream",
+          },
+        ],
+        // Attachments: [
+        //   {
+        //     FileName: resume.name,
+        //     // Content: Buffer.from('This is the attachment content.'),
+        //     Content: fileData,
+        //     ContentType: resume.type,
+        //   },
+        //   //   {
+        //   //     Filename: resume.name,
+        //   //     Content: fileData,
+        //   //     ContentType: resume.type,
+        // ],
+
+        Message: {
+          Body: {
+            // Html: {
+            //   Charset: "UTF-8",
+            //   Data: JSON.stringify(message),
+            // },
+            Text: {
+              Data: message,
+            },
+          },
+          Subject: {
+            Data: subject,
           },
         },
-        Subject: {
-          Data: subject,
-        },
-      },
-      Source: "pummy.sinha.prowerse@gmail.com", // Change to your verified email address in AWS SES
+        // Add the Attachment object
+        // Attachment: {
+        //   Data: resume.name, // The content of the PDF file
+        //   ContentType: resume.type, // The content type of the attachment
+        //   Filename: resume.name, // The name of the attachment
+        // },
+        // Attachments: [
+        //   {
+        //     FileName: resume.name,
+        //     ContentType: resume.type,
+        //     // Content: resume.data,
+        //   },
+        // ],
+        // ReplyToAddresses: ["YOUR_VERIFIED_EMAIL_ADDRESS"],
+        // MessageAttachments: [
+        //   {
+        //     Filename: resume.name,
+        //     Content: fileData,
+        //     ContentType: resume.type,
+        //   },
+        // ],
+      };
+      // Add attachment
+      // const attachmentPath = "/path/to/attachment.pdf"; // Replace with the path to your attachment
+      // const attachmentName = "attachment.pdf"; // Replace with the name of your attachment
+
+      // // Read the attachment file
+      // const fileContent = fs.readFileSync(attachmentPath);
+
+      // // Add the attachment to the email
+      // params.Message.Body.Attachment = {
+      //   Data: fileContent,
+      //   ContentType: "application/pdf",
+      //   Filename: attachmentName,
+      // };
+      // Send email
+      ses.sendEmail(params, (err, data) => {
+        if (err) {
+          console.error("Error sending email:", err);
+          alert("Failed to send email. Please try again later.");
+        } else {
+          console.log("Email sent successfully:", data);
+          alert("Email sent successfully!");
+          // Reset form fields after successful sending
+          setToEmail("");
+          setSubject("");
+          setMessage("");
+          setResume(null);
+        }
+      });
     };
 
-    ses.sendEmail(params, function (err, data) {
-      if (err) {
-        console.error("Error sending email:", err);
-      } else {
-        console.log("Email sent successfully:", data);
-        // Reset form fields after successful sending
-        setToEmail("");
-        setSubject("");
-        setMessage("");
-      }
-    });
-
+    // Read file as base64 data
+    fileReader.readAsDataURL(resume);
     // ---------------------------------
 
     // smtpsjs email send mail
@@ -192,18 +278,29 @@ function PostResume() {
                       placeholder="Resume"
                       required
                     /> */}
-                    <div class="input-group custom-file-button">
-		<label class="input-group-text" for="inputGroupFile">Upload Resume</label>
-		<input type="file" class="form-control" id="inputGroupFile"/>
-	</div>
-                    <br/>
-                    <br/>
-                     <div className="col form-group">
+                    <div className="input-group custom-file-button">
+                      <label className="input-group-text" for="inputGroupFile">
+                        Upload Resume
+                      </label>
+                      <input
+                        type="file"
+                        className="form-control"
+                        id="inputGroupFile"
+                        accept=".pdf,.doc,.docx"
+                        onChange={(e) => setResume(e.target.files[0])}
+                        // onChange={handleFileChange}
+                      />
+                    </div>
+                    <br />
+                    <br />
+                    <div className="col form-group">
                       <span>Please confirm that you are human *</span>
-                      
-                      <ReCAPTCHA ref={recaptcha} sitekey={process.env.REACT_APP_SITE_KEY} /></div>
-                    
-                    
+
+                      <ReCAPTCHA
+                        ref={recaptcha}
+                        sitekey={process.env.REACT_APP_SITE_KEY}
+                      />
+                    </div>
                   </div>
                 </div>
 

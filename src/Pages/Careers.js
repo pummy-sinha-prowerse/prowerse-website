@@ -172,7 +172,6 @@ function Careers() {
             <h2>Find Your Place</h2>
           </div> */}
 
-
         <section id="services" className="services ">
           <div className="container" data-aos="fade-up">
             <div className="section-title text-center position-relative pb-3 mx-auto">
@@ -184,36 +183,37 @@ function Careers() {
               <div className="job-list__wrapper mb-6">
                 <h3 className="mb-4">Development</h3>
 
-               
                 {/* <!-- Job Card --> */}
 
                 {/* <!-- Job Card --> */}
               </div>
               <div className="col-md-6 card-first">
-              <Link
-                  to="/job-description"
+                <Link
+                  to="/job-description-python"
                   className="card p-0 mb-3 border-0"
                   data-aos="fade-up"
                   data-aos-delay="100"
                 >
                   <div
-                  className="icon-box"
-                  data-aos="fade-up"
-                  data-aos-delay="100"
-                >
-                  <span className="row justify-content-between align-items-center">
-                    <span className="col-md-4 color--heading">
+                    className="icon-box"
+                    data-aos="fade-up"
+                    data-aos-delay="100"
+                  >
+                    <span className="row justify-content-between align-items-center">
+                      <span className="col-md-4 color--heading">
                         {/* <span className="badge badge-circle text-white mr-3"> */}
                         <i className="bi bi-filetype-py"></i>
                         {/* </span>{" "} */}
-                        <span className="position position-title">Python</span>
-                        
+                        <span className="position position-title">
+                          Python Engineer
+                        </span>
                       </span>
                       <span className="col-5 col-md-3 my-3 my-sm-0 color--text">
-                        <i className="fas fa-clock mr-1"></i>2-4 years Experience
+                        <i className="fas fa-clock mr-1"></i>2-4 years
+                        Experience
                       </span>
 
-                    <span className="col-5 col-md-3 my-3 my-sm-0 color--text">
+                      <span className="col-5 col-md-3 my-3 my-sm-0 color--text">
                         <i className="fas fa-clock mr-1"></i>Ahmedabad
                       </span>
 
@@ -221,102 +221,162 @@ function Careers() {
                         <i className="fas fa-map-marker-alt mr-1"></i> India,
                         In
                       </span> */}
-                  </span>
+                    </span>
 
-                  <h4>{/* <Link to="/job-description">Python</Link> */}</h4>
-                </div>
+                    <h4>{/* <Link to="/job-description">Python</Link> */}</h4>
+                  </div>
                 </Link>
-                
               </div>
               <div className="col-md-6">
-              <Link
-                  to="/job-description"
+                <Link
+                  to="/job-description-business-executive"
                   className="card p-0 mb-3 border-0"
                   data-aos="fade-up"
                   data-aos-delay="100"
                 >
                   <div
-                  className="icon-box"
+                    className="icon-box"
+                    data-aos="fade-up"
+                    data-aos-delay="100"
+                  >
+                    <span className="row justify-content-between align-items-center">
+                      <span className="col-md-4 color--heading">
+                        {/* <span className="badge badge-circle text-white mr-3"> */}
+                        <i className="bi bi-briefcase"></i>
+                        {/* </span>{" "} */}
+                        <span className="position position-title">
+                          Business Development <br />
+                          Executive{" "}
+                        </span>
+                      </span>
+                      <span className="col-5 col-md-3 my-3 my-sm-0 color--text">
+                        <i className="fas fa-clock mr-1"></i>2-4 years
+                        Experience
+                      </span>
+
+                      <span className="col-5 col-md-3 my-3 my-sm-0 color--text">
+                        <i className="fas fa-clock mr-1"></i>Ahmedabad
+                      </span>
+
+                      {/* <span className="col-6 col-md-2 my-3 my-sm-0 color--text">
+                        <i className="fas fa-map-marker-alt mr-1"></i> India,
+                        In
+                      </span> */}
+                    </span>
+
+                    <h4>{/* <Link to="/job-description">Python</Link> */}</h4>
+                  </div>
+                </Link>
+              </div>
+              <div className="col-md-6">
+                <Link
+                  to="/job-description-automation"
+                  className="card p-0 mb-3 border-0"
                   data-aos="fade-up"
                   data-aos-delay="100"
                 >
-                  <span className="row justify-content-between align-items-center">
-                    <span className="col-md-5 color--heading">
+                  <div
+                    className="icon-box"
+                    data-aos="fade-up"
+                    data-aos-delay="100"
+                  >
+                    <span className="row justify-content-between align-items-center">
+                      <span className="col-md-5 color--heading">
                         {/* <span className="badge badge-circle text-white mr-3"> */}
                         <i className="bi bi-server"></i>
                         {/* </span>{" "} */}
-                        <span className="position position-title">.Net</span>
-                        
+                        <span className="position position-title">
+                          Test Automation Engineer
+                        </span>
                       </span>
 
                       <span className="col-5 col-md-3 my-3 my-sm-0 color--text">
-                        <i className="fas fa-clock mr-1"></i> 2-4 years Experience
+                        <i className="fas fa-clock mr-1"></i> 2-4 years
+                        Experience
                       </span>
 
-                    <span className="col-5 col-md-3 my-3 my-sm-0 color--text">
+                      <span className="col-5 col-md-3 my-3 my-sm-0 color--text">
                         <i className="fas fa-clock mr-1"></i> Ahmedabad
                       </span>
-                  </span>
+                    </span>
 
-                  <h4>{/* <Link to="/job-description">Python</Link> */}</h4>
-                </div>
+                    <h4>{/* <Link to="/job-description">Python</Link> */}</h4>
+                  </div>
                 </Link>
-                
               </div>
               <div className="col-md-6">
-              <Link
-                  to="/job-description"
+                <Link
+                  to="/job-description-devops"
                   className="card p-0 mb-3 border-0"
                   data-aos="fade-up"
                   data-aos-delay="100"
                 >
                   <div
-                  className="icon-box"
-                  data-aos="fade-up"
-                  data-aos-delay="100"
-                >
-                  <span className="row justify-content-between align-items-center">
-                    <span className="col-md-5 color--heading">
+                    className="icon-box"
+                    data-aos="fade-up"
+                    data-aos-delay="100"
+                  >
+                    <span className="row justify-content-between align-items-center">
+                      <span className="col-md-5 color--heading">
                         {/* <span className="badge badge-circle text-white mr-3"> */}
                         <i className="bi bi-cpu"></i>
                         {/* </span>{" "} */}
-                        <span className="position position-title">DevOps</span>
-                        
+                        <span className="position position-title">
+                          DevOps Enginee
+                        </span>
                       </span>
 
                       <span className="col-5 col-md-3 my-3 my-sm-0 color--text">
-                        <i className="fas fa-clock mr-1"></i>2-4 years Experience
+                        <i className="fas fa-clock mr-1"></i>2-4 years
+                        Experience
                       </span>
 
-                    <span className="col-5 col-md-3 my-3 my-sm-0 color--text">
+                      <span className="col-5 col-md-3 my-3 my-sm-0 color--text">
                         <i className="fas fa-clock mr-1"></i> Ahmedabad
                       </span>
-                  </span>
+                    </span>
 
-                  <h4>{/* <Link to="/job-description">Python</Link> */}</h4>
-                </div>
+                    <h4>{/* <Link to="/job-description">Python</Link> */}</h4>
+                  </div>
                 </Link>
-                
               </div>
-              {/*
-            <div className="col-md-6 mt-4 mt-md-0">
-              <div className="icon-box" data-aos="fade-up" data-aos-delay="200">
-                <i className="bi bi-server"></i>
-                <h4>
-                  <Link to="/job-description"> .Net</Link>
-                </h4>
-              
+              {/* card-last */}
+              <div className="col-md-6 mt-4 mt-md-0">
+                <Link
+                  to="/job-description-rust"
+                  className="card p-0 mb-3 border-0"
+                  data-aos="fade-up"
+                  data-aos-delay="100"
+                >
+                  <div
+                    className="icon-box"
+                    data-aos="fade-up"
+                    data-aos-delay="100"
+                  >
+                    <span className="row justify-content-between align-items-center">
+                      <span className="col-md-5 color--heading">
+                        {/* <span className="badge badge-circle text-white mr-3"> */}
+                        <i className="bi bi-braces"></i>
+                        {/* </span>{" "} */}
+                        <span className="position position-title">
+                          Rust Engineer
+                        </span>
+                      </span>
+
+                      <span className="col-5 col-md-3 my-3 my-sm-0 color--text">
+                        <i className="fas fa-clock mr-1"></i>2-4 years
+                        Experience
+                      </span>
+
+                      <span className="col-5 col-md-3 my-3 my-sm-0 color--text">
+                        <i className="fas fa-clock mr-1"></i> Ahmedabad
+                      </span>
+                    </span>
+
+                    <h4>{/* <Link to="/job-description">Python</Link> */}</h4>
+                  </div>
+                </Link>
               </div>
-            </div>
-            <div className="col-md-6 mt-4 mt-md-0 card-last">
-              <div className="icon-box" data-aos="fade-up" data-aos-delay="200">
-                <i className="bi bi-cpu"></i>
-                <h4>
-                <Link to="/job-description">DevOps</Link>
-                </h4>
-               
-              </div>
-            </div> */}
             </div>
           </div>
         </section>
@@ -488,81 +548,6 @@ function Careers() {
                       data-gallery="portfolioGallery"
                       className="portfolio-lightbox"
                       title="App 3"
-                    >
-                      <i className="bx bx-plus"></i>
-                    </a>
-                    {/* <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a> */}
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div className="col-lg-4 col-md-6 portfolio-item filter-card">
-              <div className="portfolio-wrap">
-                <img
-                  src="prowerse-website/assets/img/portfolio/portfolio-7.jpg"
-                  className="img-fluid"
-                  alt=""
-                />
-                <div className="portfolio-info">
-                  {/* <h4>Card 1</h4>
-                <p>Card</p> */}
-                  <div className="portfolio-links">
-                    <a
-                      href="prowerse-website/assets/img/portfolio/portfolio-7.jpg"
-                      data-gallery="portfolioGallery"
-                      className="portfolio-lightbox"
-                      title="Card 1"
-                    >
-                      <i className="bx bx-plus"></i>
-                    </a>
-                    {/* <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a> */}
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div className="col-lg-4 col-md-6 portfolio-item filter-card">
-              <div className="portfolio-wrap">
-                <img
-                  src="prowerse-website/assets/img/portfolio/portfolio-8.jpg"
-                  className="img-fluid"
-                  alt=""
-                />
-                <div className="portfolio-info">
-                  {/* <h4>Card 3</h4>
-                <p>Card</p> */}
-                  <div className="portfolio-links">
-                    <a
-                      href="prowerse-website/assets/img/portfolio/portfolio-8.jpg"
-                      data-gallery="portfolioGallery"
-                      className="portfolio-lightbox"
-                      title="Card 3"
-                    >
-                      <i className="bx bx-plus"></i>
-                    </a>
-                    {/* <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a> */}
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div className="col-lg-4 col-md-6 portfolio-item filter-web">
-              <div className="portfolio-wrap">
-                <img
-                  src="prowerse-website/assets/img/portfolio/portfolio-9.jpg"
-                  className="img-fluid"
-                  alt=""
-                />
-                <div className="portfolio-info">
-                  {/* <h4>Web 3</h4>
-                <p>Web</p> */}
-                  <div className="portfolio-links">
-                    <a
-                      href="prowerse-website/assets/img/portfolio/portfolio-9.jpg"
-                      data-gallery="portfolioGallery"
-                      className="portfolio-lightbox"
-                      title="Web 3"
                     >
                       <i className="bx bx-plus"></i>
                     </a>

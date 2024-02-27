@@ -1,39 +1,65 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import Footer from "./Footer";
 import { Link } from "react-router-dom";
 import Clock from "../Component/Clock";
+import AWS from "aws-sdk";
+import ReCAPTCHA from "react-google-recaptcha";
+
+AWS.config.update({
+  accessKeyId: process.env.REACT_APP_ACCESS_KEY_ID,
+  secretAccessKey: process.env.REACT_APP_SECRET_ACCESS_KEY,
+  region: process.env.REACT_APP_REGION, // Change to your desired AWS region
+});
 function ContactUS() {
-  const [ratios, setRatios] = useState({
-    secondRatio: 0,
-    minuteRatio: 0,
-    hourRatio: 0,
+  const recaptcha = useRef(null);
+  const ses = new AWS.SES({ apiVersion: process.env.REACT_APP_API_VERSION });
+  const [contactData, setContactData] = useState({
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
   });
+  const handleChangeForm = (event, eventName) => {
+    setContactData({ ...contactData, [eventName]: event.target.value });
+  };
+  console.log(process.env.REACT_APP_SOURCE)
+  const SendMail = () => {
+    const captchaValue = recaptcha.current.getValue();
+    if (!captchaValue) {
+      alert("Please verify the reCAPTCHA!");
+    } else {
+      const params = {
+        Destination: {
+          ToAddresses: [process.env.REACT_APP_SOURCE],
+        },
+        Message: {
+          Body: {
+            Text: {
+                Data: `Name: ${contactData.name}\nEmail: ${contactData.email}\nSubject: ${contactData.subject}\nMessage: ${contactData.message}`,
+            },
+          },
+          Subject: {
+            Data: "Contact From",
+          },
+        },
+        Source: process.env.REACT_APP_SOURCE, // Replace with your verified email address in AWS SES
 
-  const { secondRatio, minuteRatio, hourRatio } = ratios;
+      };
+      ses.sendEmail(params, (err, data) => {
+        if (err) {
+          console.error("Error sending email:", err);
+          alert("Failed to send email. Please try again later.");
+        } else {
+          console.log("Email sent successfully:", data);
+          alert("Email sent successfully!");
+          // Reset form fields after successful sending
+        }
+      });
 
-  // india time
-  // const setClockIndia = () => {
-  //   const currentDate = new Date();
-  //   const secondRatio = currentDate.getSeconds() / 60;
-  //   const minuteRatio = (secondRatio + currentDate.getMinutes()) / 60;
-  //   const hourRatio = (minuteRatio + currentDate.getHours()) / 12;
-
-  //   setRatios({
-  //     secondRatio,
-  //     minuteRatio,
-  //     hourRatio,
-  //   });
-  // };
-
-  // useEffect(() => {
-  //   const intervalId = setInterval(() => {
-  //     setClockIndia();
-  //   }, 1000);
-
-  //   return () => {
-  //     clearInterval(intervalId);
-  //   };
-  // }, []);
+      // make form submission
+      alert("Form submission successful!");
+    }
+  };
   const [time, setTime] = useState({
     india: new Date(),
     uk: new Date(),
@@ -140,10 +166,10 @@ function ContactUS() {
             </div>
 
             <div className="col-lg-6">
-              <form
-                action="forms/contact.php"
-                method="post"
-                role="form"
+              <div
+                // action="forms/contact.php"
+                // method="post"
+                // role="form"
                 className="php-email-form"
               >
                 <div className="row">
@@ -155,6 +181,7 @@ function ContactUS() {
                       id="name"
                       placeholder="Your Name"
                       required
+                      onChange={(event) => handleChangeForm(event, "name")}
                     />
                   </div>
                   <div className="col form-group">
@@ -165,6 +192,7 @@ function ContactUS() {
                       id="email"
                       placeholder="Your Email"
                       required
+                      onChange={(event) => handleChangeForm(event, "email")}
                     />
                   </div>
                 </div>
@@ -176,6 +204,7 @@ function ContactUS() {
                     id="subject"
                     placeholder="Subject"
                     required
+                    onChange={(event) => handleChangeForm(event, "subject")}
                   />
                 </div>
                 <div className="form-group">
@@ -185,7 +214,16 @@ function ContactUS() {
                     rows="5"
                     placeholder="Message"
                     required
+                    onChange={(event) => handleChangeForm(event, "message")}
                   ></textarea>
+                </div>
+                <div className="col form-group">
+                  <span>Please confirm that you are human *</span>
+
+                  <ReCAPTCHA
+                    ref={recaptcha}
+                    sitekey={process.env.REACT_APP_SITE_KEY}
+                  />
                 </div>
                 <div className="my-3">
                   <div className="loading">Loading</div>
@@ -195,9 +233,11 @@ function ContactUS() {
                   </div>
                 </div>
                 <div className="text-center">
-                  <button type="submit">Send Message</button>
+                  <button type="submit" onClick={SendMail}>
+                    Send Message
+                  </button>
                 </div>
-              </form>
+              </div>
             </div>
           </div>
         </div>
@@ -211,7 +251,7 @@ function ContactUS() {
             {/* <p>Software Development Outsourcing</p> */}
           </div>
 
-          <div className="row" style={{marginTop: "20px"}}>
+          <div className="row" style={{ marginTop: "20px" }}>
             <div className="col-md-6">
               <div className="icon-box" data-aos="fade-up" data-aos-delay="100">
                 <i className="bi bi-briefcase"></i>
@@ -271,7 +311,7 @@ function ContactUS() {
             {/* <p>Software Development Outsourcing</p> */}
           </div>
 
-          <div className="row" style={{marginTop: "20px"}}>
+          <div className="row" style={{ marginTop: "20px" }}>
             <div className="col-md-4 card-first">
               <div className="icon-box" data-aos="fade-up" data-aos-delay="100">
                 <h4>

@@ -62,7 +62,6 @@ const Home = () => {
   };
   const datawithdash = {
     counts: [
-     
       {
         id: "004",
         label: "Reduction In Your IT Budgets",
@@ -386,16 +385,41 @@ const Home = () => {
                       </li>
                       <li>
                         <i className="ri-check-double-line"></i>
-                        <b> Timely and regular communication is the key:</b> At no point in the engagement could you risk losing your way and taking the wrong path. Businesses often spend more money and time on course correction than on the actual project. We understand that regular catch-ups, proper communication, and timely feedback are critical to project success. Through regular reports, status updates, and sprints, we ensure a tight hold on timely and quality output.
+                        <b> Timely and regular communication is the key:</b> At
+                        no point in the engagement could you risk losing your
+                        way and taking the wrong path. Businesses often spend
+                        more money and time on course correction than on the
+                        actual project. We understand that regular catch-ups,
+                        proper communication, and timely feedback are critical
+                        to project success. Through regular reports, status
+                        updates, and sprints, we ensure a tight hold on timely
+                        and quality output.
                       </li>
                       <li>
-                        <i className="ri-check-double-line"></i><b>Every client matters:</b> No matter the size of the project, we assign a dedicated point of contact to discuss project health and engagement functions that matter to the client. Ensuring customer delight has resulted in long-term and mutually-beneficial relationships for Prowerse.
+                        <i className="ri-check-double-line"></i>
+                        <b>Every client matters:</b> No matter the size of the
+                        project, we assign a dedicated point of contact to
+                        discuss project health and engagement functions that
+                        matter to the client. Ensuring customer delight has
+                        resulted in long-term and mutually-beneficial
+                        relationships for Prowerse.
                       </li>
                       <li>
-                        <i className="ri-check-double-line"></i><b>Integrity as the epicenter:</b> Everything revolves around delivering on our commitments with a high sense of sincerity and honesty. This is what a client would carry with them, even more than certain quality and economical aspects.
+                        <i className="ri-check-double-line"></i>
+                        <b>Integrity as the epicenter:</b> Everything revolves
+                        around delivering on our commitments with a high sense
+                        of sincerity and honesty. This is what a client would
+                        carry with them, even more than certain quality and
+                        economical aspects.
                       </li>
                       <li>
-                        <i className="ri-check-double-line"></i><b>Customer & Employee Satisfaction:</b> These are the two core aspects of any business. We go the extra mile to strike perfect balance and keep our employees motivated, which reflects in successful client engagements. We would land nowhere without the two poles guarding our business.
+                        <i className="ri-check-double-line"></i>
+                        <b>Customer & Employee Satisfaction:</b> These are the
+                        two core aspects of any business. We go the extra mile
+                        to strike perfect balance and keep our employees
+                        motivated, which reflects in successful client
+                        engagements. We would land nowhere without the two poles
+                        guarding our business.
                       </li>
                     </ul>
                   </div>
@@ -421,18 +445,36 @@ const Home = () => {
                     </p>
                     <ul>
                       <li>
-                        <i className="ri-check-double-line"></i>We tailor <b>personalized engagement plans</b>, ensuring that our offerings accurately fit your needs and business objectives.
+                        <i className="ri-check-double-line"></i>We tailor{" "}
+                        <b>personalized engagement plans</b>, ensuring that our
+                        offerings accurately fit your needs and business
+                        objectives.
                       </li>
                       <li>
-                        <i className="ri-check-double-line"></i>We go beyond <b>one-size-fits-all practices</b> and delve into the intricacies of your requirements to meet your expected service standards. Customised approach as per the nature of your business helps us address your vision. Working with a start-up or small business is different from working with an enterprise. Refining an idea into an MVP/prototype or rapid productization for early adopters are a few cases that we have mastered over several executions.
+                        <i className="ri-check-double-line"></i>We go beyond{" "}
+                        <b>one-size-fits-all practices</b> and delve into the
+                        intricacies of your requirements to meet your expected
+                        service standards. Customised approach as per the nature
+                        of your business helps us address your vision. Working
+                        with a start-up or small business is different from
+                        working with an enterprise. Refining an idea into an
+                        MVP/prototype or rapid productization for early adopters
+                        are a few cases that we have mastered over several
+                        executions.
                       </li>
                       <li>
-                        <i className="ri-check-double-line"></i><b>Embedding seamlessly</b> in your existing set-up and work culture, we foster collaboration for shared success, working as a natural extension of your team and amplifying your overall delivery capabilities.
+                        <i className="ri-check-double-line"></i>
+                        <b>Embedding seamlessly</b> in your existing set-up and
+                        work culture, we foster collaboration for shared
+                        success, working as a natural extension of your team and
+                        amplifying your overall delivery capabilities.
                       </li>
                       <li>
-                        <i className="ri-check-double-line"></i>As your strategic partners and invested collaborators, we work with a <b>cohesive approach</b> towards a common business objective.
+                        <i className="ri-check-double-line"></i>As your
+                        strategic partners and invested collaborators, we work
+                        with a <b>cohesive approach</b> towards a common
+                        business objective.
                       </li>
-                      
                     </ul>
                   </div>
                   <div className="col-lg-6 order-1 order-lg-2 text-center">
@@ -458,19 +500,30 @@ const Home = () => {
 
                     <ul>
                       <li>
-                        <i className="ri-check-double-line"></i> <b>Strong core team</b> with deep knowledge and experience in their respective domains.
-
+                        <i className="ri-check-double-line"></i>{" "}
+                        <b>Strong core team</b> with deep knowledge and
+                        experience in their respective domains.
                       </li>
                       <li>
-                        <i className="ri-check-double-line"></i> <b>State-of-the-art tools and techniques:</b> Our choice of relevant tools, techniques, processes, and talent is done keeping superior performance and efficiency in mind.
+                        <i className="ri-check-double-line"></i>{" "}
+                        <b>State-of-the-art tools and techniques:</b> Our choice
+                        of relevant tools, techniques, processes, and talent is
+                        done keeping superior performance and efficiency in
+                        mind.
                       </li>
                       <li>
-                        <i className="ri-check-double-line"></i> Our collaborative ethos implies that we share in both wins and hurdles, and are reachable beyond any SLAs, giving you the assurance that <b>"we are there whenever you need someone"</b>.
+                        <i className="ri-check-double-line"></i> Our
+                        collaborative ethos implies that we share in both wins
+                        and hurdles, and are reachable beyond any SLAs, giving
+                        you the assurance that{" "}
+                        <b>"we are there whenever you need someone"</b>.
                       </li>
                       <li>
-                        <i className="ri-check-double-line"></i> With a <b>vision of mutual growth</b>, our people bring a proactive mindset, actively seeking opportunities to add value and innovate.
+                        <i className="ri-check-double-line"></i> With a{" "}
+                        <b>vision of mutual growth</b>, our people bring a
+                        proactive mindset, actively seeking opportunities to add
+                        value and innovate.
                       </li>
-                     
                     </ul>
                   </div>
                   <div className="col-lg-6 order-1 order-lg-2 text-center">
@@ -487,153 +540,163 @@ const Home = () => {
         </section>
 
         <section id="team" className="team">
-        <div className="container" data-aos="fade-up">
-          <div className="section-title text-center position-relative pb-3 mx-auto">
-            <h2>OUR DEVELOPMENT PROCESS</h2>
+          <div className="container" data-aos="fade-up">
+            <div className="section-title text-center position-relative pb-3 mx-auto">
+              <h2>OUR DEVELOPMENT PROCESS</h2>
+            </div>
+            <div className="sub-section-title">
+              <p>
+                We strive to deliver highest level of customer service through
+                innovative and collaborative project management systems to build
+                robust, secure and highly scalable digital solutions with
+                superior quality standards.
+              </p>
+            </div>
+            <div className="row">
+              <ul className="hire-team-process">
+                <li className="step1">
+                  <div className="dashed-circle project-requirment"></div>
+                  <div className="figcaption">
+                    <h4 className="heading">
+                      {" "}
+                      SHARE YOUR PROJECT &amp; REQUIREMENTS
+                    </h4>
+                    <p className="sub-title-area">
+                      Our team will analyze the project requirements and select
+                      relevant engineers suited for the project. We also offer
+                      our clients to screen our engineers as per their set
+                      criteria.
+                    </p>
+                  </div>
+                </li>
+                <li className="step2">
+                  <div className="dashed-circle discuss-project"></div>
+                  <div className="figcaption">
+                    <h4 className="heading">
+                      DISCUSS PROJECT DETAILS WITH OUR ANALYSTS
+                    </h4>
+                    <p className="sub-title-area">
+                      Our team will contact you within 1-2 business days to
+                      discuss the project and its execution plan in depth, and
+                      to offer the best suited solution for the given business
+                      scenario.
+                    </p>
+                  </div>
+                </li>
+                <li className="step3">
+                  <div className="dashed-circle terms-n-timelines"></div>
+                  <div className="figcaption">
+                    <h4 className="heading">
+                      REVIEW ENGAGEMENT TERMS & TIMELINES
+                    </h4>
+                    <p className="sub-title-area">
+                      Based on the initial discussions and requirements review,
+                      we can discuss and agree on the relevant engagement model
+                      for project execution. Timelines would be transparently
+                      discussed and mutually agreed upon before the project
+                      kick-off.
+                    </p>
+                  </div>
+                </li>
+                <li className="step4">
+                  <div className="dashed-circle get-started"></div>
+                  <div className="figcaption">
+                    <h4 className="heading">
+                      LETS CREATE ANOTHER SUCCESS-STORY
+                    </h4>
+                    <p className="sub-title-area">
+                      We mutually agree on the engagement terms, defining
+                      milestones and moving forward to creating another
+                      success-story.
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
           </div>
-          <div className="sub-section-title">
-            <p>
-              We strive to deliver highest level of customer service through
-              innovative and collaborative project management systems to build
-              robust, secure and highly scalable digital solutions with superior
-              quality standards.
-            </p>
-          </div>
-          <div className="row">
-            <ul className="hire-team-process">
-              <li className="step1">
-                <div className="dashed-circle project-requirment"></div>
-                <div className="figcaption">
-                  <h4 className="heading">
-                    {" "}
-                    SHARE YOUR PROJECT &amp; REQUIREMENTS
-                  </h4>
-                  <p className="sub-title-area">
-                    Our team will analyze the project requirements and select
-                    relevant engineers suited for the project. We also offer our
-                    clients to screen our engineers as per their set criteria.
-                  </p>
-                </div>
-              </li>
-              <li className="step2">
-                <div className="dashed-circle discuss-project"></div>
-                <div className="figcaption">
-                  <h4 className="heading">
-                  DISCUSS PROJECT DETAILS WITH OUR ANALYSTS
-                  </h4>
-                  <p className="sub-title-area">
-                  Our team will contact you within 1-2 business days to discuss the project and its execution plan in depth, and to offer the best suited solution for the given business scenario. 
-                  </p>
-                </div>
-              </li>
-              <li className="step3">
-                <div className="dashed-circle terms-n-timelines"></div>
-                <div className="figcaption">
-                  <h4 className="heading">
-                  REVIEW ENGAGEMENT TERMS & TIMELINES
-                  </h4>
-                  <p className="sub-title-area">
-                  Based on the initial discussions and requirements review, we can discuss and agree on the relevant engagement model for project execution. Timelines would be transparently discussed and mutually agreed upon before the project kick-off.
-                  </p>
-                </div>
-              </li>
-              <li className="step4">
-                <div className="dashed-circle get-started"></div>
-                <div className="figcaption">
-                  <h4 className="heading">
-                  LETS CREATE ANOTHER SUCCESS-STORY
-                  </h4>
-                  <p className="sub-title-area">
-                  We mutually agree on the engagement terms, defining milestones and moving forward to creating another success-story.
-                  </p>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </section>
-      
-        <section id="team" className="team">
-        <div className="container" data-aos="fade-up">
-          <div className="section-title text-center position-relative pb-3 mx-auto">
-            <h2>CaseStudy</h2>
-          </div>
-          <div className="sub-section-title">
-            <p>
-              CASE STUDIES OF HOW OUR CLIENTS HAVE EXPERIENCED{" "}
-              <span>COMPETITIVE</span>
-              ADVANTAGE
-            </p>
-          </div>
+        </section>
 
-          <div className="row">
-            <div
-              className="case-studies-banner row mr0 aos-init aos-animate"
-              data-aos="fade-up"
-            >
-              <div className="item col-lg-4 col-sm-6 aos-init aos-animat">
-                <div className="inner-cols banner4">
-                  <div className="banner-col-content">
-                    <div className="col-logo">
-                      <img
-                        src="prowerse-website/assets/img/casestudies/logo4.png"
-                        alt=""
-                      />
+        <section id="team" className="team">
+          <div className="container" data-aos="fade-up">
+            <div className="section-title text-center position-relative pb-3 mx-auto">
+              <h2>CaseStudy</h2>
+            </div>
+            <div className="sub-section-title">
+              <p>
+                CASE STUDIES OF HOW OUR CLIENTS HAVE EXPERIENCED{" "}
+                <span>COMPETITIVE</span>
+                ADVANTAGE
+              </p>
+            </div>
+
+            <div className="row">
+              <div
+                className="case-studies-banner row mr0 aos-init aos-animate"
+                data-aos="fade-up"
+              >
+                <div className="item col-lg-4 col-sm-6 aos-init aos-animat">
+                  <div className="inner-cols banner4">
+                    <div className="banner-col-content">
+                      <div className="col-logo">
+                        <img
+                          src="prowerse-website/assets/img/casestudies/logo4.png"
+                          alt=""
+                        />
+                      </div>
+                      <p className="para">
+                        AlgoTrader is the first fully-integrated algorithmic
+                        trading software solution for quantitative hedge funds.
+                      </p>
+                      <Link to="/algo-trader" className="red-btn circle-btn">
+                        View Case Study{" "}
+                      </Link>
                     </div>
-                    <p className="para">
-                      AlgoTrader is the first fully-integrated algorithmic
-                      trading software solution for quantitative hedge funds.
-                    </p>
-                    <Link to="/algo-trader" className="red-btn circle-btn">
-                      View Case Study{" "}
-                    </Link>
                   </div>
                 </div>
-              </div>
-              <div className="item col-lg-4 col-sm-6 aos-init aos-animat">
-                <div className="inner-cols banner4">
-                  <div className="banner-col-content">
-                    <div className="col-logo">
-                      <img
-                        src="prowerse-website/assets/img/casestudies/logo4.png"
-                        alt=""
-                      />
+                <div className="item col-lg-4 col-sm-6 aos-init aos-animat">
+                  <div className="inner-cols banner4">
+                    <div className="banner-col-content">
+                      <div className="col-logo">
+                        <img
+                          src="prowerse-website/assets/img/casestudies/logo4.png"
+                          alt=""
+                        />
+                      </div>
+                      <p className="para">
+                        AlgoTrader is the first fully-integrated algorithmic
+                        trading software solution for quantitative hedge funds.
+                      </p>
+                      <Link to="/algo-trader" className="red-btn circle-btn">
+                        {" "}
+                        View Case Study{" "}
+                      </Link>
                     </div>
-                    <p className="para">
-                      AlgoTrader is the first fully-integrated algorithmic
-                      trading software solution for quantitative hedge funds.
-                    </p>
-                    <Link to="/algo-trader" className="red-btn circle-btn">
-                      {" "}
-                      View Case Study{" "}
-                    </Link>
                   </div>
                 </div>
-              </div>
-              <div className="item col-lg-4 col-sm-6 aos-init aos-animat">
-                <div className="inner-cols banner4">
-                  <div className="banner-col-content">
-                    <div className="col-logo">
-                      <img
-                        src="prowerse-website/assets/img/casestudies/logo4.png"
-                        alt=""
-                      />
+                <div className="item col-lg-4 col-sm-6 aos-init aos-animat">
+                  <div className="inner-cols banner4">
+                    <div className="banner-col-content">
+                      <div className="col-logo">
+                        <img
+                          src="prowerse-website/assets/img/casestudies/logo4.png"
+                          alt=""
+                        />
+                      </div>
+                      <p className="para">
+                        AlgoTrader is the first fully-integrated algorithmic
+                        trading software solution for quantitative hedge funds.
+                      </p>
+                      <Link to="/algo-trader" className="red-btn circle-btn">
+                        {" "}
+                        View Case Study{" "}
+                      </Link>
                     </div>
-                    <p className="para">
-                      AlgoTrader is the first fully-integrated algorithmic
-                      trading software solution for quantitative hedge funds.
-                    </p>
-                    <Link to="/algo-trader" className="red-btn circle-btn">
-                      {" "}
-                      View Case Study{" "}
-                    </Link>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
         {/* <!-- ======= Portfolio Section ======= --> */}
         {/* <section id="portfolio" className="portfolio">
           <div className="container" data-aos="fade-up">
@@ -1121,13 +1184,14 @@ const Home = () => {
                   <article>
                     <div className="inner-article">
                       <p className="text">
-                        DevOps is their forte. Bring what you got. AWS, Azure,
-                        GCP. Strong technical acumen. In other terms, it's like
-                        a tennis player with qualities of Fed, Rafa and Novak.
+                        Development results are great and skills of the
+                        developers are effective. Communication as an aspect is
+                        given high regard. Overall good value for money.
                       </p>
                       <p>
                         <h6>
-                          CTO, Sports event management firm, Prague, Czechia
+                          Product company in Health, Fitness & Nutrition domain,
+                          Norway
                         </h6>
                       </p>
                     </div>
@@ -1141,13 +1205,15 @@ const Home = () => {
                   <article>
                     <div className="inner-article">
                       <p className="text">
-                        DevOps is their forte. Bring what you got. AWS, Azure,
-                        GCP. Strong technical acumen. In other terms, it's like
-                        a tennis player with qualities of Fed, Rafa and Novak.
+                        The core project team has remained the same since last
+                        25 months which is a great testament to Prowerse
+                        management. They are our go to partners for new
+                        requirements due to the transparent and loyal
+                        relationship maintained through various ups and downs.
                       </p>
                       <p>
                         <h6>
-                          CTO, Sports event management firm, Prague, Czechia
+                          Swiss Blockchain solutions company working in Web3
                         </h6>
                       </p>
                     </div>
@@ -1160,36 +1226,36 @@ const Home = () => {
         </section>
         {/* <!-- ======= Service Section ======= --> */}
         <section id="team" className="team">
-        <div className="container" data-aos="fade-up">
-          <div className="section-title text-center position-relative pb-3 mx-auto">
-            <h2>Team</h2>
-          </div>
-          <div className="sub-section-title">
-            <p>
-              Meet our dynamic team dedicated to transforming ideas into
-              cutting-edge software solutions. With diverse expertise and
-              knowledge in their respective fields, we collaborate seamlessly to
-              elevate your experience of engaging with Prowerse.
-            </p>
-          </div>
+          <div className="container" data-aos="fade-up">
+            <div className="section-title text-center position-relative pb-3 mx-auto">
+              <h2>Team</h2>
+            </div>
+            <div className="sub-section-title">
+              <p>
+                Meet our dynamic team dedicated to transforming ideas into
+                cutting-edge software solutions. With diverse expertise and
+                knowledge in their respective fields, we collaborate seamlessly
+                to elevate your experience of engaging with Prowerse.
+              </p>
+            </div>
 
-          <div className="row">
-            <div className="col-lg-3 col-md-6 d-flex align-items-stretch">
-              <div className="member" data-aos="fade-up" data-aos-delay="100">
-                <div className="member-img">
-                  <img
-                    src="prowerse-website/assets/img/team/pradyuman-zala.jpg"
-                    className="img-fluid"
-                    alt=""
-                  />
-                  <div className="social">
-                    <a
-                      href="https://www.linkedin.com/in/zalaps/"
-                      target="_blank"
-                    >
-                      <i className="bi bi-linkedin"></i>
-                    </a>
-                    {/* <a href="">
+            <div className="row">
+              <div className="col-lg-3 col-md-6 d-flex align-items-stretch">
+                <div className="member" data-aos="fade-up" data-aos-delay="100">
+                  <div className="member-img">
+                    <img
+                      src="prowerse-website/assets/img/team/pradyuman-zala.jpg"
+                      className="img-fluid"
+                      alt=""
+                    />
+                    <div className="social">
+                      <a
+                        href="https://www.linkedin.com/in/zalaps/"
+                        target="_blank"
+                      >
+                        <i className="bi bi-linkedin"></i>
+                      </a>
+                      {/* <a href="">
                       <i className="bi bi-twitter"></i>
                     </a>
                     <a href="">
@@ -1198,17 +1264,17 @@ const Home = () => {
                     <a href="">
                       <i className="bi bi-instagram"></i>
                     </a> */}
+                    </div>
                   </div>
-                </div>
-                <div className="member-info">
-                  <h4>Pradyuman Zala</h4>
-                  <span>Founder & Technology Evangelist</span>
+                  <div className="member-info">
+                    <h4>Pradyuman Zala</h4>
+                    <span>Founder & Technology Evangelist</span>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
         {/* <section id="pricing" className="pricing section-bg">
           <div className="container" data-aos="fade-up">
             <div className="section-title text-center position-relative pb-3 mx-auto">
@@ -1283,7 +1349,8 @@ const Home = () => {
           </div>
           <div className="sub-section-title">
             <p>
-            Explore the latest updates and insights through our hub of recent posts and blogs.
+              Explore the latest updates and insights through our hub of recent
+              posts and blogs.
             </p>
           </div>
 
