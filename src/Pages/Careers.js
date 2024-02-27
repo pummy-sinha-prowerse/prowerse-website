@@ -209,7 +209,7 @@ function Careers() {
                         </span>
                       </span>
                       <span className="col-5 col-md-3 my-3 my-sm-0 color--text">
-                        <i className="fas fa-clock mr-1"></i>2-4 years
+                        <i className="fas fa-clock mr-1"></i>3+ years
                         Experience
                       </span>
 
@@ -250,7 +250,7 @@ function Careers() {
                         </span>
                       </span>
                       <span className="col-5 col-md-3 my-3 my-sm-0 color--text">
-                        <i className="fas fa-clock mr-1"></i>2-4 years
+                        <i className="fas fa-clock mr-1"></i>2+ years
                         Experience
                       </span>
 
@@ -291,7 +291,7 @@ function Careers() {
                       </span>
 
                       <span className="col-5 col-md-3 my-3 my-sm-0 color--text">
-                        <i className="fas fa-clock mr-1"></i> 2-4 years
+                        <i className="fas fa-clock mr-1"></i> 4-5 years
                         Experience
                       </span>
 
@@ -327,7 +327,7 @@ function Careers() {
                       </span>
 
                       <span className="col-5 col-md-3 my-3 my-sm-0 color--text">
-                        <i className="fas fa-clock mr-1"></i>2-4 years
+                        <i className="fas fa-clock mr-1"></i>3+ years
                         Experience
                       </span>
 
@@ -364,7 +364,7 @@ function Careers() {
                       </span>
 
                       <span className="col-5 col-md-3 my-3 my-sm-0 color--text">
-                        <i className="fas fa-clock mr-1"></i>2-4 years
+                        <i className="fas fa-clock mr-1"></i>3+ years
                         Experience
                       </span>
 

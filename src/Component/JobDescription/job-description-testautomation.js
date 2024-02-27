@@ -34,7 +34,7 @@ function JobDescription() {
                 <div className="entry-meta">
                   <ul>
                     <li className="d-flex align-items-center">
-                      Experience: 6-8 Years
+                      Experience: 4-5 Years
                     </li>
 
                     <li className="d-flex align-items-center">
