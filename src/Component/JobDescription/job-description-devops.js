@@ -58,21 +58,21 @@ function JobDescription() {
                   <p>
                     <ul>
                       <li>
-                        Work with development teams to ideate software solutions
+                        Work with development teams to ideate software solutions.
                       </li>
                       <li>
                         Building and setting up new development tools and
-                        infrastructure .{" "}
+                        infrastructure.{" "}
                       </li>
                       <li>
                         Working on ways to automate and improve development and
-                        release processes
+                        release processes.
                       </li>
                       <li>
                         Ensuring that systems are safe and secure against
-                        cybersecurity threats
+                        cybersecurity threats.
                       </li>
-                      <li>Deploy updates and fixes</li>
+                      <li>Deploy updates and fixes.</li>
                       <li>
                         Perform root cause analysis for production errors.{" "}
                       </li>
@@ -82,7 +82,7 @@ function JobDescription() {
                       <li>
                         Working with software developers and software engineers
                         to ensure that development follows established processes
-                        and works as intended
+                        and works as intended.
                       </li>
                     </ul>
                   </p>

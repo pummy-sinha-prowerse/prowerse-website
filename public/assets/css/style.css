@@ -3976,8 +3976,14 @@ casestudy
   text-align: center;
   position: relative;
 }
-.banner4 {
-  background: url(../img/casestudies/banner4.webp) no-repeat center center/cover;
+.banner1 {
+  background: url(../img/casestudies/switzerland.jpeg) no-repeat center center/cover;
+}
+.banner2 {
+  background: url(../img/casestudies/africa.jpeg) no-repeat center center/cover;
+}
+.banner3 {
+  background: url(../img/casestudies/bannernorway.jpeg) no-repeat center center/cover;
 }
 .banner-col-content {
   position: absolute;
@@ -4068,6 +4074,14 @@ casestudy
 .circle-btn:hover {
   border-radius: 25px;
   overflow: hidden;
+}
+.download-casestudy {
+  background: #e03a3c;
+  border: 0;
+  padding: 10px 32px;
+  color: #fff;
+  transition: 0.4s;
+  border-radius: 4px;
 }
 /* ------------------------------------------
 post resume

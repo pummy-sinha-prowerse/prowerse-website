@@ -1,8 +1,25 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Footer from "../../Pages/Footer";
 import { Link } from "react-router-dom";
 
 function ViewCaseStudy() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  const handleDownload = () => {
+    // Replace 'your-pdf-file.pdf' with the actual path or URL of your PDF file
+    const pdfUrl =
+      "/assets/img/casestudies/Prowerse Case Study_DevOps-Infra.pdf";
+
+    // Trigger download
+    const link = document.createElement("a");
+    link.href = pdfUrl;
+    link.setAttribute("download", "Prowerse Case Study_DevOps-Infra.pdf"); // You can specify the filename here
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
   return (
     <>
       <section id="hero-casestudy" className="d-flex align-items-center">
@@ -30,139 +47,105 @@ function ViewCaseStudy() {
             <div className="col-lg-8 entries">
               <article className="entry entry-single">
                 <h4 className="entry-title">
-                  <span style={{ color: "#ff8050" }}>ABOUT ALGOTRADER</span>
+                  <span style={{ color: "#ff8050" }}>ABOUT BLOCKCHAIN</span>
                 </h4>
 
                 <div className="entry-content">
                   <p>
-                    AlgoTrader is basically a first fully-integrated algorithmic
-                    trading software solution for quantitative hedge funds. It
-                    allows automation of complex, quantitative trading
-                    strategies in Equity, Forex and Derivative markets.
-                    AlgoTrader provides everything a typical quantitative hedge
-                    fund needs on an everyday basis to run his operation and it
-                    is also the very first and only algorithmic trading software
-                    product to allow automated trading of Bitcoin and other
-                    Cryptocurrencies. Any hedge fund, brokerage firm or
-                    individual can get and use AlgoTrader's inbuilt algorithms,
-                    past data and key indicators to create innovative and
-                    successful trading strategies and take their trading
-                    decisions based on that with high level of probability of
-                    success. AlgoTrader currently supports over 100 trading
-                    strategies and already has more than 80 clients and 400+
-                    supported brokers and exchanges.
+                    REDUCTION IN INFRASTRUCTURE PROVISIONING TIME BY 70%
+                    RESULTING IN SIGNIFICANT ANNUAL COST-SAVINGS
+                  </p>
+                  <p>
+                    {" "}
+                    <button
+                      className="download-casestudy"
+                      onClick={handleDownload}
+                    >
+                      Download CaseStudy PDF
+                    </button>
                   </p>
                   <h3 className="sidebar-title">
-                    <span style={{ color: "#ff8050" }}>KEY CHALLENGES</span>
+                    <span style={{ color: "#ff8050" }}>PROWERSE APPROACH</span>
                   </h3>
                   <ul>
                     <li>
-                      AlgoTrader company already had an old site with an
-                      outdated design and it required badly to be updated as per
-                      latest technologies especially its user interface (UI),
-                      design and other internal pages. Prowerse was asked to
-                      redesign the outdated website as per client needs and as
-                      per PSDs provided to Prowerse.
+                      Implemented Infrastructure as Code (IaC) for effective
+                      infrastructure landscaping.
                     </li>
                     <li>
-                      The client wanted the AlgoTrader website to be fully
-                      responsive so that it can be opened on any kind of mobile
-                      devices and desktop computers.
+                      Helped to optimize infrastructure provisioning using
+                      opensource solutions for effective cost-saving.
+                    </li>
+                    <li>Implementing web3 and crypto infra ecosystem.</li>
+                    <li>Designed and provisioned their monitoring stack.</li>
+                    <li>
+                      Contributed in implementation of their archival strategy.
                     </li>
                     <li>
-                      All Existing Plugins in the AlgoTrader site were to be
-                      maintained as they are required for the functionality of
-                      the website.
+                      Performed Pentest as part of DevSecOps alongwith
+                      infrastructure automation.
+                    </li>
+                    <li>Prepared cloud-agnostic mining agent distribution</li>
+                    <li>
+                      Designed and configured CI/CD/CT pipelines with nightly
+                      build and continuous test-runs
                     </li>
                     <li>
-                      Project was in a bottleneck situation and needed lots of
-                      dedicated work and efforts and Prowerse just did that.
-                    </li>
-                    <li>
-                      The website required rigorous and thorough testing as the
-                      client was very particular in terms of web designs and
-                      wanted it to be pixel perfect.
+                      Coordinating with their existing team of Rust engineers
+                      and being first point of contact for investor queries
+                      through an ITIL- certified Prowerse engineer
                     </li>
                   </ul>
                   <h3 className="sidebar-title">
-                    <span style={{ color: "#ff8050" }}>
-                      PROPOSITION & SOLUTION
-                    </span>
+                    <span style={{ color: "#ff8050" }}>BUSINESS SCENARIO</span>
                   </h3>
 
                   <p>
-                    Prowerse has worked on many projects similar to AlgoTrader
-                    before. Hence, we presented the following solution to the
-                    owners of AlgoTrader:
+                    After initial set of meetings with the client, we could gain
+                    an understanding on existing business scenarios at their
+                    end:
                   </p>
                   <ul>
                     <li>
-                      We have shown our earlier work in which we have developed
-                      similar websites.
+                      No existing infrastructure management process with limited
+                      consideration on infrastructure landscaping.
                     </li>
                     <li>
-                      We have converted a sample PSD file given to us by
-                      AlgoTrader into HTML to show AlgoTrader our capabilities
-                      and expertise.
+                      Skill-gap in existing team for catering to their business
+                      objectives.
                     </li>
                     <li>
-                      During the development of the AlgoTrader website, first we
-                      converted all the PSD files into HTML and then integrated
-                      them into WordPress and implemented other things.
+                      Need to roll-out quicker feature- releases for sustaining
+                      early-mover advantage for their disruptive offering.
                     </li>
+                    <li>Spilling costs.</li>
                     <li>
-                      We have thoroughly tested AlgoTrader website and done
-                      extensive quality assurance analysis to deliver the client
-                      a perfect website without any flaws.
-                    </li>
-                    <li>
-                      We made sure that the AlgoTrader website is pixel perfect
-                      and fully responsive which works perfectly on all mobile
-                      devices as per the specific needs of the client.
+                      Lack of availability of skilled resources in DevOps, Test
+                      Automation and for supporting investor needs.
                     </li>
                   </ul>
                   <h3 className="sidebar-title">
-                    <span style={{ color: "#ff8050" }}>RESULTS & BENEFITS</span>
+                    <span style={{ color: "#ff8050" }}>VALUE PROPOSITIONS</span>
                   </h3>
-                  <p>
-                    The solution designed and developed by Prowerse met all of
-                    the expectations of the AlgoTrader website owner regarding
-                    the new fully responsive website which works perfectly on
-                    all kinds of mobile devices and desktop computers. Today, so
-                    many of AlgoTrader clients which are hedge funds or other
-                    brokerage firms work from mobile platforms hence newly build
-                    AlgoTrader website was fit for them as it was attractive as
-                    well as robust. Following were the key benefits that we as a
-                    contractor successfully provided to AlgoTader.
-                  </p>
+
                   <ul>
                     <li>
-                      AlgoTrader was delivered the product on time thus allowing
-                      them with appropriate time to market their product.
+                      Rapid productization and enhanced process efficiency
+                      helped client retain their early-mover advantage.
                     </li>
                     <li>
-                      AlgoTrader is extremely satisfied with the deliverables
-                      provided on time and within their budget.
+                      Cost reduction: facilitating disposable infrastructure for
+                      individual test instances itself resulted in 40% annual
+                      cost-reduction.
                     </li>
                     <li>
-                      New features introduced within the AlgoTrader system were
-                      taken up and Prowerse ensured the faster delivery for the
-                      same to take the system to the next level. This overall
-                      dedicated effort from Prowerse along with the overall
-                      software quality increased the customer satisfaction
-                      level, thereby increasing our client’s revenue and
-                      customer retention by huge margin.
+                      Access to skilled resources, enabling client to fill their
+                      existing resource gap.
                     </li>
+
                     <li>
-                      The website developed by Prowerse has been appreciated a
-                      lot from all kinds of users i.e. hedge funds, traders,
-                      individual investors, brokerage firms, investment firms
-                      etc. further strengthening AlgoTrader’s relationship with
-                      its customers.
-                    </li>
-                    <li>
-                      AlgoTrader was extremely satisfied with the Quality
-                      Assurance Analysis (QA) efforts provided by Prowerse.
+                      Availability of team working round-the-clock for
+                      addressing business and investors needs.
                     </li>
                   </ul>
                 </div>
@@ -252,12 +235,17 @@ function ViewCaseStudy() {
                 {/* <!-- End sidebar search formn--> */}
 
                 <h3 className="sidebar-title">
-                  <span style={{ color: "#ff8050" }}>TECHNOLOGIES</span>
+                  <span style={{ color: "#ff8050" }}>TOOLS & TECHNOLOGIES</span>
                 </h3>
                 <div className="sidebar-item categories">
                   <p>
-                    WordPress CMS, JQuery, Mailchimp, Yoast plugin for SEO,
-                    Apache Server
+                    <span style={{ fontWeight: "bold" }}>Tools:</span> Selenium
+                    for Automation Testing, Jenkins, Gitlab, JMeter, Cypress,
+                    Github
+                  </p>
+                  <p>
+                    <span style={{ fontWeight: "bold" }}>Technologies:</span>{" "}
+                    Terraform, AWS, Google Cloud Platform, Azure
                   </p>
                 </div>
                 {/* <!-- End sidebar categories--> */}
@@ -267,19 +255,11 @@ function ViewCaseStudy() {
                 </h3>
                 <div className="sidebar-item recent-posts">
                   <p>
-                    We have found Prowerse through internet search and right now
-                    feeling extremely satisfied with the quality of work they
-                    have delivered to us. It has an expert team of designers and
-                    developers and demonstrated a high degree of professionalism
-                    in its work. They have been highly committed and completed
-                    the project in very smooth manner meeting all the
-                    requirements of the project and delivered the same in
-                    timeframe provided. Now our new WordPress website is fully
-                    responsive, quite attractive and has an excellent user
-                    interface as required and is being appreciated and highly
-                    likened by our clients who are using it. We will definitely
-                    contact Prowerse in future too whenever we will have any
-                    requirement for any project.
+                    The core project team has remained the same since last 25
+                    months which is a great testament to Prowerse management.
+                    They are our go to partners for new requirements due to the
+                    transparent and loyal relationship maintained through
+                    various ups and downs.
                   </p>
                 </div>
                 {/* <!-- End sidebar recent posts--> */}

@@ -15,7 +15,10 @@ import Post3 from "./Component/BlogDetails/post-3";
 import Post2 from "./Component/BlogDetails/post-2";
 import ProductEngineering from "./Pages/ProductEngineering";
 import BuildYourTeam from "./Pages/BuildYourTeam";
-import ViewCaseStudy from "./Component/ViewCaseStudy/ViewCaseStudy";
+import ViewCaseStudyBlockChain from "./Component/ViewCaseStudy/ViewCaseStudyBlockChain";
+import ViewCaseStudyHealthCare from "./Component/ViewCaseStudy/ViewCaseStudyHealthCare";
+import ViewCaseStudyhealthFitness from "./Component/ViewCaseStudy/ViewCaseStudyhealthFitness";
+
 import BuildYourDedicatedTeam from "./Pages/BuildYourDedicatedTeam";
 import JobDescriptionBusiness from "./Component/JobDescription/job-description-business-executive";
 import JobDescriptionDevOps from "./Component/JobDescription/job-description-devops";
@@ -61,7 +64,10 @@ function App() {
         <Route path="/careers" element={<Careers />} />
         <Route path="/product" element={<ProductEngineering />} />
         <Route path="/buildyourteam" element={<BuildYourTeam />} />
-        <Route path="/algo-trader" element={<ViewCaseStudy />} />
+        <Route path="/blockchain" element={<ViewCaseStudyBlockChain />} />
+        <Route path="/healthcare" element={<ViewCaseStudyHealthCare />} />
+        <Route path="/health-wealth-fitness" element={<ViewCaseStudyhealthFitness />} />
+
         <Route
           path="/build-your-dedicated-team"
           element={<BuildYourDedicatedTeam />}

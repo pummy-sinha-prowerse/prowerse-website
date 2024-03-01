@@ -69,16 +69,16 @@ function JobDescription() {
                         Develop back-end components to improve responsiveness
                         and overall performance
                       </li>
-                      <li>Integrate user-facing elements into applications</li>
-                      <li>Test and debug programs</li>
-                      <li>Improve functionality of existing systems </li>
+                      <li>Integrate user-facing elements into applications.</li>
+                      <li>Test and debug programs.</li>
+                      <li>Improve functionality of existing systems. </li>
                       <li>
                         Implement security and data protection solutions.{" "}
                       </li>
                       <li>Assess and prioritize feature requests.</li>
                       <li>
                         Coordinate with internal teams to understand user
-                        requirements and provide technical solutions
+                        requirements and provide technical solutions.
                       </li>
                     </ul>
                   </p>
@@ -97,9 +97,9 @@ function JobDescription() {
                         and HTML5).
                       </li>
                       <li>Team spirit .</li>
-                      <li>Good problem-solving skills . </li>
+                      <li>Good problem-solving skills. </li>
                       <li>
-                        BSc in Computer Science, Engineering or relevant field
+                        BSc in Computer Science, Engineering or relevant field.
                       </li>
                     </ul>
                   </p>

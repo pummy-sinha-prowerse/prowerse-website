@@ -96,7 +96,7 @@ function JobDescription() {
                         Familiarity with front-end technologies (like JavaScript
                         and HTML5).{" "}
                       </li>
-                      <li>Good problem-solving skills . </li>
+                      <li>Good problem-solving skills. </li>
                     </ul>
                   </p>
                 </div>

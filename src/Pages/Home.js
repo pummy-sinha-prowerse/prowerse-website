@@ -635,7 +635,7 @@ const Home = () => {
                 data-aos="fade-up"
               >
                 <div className="item col-lg-4 col-sm-6 aos-init aos-animat">
-                  <div className="inner-cols banner4">
+                  <div className="inner-cols banner1">
                     <div className="banner-col-content">
                       <div className="col-logo">
                         <img
@@ -644,17 +644,17 @@ const Home = () => {
                         />
                       </div>
                       <p className="para">
-                        AlgoTrader is the first fully-integrated algorithmic
-                        trading software solution for quantitative hedge funds.
+                        REDUCTION IN INFRASTRUCTURE PROVISIONING TIME BY 70%
+                        RESULTING IN SIGNIFICANT ANNUAL COST-SAVINGS
                       </p>
-                      <Link to="/algo-trader" className="red-btn circle-btn">
+                      <Link to="/blockchain" className="red-btn circle-btn">
                         View Case Study{" "}
                       </Link>
                     </div>
                   </div>
                 </div>
                 <div className="item col-lg-4 col-sm-6 aos-init aos-animat">
-                  <div className="inner-cols banner4">
+                  <div className="inner-cols banner2">
                     <div className="banner-col-content">
                       <div className="col-logo">
                         <img
@@ -663,10 +663,11 @@ const Home = () => {
                         />
                       </div>
                       <p className="para">
-                        AlgoTrader is the first fully-integrated algorithmic
-                        trading software solution for quantitative hedge funds.
+                        SIGNIFICANT REDUCTION IN MVP ROLL OUT TIMELINES THROUGH
+                        PORTABLE WEB APPS (PWA'S) AND ABOUT 45% REDUCTION IN
+                        COSTS
                       </p>
-                      <Link to="/algo-trader" className="red-btn circle-btn">
+                      <Link to="/healthcare" className="red-btn circle-btn">
                         {" "}
                         View Case Study{" "}
                       </Link>
@@ -674,7 +675,7 @@ const Home = () => {
                   </div>
                 </div>
                 <div className="item col-lg-4 col-sm-6 aos-init aos-animat">
-                  <div className="inner-cols banner4">
+                  <div className="inner-cols banner3">
                     <div className="banner-col-content">
                       <div className="col-logo">
                         <img
@@ -683,10 +684,11 @@ const Home = () => {
                         />
                       </div>
                       <p className="para">
-                        AlgoTrader is the first fully-integrated algorithmic
-                        trading software solution for quantitative hedge funds.
+                        Scaling MVP to market- ready product offering by keeping
+                        product north star in sight and increasing marketable
+                        feature releases with 50% more agility
                       </p>
-                      <Link to="/algo-trader" className="red-btn circle-btn">
+                      <Link to="/health-wealth-fitness" className="red-btn circle-btn">
                         {" "}
                         View Case Study{" "}
                       </Link>
