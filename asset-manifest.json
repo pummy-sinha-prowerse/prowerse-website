@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/prowerse-website/static/css/main.0805de2b.css",
-    "main.js": "/prowerse-website/static/js/main.ebeea201.js",
-    "static/js/592.2ee4336b.chunk.js": "/prowerse-website/static/js/592.2ee4336b.chunk.js",
-    "index.html": "/prowerse-website/index.html",
-    "main.0805de2b.css.map": "/prowerse-website/static/css/main.0805de2b.css.map",
-    "main.ebeea201.js.map": "/prowerse-website/static/js/main.ebeea201.js.map",
-    "592.2ee4336b.chunk.js.map": "/prowerse-website/static/js/592.2ee4336b.chunk.js.map"
+    "main.css": "/static/css/main.0805de2b.css",
+    "main.js": "/static/js/main.fefb19f9.js",
+    "static/js/592.2ee4336b.chunk.js": "/static/js/592.2ee4336b.chunk.js",
+    "index.html": "/index.html",
+    "main.0805de2b.css.map": "/static/css/main.0805de2b.css.map",
+    "main.fefb19f9.js.map": "/static/js/main.fefb19f9.js.map",
+    "592.2ee4336b.chunk.js.map": "/static/js/592.2ee4336b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.0805de2b.css",
-    "static/js/main.ebeea201.js"
+    "static/js/main.fefb19f9.js"
   ]
 }

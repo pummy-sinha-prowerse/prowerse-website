@@ -4106,6 +4106,55 @@ post resume
 	}
 }
 
+/* ---------carousal */
+.carousel {
+  position: relative;
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.slides {
+  display: flex;
+}
+
+.slide {
+  flex: 0 0 auto;
+  display: none;
+}
+
+.slide.active {
+  display: block;
+}
+
+.slides img {
+  width: 400px; /* Set the width to 200px for medium size */
+  height: auto;
+  padding-left: 21px;
+  margin-left: 19px;
+
+}
+
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.prev {
+  left: 0;
+}
+
+.next {
+  right: 0;
+}
 
 
 
