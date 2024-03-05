@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import Footer from "./Footer";
 import { Link } from "react-router-dom";
 // import Count from "../Component/Count";
@@ -7,41 +7,43 @@ function Careers() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-  // const data = {
-  //   counts: [
-  //     {
-  //       id: "001",
-  //       label: "Years of Industry Experience",
-  //       number: "15",
-  //       duration: "5",
-  //       type: "",
-  //       icon: "bi bi-emoji-smile",
-  //     },
-  //     {
-  //       id: "002",
-  //       label: "Client Retention Rate",
-  //       number: "92",
-  //       duration: "5",
-  //       type: "%",
-  //       icon: "bi bi-journal-richtext",
-  //     },
-  //     {
-  //       id: "003",
-  //       label: "Projects Executed",
-  //       number: "500",
-  //       duration: "5",
-  //       type: "+",
-  //       icon: "bi bi-headset",
-  //     },
-  //     {
-  //       id: "004",
-  //       label: "Reduction In Your IT Budgets",
-  //       number: "50",
-  //       duration: "5",
-  //       type: "%",
-  //       icon: "bi bi-people",
-  //     },
-  //   ],
+  const [currentSlide, setCurrentSlide] = useState(0);
+  const images = [
+    [
+      "assets/img/portfolio/portfolio-1.jpg",
+      "assets/img/portfolio/portfolio-2.jpg",
+      "assets/img/portfolio/portfolio-3.jpg",
+    ],
+    [
+      "assets/img/portfolio/portfolio-4.jpg",
+      "assets/img/portfolio/portfolio-5.jpg",
+      "assets/img/portfolio/portfolio-6.png",
+    ],
+  ];
+
+  const totalSlides = images.length;
+
+  const nextSlide = () => {
+    setCurrentSlide(currentSlide === totalSlides - 1 ? 0 : currentSlide + 1);
+  };
+
+  const prevSlide = () => {
+    setCurrentSlide(currentSlide === 0 ? totalSlides - 1 : currentSlide - 1);
+  };
+  // const images = [
+  //   "assets/img/portfolio/portfolio-1.jpg",
+  //   "/assets/img/portfolio/portfolio-2.jpg",
+  //   "/assets/img/portfolio/portfolio-3.jpg",
+  //   "/assets/img/portfolio/portfolio-1.jpg",
+  //   "/assets/img/portfolio/portfolio-2.jpg",
+  //   "/assets/img/portfolio/portfolio-3.jpg",
+  // ];
+  // const nextSlide = () => {
+  //   setCurrentSlide(currentSlide === images.length - 1 ? 0 : currentSlide + 1);
+  // };
+
+  // const prevSlide = () => {
+  //   setCurrentSlide(currentSlide === 0 ? images.length - 1 : currentSlide - 1);
   // };
   return (
     <>
@@ -209,8 +211,7 @@ function Careers() {
                         </span>
                       </span>
                       <span className="col-5 col-md-3 my-3 my-sm-0 color--text">
-                        <i className="fas fa-clock mr-1"></i>3+ years
-                        Experience
+                        <i className="fas fa-clock mr-1"></i>3+ years Experience
                       </span>
 
                       <span className="col-5 col-md-3 my-3 my-sm-0 color--text">
@@ -244,14 +245,16 @@ function Careers() {
                         {/* <span className="badge badge-circle text-white mr-3"> */}
                         <i className="bi bi-briefcase"></i>
                         {/* </span>{" "} */}
-                        <span className="position position-title">
+                        <span
+                          className="position position-title"
+                          style={{ marginTop: "-9px" }}
+                        >
                           Business Development <br />
                           Executive{" "}
                         </span>
                       </span>
                       <span className="col-5 col-md-3 my-3 my-sm-0 color--text">
-                        <i className="fas fa-clock mr-1"></i>2+ years
-                        Experience
+                        <i className="fas fa-clock mr-1"></i>2+ years Experience
                       </span>
 
                       <span className="col-5 col-md-3 my-3 my-sm-0 color--text">
@@ -327,8 +330,7 @@ function Careers() {
                       </span>
 
                       <span className="col-5 col-md-3 my-3 my-sm-0 color--text">
-                        <i className="fas fa-clock mr-1"></i>3+ years
-                        Experience
+                        <i className="fas fa-clock mr-1"></i>3+ years Experience
                       </span>
 
                       <span className="col-5 col-md-3 my-3 my-sm-0 color--text">
@@ -364,8 +366,7 @@ function Careers() {
                       </span>
 
                       <span className="col-5 col-md-3 my-3 my-sm-0 color--text">
-                        <i className="fas fa-clock mr-1"></i>3+ years
-                        Experience
+                        <i className="fas fa-clock mr-1"></i>3+ years Experience
                       </span>
 
                       <span className="col-5 col-md-3 my-3 my-sm-0 color--text">
@@ -407,155 +408,53 @@ function Careers() {
             data-aos-delay="200"
             style={{ marginTop: "20px" }}
           >
-            <div className="col-lg-4 col-md-6 portfolio-item filter-app">
-              <div className="portfolio-wrap">
-                <img
-                  src="prowerse-website/assets/img/portfolio/portfolio-1.jpg"
-                  className="img-fluid"
-                  alt=""
-                />
-                <div className="portfolio-info">
-                  {/* <h4>App 1</h4>
-                <p>App</p> */}
-                  <div className="portfolio-links">
-                    <a
-                      href="prowerse-website/assets/img/portfolio/portfolio-1.jpg"
-                      data-gallery="portfolioGallery"
-                      className="portfolio-lightbox"
-                      title="App 1"
-                    >
-                      <i className="bx bx-plus"></i>
-                    </a>
-                    {/* <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a> */}
+            <div className="carousel">
+              <button className="prev" onClick={prevSlide}>
+                &#10094;
+              </button>
+              <button className="next" onClick={nextSlide}>
+                &#10095;
+              </button>
+              <div className="slides col-lg-4 col-md-6 portfolio-item">
+                {images.map((imageGroup, index) => (
+                  <div
+                    key={index}
+                    className={
+                      index === currentSlide ? "slide active" : "slide"
+                    }
+                  >
+                    {imageGroup.map((image, subIndex) => (
+                      <img
+                        key={subIndex}
+                        src={image}
+                        alt={`Slide ${index + 1} Image ${subIndex + 1}`}
+                      />
+                    ))}
                   </div>
-                </div>
+                ))}
               </div>
             </div>
 
-            <div className="col-lg-4 col-md-6 portfolio-item filter-web">
-              <div className="portfolio-wrap">
-                <img
-                  src="prowerse-website/assets/img/portfolio/portfolio-2.jpg"
-                  className="img-fluid"
-                  alt=""
-                />
-                <div className="portfolio-info">
-                  {/* <h4>Web 3</h4>
-                <p>Web</p> */}
-                  <div className="portfolio-links">
-                    <a
-                      href="prowerse-website/assets/img/portfolio/portfolio-2.jpg"
-                      data-gallery="portfolioGallery"
-                      className="portfolio-lightbox"
-                      title="Web 3"
-                    >
-                      <i className="bx bx-plus"></i>
-                    </a>
-                    {/* <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a> */}
+            {/* <div className="carousel">
+              <button className="prev" onClick={prevSlide}>
+                &#10094;
+              </button>
+              <button className="next" onClick={nextSlide}>
+                &#10095;
+              </button>
+              <div className="slides">
+                {images.map((image, index) => (
+                  <div
+                    key={index}
+                    className={
+                      index === currentSlide ? "slide active" : "slide"
+                    }
+                  >
+                    <img src={image} alt={`Slide ${index}`} />
                   </div>
-                </div>
+                ))}
               </div>
-            </div>
-
-            <div className="col-lg-4 col-md-6 portfolio-item filter-app">
-              <div className="portfolio-wrap">
-                <img
-                  src="prowerse-website/assets/img/portfolio/portfolio-3.jpg"
-                  className="img-fluid"
-                  alt=""
-                />
-                <div className="portfolio-info">
-                  {/* <h4>App 2</h4>
-                <p>App</p> */}
-                  <div className="portfolio-links">
-                    <a
-                      href="prowerse-website/assets/img/portfolio/portfolio-3.jpg"
-                      data-gallery="portfolioGallery"
-                      className="portfolio-lightbox"
-                      title="App 2"
-                    >
-                      <i className="bx bx-plus"></i>
-                    </a>
-                    {/* <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a> */}
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div className="col-lg-4 col-md-6 portfolio-item filter-card">
-              <div className="portfolio-wrap">
-                <img
-                  src="prowerse-website/assets/img/portfolio/portfolio-4.jpg"
-                  className="img-fluid"
-                  alt=""
-                />
-                <div className="portfolio-info">
-                  {/* <h4>Card 2</h4>
-                <p>Card</p> */}
-                  <div className="portfolio-links">
-                    <a
-                      href="prowerse-website/assets/img/portfolio/portfolio-4.jpg"
-                      data-gallery="portfolioGallery"
-                      className="portfolio-lightbox"
-                      title="Card 2"
-                    >
-                      <i className="bx bx-plus"></i>
-                    </a>
-                    {/* <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a> */}
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div className="col-lg-4 col-md-6 portfolio-item filter-web">
-              <div className="portfolio-wrap">
-                <img
-                  src="prowerse-website/assets/img/portfolio/portfolio-5.jpg"
-                  className="img-fluid"
-                  alt=""
-                />
-                <div className="portfolio-info">
-                  {/* <h4>Web 2</h4>
-                <p>Web</p> */}
-                  <div className="portfolio-links">
-                    <a
-                      href="prowerse-website/assets/img/portfolio/portfolio-5.jpg"
-                      data-gallery="portfolioGallery"
-                      className="portfolio-lightbox"
-                      title="Web 2"
-                    >
-                      <i className="bx bx-plus"></i>
-                    </a>
-                    {/* <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a> */}
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div className="col-lg-4 col-md-6 portfolio-item filter-app">
-              <div className="portfolio-wrap">
-                <img
-                  src="prowerse-website/assets/img/portfolio/portfolio-6.jpg"
-                  className="img-fluid"
-                  alt=""
-                />
-                <div className="portfolio-info">
-                  {/* <h4>App 3</h4>
-                <p>App</p> */}
-                  <div className="portfolio-links">
-                    <a
-                      href="prowerse-website/assets/img/portfolio/portfolio-6.jpg"
-                      data-gallery="portfolioGallery"
-                      className="portfolio-lightbox"
-                      title="App 3"
-                    >
-                      <i className="bx bx-plus"></i>
-                    </a>
-                    {/* <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a> */}
-                  </div>
-                </div>
-              </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>

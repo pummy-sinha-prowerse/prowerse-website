@@ -624,8 +624,7 @@ const Home = () => {
             <div className="sub-section-title">
               <p>
                 CASE STUDIES OF HOW OUR CLIENTS HAVE EXPERIENCED{" "}
-                <span>COMPETITIVE</span>
-                ADVANTAGE
+                COMPETITIVE ADVANTAGE
               </p>
             </div>
 
@@ -638,10 +637,10 @@ const Home = () => {
                   <div className="inner-cols banner1">
                     <div className="banner-col-content">
                       <div className="col-logo">
-                        <img
+                        {/* <img
                           src="prowerse-website/assets/img/casestudies/logo4.png"
                           alt=""
-                        />
+                        /> */}
                       </div>
                       <p className="para">
                         REDUCTION IN INFRASTRUCTURE PROVISIONING TIME BY 70%
@@ -657,10 +656,10 @@ const Home = () => {
                   <div className="inner-cols banner2">
                     <div className="banner-col-content">
                       <div className="col-logo">
-                        <img
+                        {/* <img
                           src="prowerse-website/assets/img/casestudies/logo4.png"
                           alt=""
-                        />
+                        /> */}
                       </div>
                       <p className="para">
                         SIGNIFICANT REDUCTION IN MVP ROLL OUT TIMELINES THROUGH
@@ -678,10 +677,10 @@ const Home = () => {
                   <div className="inner-cols banner3">
                     <div className="banner-col-content">
                       <div className="col-logo">
-                        <img
-                          src="prowerse-website/assets/img/casestudies/logo4.png"
+                        {/* <img
+                          src="prowerse-website/assets/img/casestudies/entirebody_logo.png"
                           alt=""
-                        />
+                        /> */}
                       </div>
                       <p className="para">
                         Scaling MVP to market- ready product offering by keeping

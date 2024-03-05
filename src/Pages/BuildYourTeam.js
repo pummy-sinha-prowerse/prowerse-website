@@ -74,7 +74,7 @@ function BuildYourTeam() {
       </section>
 
       {/* deticated team */}
-      <section
+      {/* <section
         id="about"
         className="about section-bg hire-developers-sec about-box"
       >
@@ -168,7 +168,7 @@ function BuildYourTeam() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* <!-- ======= Footer ======= --> */}
       <Footer />
@@ -176,3 +176,4 @@ function BuildYourTeam() {
   );
 }
 export default BuildYourTeam;
+

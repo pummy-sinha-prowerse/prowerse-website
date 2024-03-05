@@ -19,7 +19,6 @@ function PostResume() {
   const [Fileresume, setfileResume] = useState(null);
 
   const ses = new AWS.SES({ apiVersion: process.env.REACT_APP_API_VERSION });
-  console.log("SOURCE", process.env);
 
   // const handleFileChange = (event) => {
   //   const file = event.target.files[0];
@@ -31,12 +30,13 @@ function PostResume() {
   // };
 
   const SubmitResume = (event) => {
-    console.log("resume", resume.name, resume.type, resume.data);
-    const file = resume;
+    console.log("resume", resume.name, resume.type, resume.webkitRelativePath);
     const formData = new FormData();
-    formData.append("file", file);
+    formData.append("file", resume);
     event.preventDefault();
     const captchaValue = recaptcha.current.getValue();
+    // const attachmentPath = '/path/to/attachment.pdf'; // Replace with the path to your attachment
+    // const attachmentName = 'attachment.pdf'; // Replace with the name of your attachment
 
     if (!captchaValue) {
       alert("Please verify the reCAPTCHA!");
@@ -54,18 +54,19 @@ function PostResume() {
       const fileData = fileReader.result;
       // const pdfAttachment = fs.readFileSync("path/to/your/pdf/file.pdf");
       // Define email parameters
+      console.log(process.env.REACT_APP_SOURCE);
       const params = {
         Source: process.env.REACT_APP_SOURCE, // Replace with your verified email address in AWS SES
         Destination: {
           ToAddresses: [toEmail],
         },
-        Attachments: [
-          {
-            Filename: resume.name,
-            Content: formData,
-            ContentType: "application/octet-stream",
-          },
-        ],
+        // Attachments: [
+        //   {
+        //     Filename: resume.name,
+        //     Content: formData,
+        //     ContentType: "application/octet-stream",
+        //   },
+        // ],
         // Attachments: [
         //   {
         //     FileName: resume.name,
@@ -93,28 +94,15 @@ function PostResume() {
             Data: subject,
           },
         },
-        // Add the Attachment object
-        // Attachment: {
-        //   Data: resume.name, // The content of the PDF file
-        //   ContentType: resume.type, // The content type of the attachment
-        //   Filename: resume.name, // The name of the attachment
-        // },
-        // Attachments: [
-        //   {
-        //     FileName: resume.name,
-        //     ContentType: resume.type,
-        //     // Content: resume.data,
-        //   },
-        // ],
-        // ReplyToAddresses: ["YOUR_VERIFIED_EMAIL_ADDRESS"],
-        // MessageAttachments: [
-        //   {
-        //     Filename: resume.name,
-        //     Content: fileData,
-        //     ContentType: resume.type,
-        //   },
-        // ],
+        Attachments: [
+          {
+            Data: "https://en.wikipedia.org/wiki/Image#/media/File:Image_created_with_a_mobile_phone.png",
+            ContentType: "application/octet-stream",
+            Filename: "Image_created_with_a_mobile_phone.png",
+          },
+        ],
       };
+
       // Add attachment
       // const attachmentPath = "/path/to/attachment.pdf"; // Replace with the path to your attachment
       // const attachmentName = "attachment.pdf"; // Replace with the name of your attachment
@@ -124,9 +112,9 @@ function PostResume() {
 
       // // Add the attachment to the email
       // params.Message.Body.Attachment = {
-      //   Data: fileContent,
-      //   ContentType: "application/pdf",
-      //   Filename: attachmentName,
+      //   Data: "https://en.wikipedia.org/wiki/Image#/media/File:Image_created_with_a_mobile_phone.png",
+      //   ContentType: "application/octet-stream",
+      //   Filename: "Image_created_with_a_mobile_phone.png",
       // };
       // Send email
       ses.sendEmail(params, (err, data) => {
