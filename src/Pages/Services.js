@@ -153,7 +153,7 @@ function Service() {
             </p>
           </div>
           <div className="row">
-            <div className="col-md-3">
+            <div className="col-md-4">
               <div className="icon-box" data-aos="fade-up" data-aos-delay="100">
                 <div class="example-wrap">
                   <div class="button-wrap-1 example">
@@ -171,7 +171,7 @@ function Service() {
               </div>
             </div>
 
-            <div className="col-md-3 mt-4 mt-md-0">
+            <div className="col-md-4 mt-4 mt-md-0">
               <div className="icon-box" data-aos="fade-up" data-aos-delay="200">
                 <div class="example-wrap">
                   <div class="button-wrap-1 example">
@@ -187,7 +187,7 @@ function Service() {
                 </p>
               </div>
             </div>
-            <div className="col-md-3">
+            <div className="col-md-4">
               <div className="icon-box" data-aos="fade-up" data-aos-delay="100">
                 <div class="example-wrap">
                   <div class="button-wrap-1 example">
@@ -203,7 +203,7 @@ function Service() {
                 </p>
               </div>
             </div>
-            <div className="col-md-3">
+            <div className="col-md-4">
               <div className="icon-box" data-aos="fade-up" data-aos-delay="100">
                 <div class="example-wrap">
                   <div class="button-wrap-1 example">
@@ -219,7 +219,7 @@ function Service() {
                 </p>
               </div>
             </div>
-            <div className="col-md-3">
+            <div className="col-md-4">
               <div className="icon-box" data-aos="fade-up" data-aos-delay="100">
                 <div class="example-wrap">
                   <div class="button-wrap-1 example">
@@ -235,7 +235,7 @@ function Service() {
                 </p>
               </div>
             </div>
-            <div className="col-md-3">
+            <div className="col-md-4">
               <div className="icon-box" data-aos="fade-up" data-aos-delay="100">
                 <div class="example-wrap">
                   <div class="button-wrap-1 example">
@@ -251,7 +251,7 @@ function Service() {
                 </p>
               </div>
             </div>
-            <div className="col-md-3">
+            <div className="col-md-4">
               <div className="icon-box" data-aos="fade-up" data-aos-delay="100">
                 <div class="example-wrap">
                   <div class="button-wrap-1 example">
@@ -267,7 +267,7 @@ function Service() {
                 </p>
               </div>
             </div>
-            <div className="col-md-3">
+            <div className="col-md-4">
               <div className="icon-box" data-aos="fade-up" data-aos-delay="100">
                 <div class="example-wrap">
                   <div class="button-wrap-1 example">
@@ -283,7 +283,7 @@ function Service() {
                 </p>
               </div>
             </div>
-            <div className="col-md-3">
+            <div className="col-md-4">
               <div className="icon-box" data-aos="fade-up" data-aos-delay="100">
                 <div class="example-wrap">
                   <div class="button-wrap-1 example">
@@ -300,7 +300,7 @@ function Service() {
                 </p>
               </div>
             </div>
-            <div className="col-md-3">
+            <div className="col-md-4">
               <div className="icon-box" data-aos="fade-up" data-aos-delay="100">
                 <div className="example-wrap">
                   <div className="button-wrap-1 example">
@@ -317,14 +317,52 @@ function Service() {
                 </p>
               </div>
             </div>
-            <div className="col-md-3">
+
+           
+
+            <div className="col-md-4">
               <div className="icon-box" data-aos="fade-up" data-aos-delay="100">
                 <div class="example-wrap">
                   <div class="button-wrap-1 example">
                     <a href class="clicker">
-                      Block Chain
+                      (RPA + GenAI)
                     </a>
                     <div class="circle"></div>
+                  </div>
+                </div>
+
+                <p className="service-fill techstack">Intelligent Automation</p>
+              </div>
+            </div>
+
+            <div className="col-md-4">
+              <div className="icon-box" data-aos="fade-up" data-aos-delay="100">
+                <div className="example-wrap">
+                  <div className="button-wrap-1 example">
+                    <a href className="clicker text-style">
+                      RUST
+                    </a>
+                    <div className="circle"></div>
+                  </div>
+                </div>
+
+                <p className="service-fill techstack">
+                  Implementing Smart Contracts in Web3
+                </p>
+              </div>
+            </div>
+
+
+          </div>
+          <div className="row last-row-career">
+            <div className="col-md-6">
+              <div className="icon-box" data-aos="fade-up" data-aos-delay="100">
+                <div class="example-wrap">
+                  <div class="button-wrap-1 example">
+                    <a href class="clickerBlock clicker">
+                      BlockChain
+                    </a>
+                    <div class="cicrcleBlock circle"></div>
                   </div>
                 </div>
 
@@ -333,7 +371,7 @@ function Service() {
                 </p>
               </div>
             </div>
-          </div>
+            </div>
         </div>
       </section>
       {/* <!-- Techstack --> */}

@@ -623,8 +623,8 @@ const Home = () => {
             </div>
             <div className="sub-section-title">
               <p>
-                CASE STUDIES OF HOW OUR CLIENTS HAVE EXPERIENCED{" "}
-                COMPETITIVE ADVANTAGE
+                CASE STUDIES OF HOW OUR CLIENTS HAVE EXPERIENCED COMPETITIVE
+                ADVANTAGE
               </p>
             </div>
 
@@ -646,6 +646,9 @@ const Home = () => {
                         REDUCTION IN INFRASTRUCTURE PROVISIONING TIME BY 70%
                         RESULTING IN SIGNIFICANT ANNUAL COST-SAVINGS
                       </p>
+                      <p className="para domainPara">
+                        DOMAIN - <span>Crypto</span>
+                      </p>
                       <Link to="/blockchain" className="red-btn circle-btn">
                         View Case Study{" "}
                       </Link>
@@ -665,6 +668,9 @@ const Home = () => {
                         SIGNIFICANT REDUCTION IN MVP ROLL OUT TIMELINES THROUGH
                         PORTABLE WEB APPS (PWA'S) AND ABOUT 45% REDUCTION IN
                         COSTS
+                      </p>
+                      <p className="para domainPara">
+                        DOMAIN - <span>African Venture In Healthcare</span>
                       </p>
                       <Link to="/healthcare" className="red-btn circle-btn">
                         {" "}
@@ -687,7 +693,13 @@ const Home = () => {
                         product north star in sight and increasing marketable
                         feature releases with 50% more agility
                       </p>
-                      <Link to="/health-wealth-fitness" className="red-btn circle-btn">
+                      <p className="para domainPara">
+                        DOMAIN - <span>Health, Welness & Fitness</span>
+                      </p>
+                      <Link
+                        to="/health-wealth-fitness"
+                        className="red-btn circle-btn"
+                      >
                         {" "}
                         View Case Study{" "}
                       </Link>

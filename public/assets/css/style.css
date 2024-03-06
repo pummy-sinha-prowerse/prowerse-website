@@ -609,7 +609,7 @@ Position design for career page
 ---------------------------------------------------------------- */
 .color--text {
   color: #f5f6f8 !important;
-  padding:2px
+  padding: 2px;
 }
 .text-white {
   color: #f5f6f8 !important;
@@ -618,17 +618,21 @@ Position design for career page
   /* width: 2.5rem; */
   font-size: 1rem;
   line-height: 2.5rem;
-  padding: 0
+  padding: 0;
 }
 .color--heading {
-  color: #f5f6f8 !important
+  color: #f5f6f8 !important;
 }
-.position{
-  top:44px;
+.position {
+  top: 44px;
   position: absolute;
 }
-.position-title{
+.position-title {
   margin-left: 10px;
+}
+.last-row-career {
+  display: flex;
+  justify-content: center;
 }
 /* ------------------------------------------------------------
 Build your dedicated team
@@ -659,27 +663,27 @@ Build your dedicated team
   justify-content: center;
   background-color: coral;
 }
-.core-expertise-box p{
+.core-expertise-box p {
   color: #fff;
 }
 .text-dark {
-  color: #343a40!important;
+  color: #343a40 !important;
 }
 .text-style-2 {
   padding-top: 27px;
 }
-.hr-text{
+.hr-text {
   font-weight: bold;
 }
-.buid-your-team-box{
+.buid-your-team-box {
   min-height: 200px !important;
 }
-.value-box{
+.value-box {
   background: none !important;
-  color: #ff7f51 ;
-  text-align: center ;
+  color: #ff7f51;
+  text-align: center;
 }
-.heading-value{
+.heading-value {
   background: none !important;
 }
 /*--------------------------------------------------------------
@@ -3692,9 +3696,11 @@ ul.hire-team-process li:last-child:after {
 /* techstack */
 /* --------------------------------------------------------- */
 .example-wrap {
-  display: inline-block;
+  /* display: inline-block;
   margin-left: 54px;
-  margin-top: -36px;
+  margin-top: -36px; */
+  display: flex;
+  justify-content: center;
 }
 .example {
   float: left;
@@ -3702,10 +3708,14 @@ ul.hire-team-process li:last-child:after {
 
 .services .icon-box .techstack {
   font-size: 14px;
-  margin-left: 0px;
+  margin: 0px;
+  /* margin-left: 0px; */
+  /* display: table-footer-group; */
+  text-align: center;
 }
 .techstack-section .icon-box {
-  max-height: 239px;
+  max-height: 268px;
+  min-height: 268px;
 }
 /***** 1. Rotor ********/
 @-webkit-keyframes rotor {
@@ -3772,6 +3782,24 @@ ul.hire-team-process li:last-child:after {
     -o-box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.5);
     box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.5);
   }
+
+  .clickerBlock {
+    color: #2b2b2b;
+    font-weight: bold;
+    width: 114px;
+    height: 114px;
+    margin: 10px;
+    background-color: #fff;
+    border-radius: 55px;
+    z-index: 2;
+    position: absolute;
+    padding: 45px 10px;
+    text-align: center;
+    -webkit-box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.5);
+    -o-box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.5);
+  }
   .text-style {
     padding-top: 36px;
   }
@@ -3793,6 +3821,22 @@ ul.hire-team-process li:last-child:after {
     );
 
     /*** outer circle position: under */
+    z-index: 1;
+    position: absolute;
+  }
+  .cicrcleBlock {
+    width: 134px;
+    height: 134px;
+    border-radius: 63px;
+    background-image: linear-gradient(
+      45deg,
+      white 0%,
+      white 30%,
+      rgb(255 127 80) 30%,
+      rgb(225 57 59) 70%,
+      white 70%,
+      white 100%
+    );
     z-index: 1;
     position: absolute;
   }
@@ -3882,10 +3926,11 @@ ul.hire-team-process li:last-child:after {
 /* ------------------------------------------------------------------- 
 casestudy
  -------------------------------------------------------------------  */
- #hero-casestudy {
+#hero-casestudy {
   width: 100%;
   height: 100vh;
-  background: url("../img/casestudies/case-study-header.webp") top center no-repeat;
+  background: url("../img/casestudies/case-study-header.webp") top center
+    no-repeat;
   background-size: cover;
   position: relative;
   padding-top: 82px;
@@ -3977,13 +4022,15 @@ casestudy
   position: relative;
 }
 .banner1 {
-  background: url(../img/casestudies/switzerland.jpeg) no-repeat center center/cover;
+  background: url(../img/casestudies/switzerland.jpeg) no-repeat center
+    center/cover;
 }
 .banner2 {
   background: url(../img/casestudies/africa.jpeg) no-repeat center center/cover;
 }
 .banner3 {
-  background: url(../img/casestudies/bannernorway.jpeg) no-repeat center center/cover;
+  background: url(../img/casestudies/bannernorway.jpeg) no-repeat center
+    center/cover;
 }
 .banner-col-content {
   position: absolute;
@@ -4004,6 +4051,7 @@ casestudy
   padding: 0 30px;
   line-height: 1.4;
   font-size: 16px;
+  font-weight: bold;
 }
 .banner-col-content .red-btn {
   display: none;
@@ -4083,27 +4131,33 @@ casestudy
   transition: 0.4s;
   border-radius: 4px;
 }
+.domainPara {
+  background-color: #f56849;
+  border-radius: 10px;
+  padding: 10px !important;
+  min-width: 60%;
+}
 /* ------------------------------------------
 post resume
 ------------------------------------------- */
 .custom-file-button {
-	input[type="file"] {
-		margin-left: -2px !important;
+  input[type="file"] {
+    margin-left: -2px !important;
 
-		&::-webkit-file-upload-button {
-			display: none;
-		}
-		&::file-selector-button {
-			display: none;
-		}
-	}
+    &::-webkit-file-upload-button {
+      display: none;
+    }
+    &::file-selector-button {
+      display: none;
+    }
+  }
 
-	&:hover {
-		label {
-			background-color: #dde0e3;
-			cursor: pointer;
-		}
-	}
+  &:hover {
+    label {
+      background-color: #dde0e3;
+      cursor: pointer;
+    }
+  }
 }
 
 /* ---------carousal */
@@ -4132,7 +4186,6 @@ post resume
   height: auto;
   padding-left: 21px;
   margin-left: 19px;
-
 }
 
 .prev,
@@ -4155,9 +4208,3 @@ post resume
 .next {
   right: 0;
 }
-
-
-
-
-
-

@@ -47,15 +47,14 @@ function ViewCaseStudy() {
             <div className="col-lg-8 entries">
               <article className="entry entry-single">
                 <h4 className="entry-title">
-                  <span style={{ color: "#ff8050" }}>ABOUT BLOCKCHAIN</span>
+                  <span style={{ color: "#ff8050" }}>
+                  FOR AN BLOCKCHAIN SOLUTION COMPANY WITH THE VISION OF INTRODUCING
+                    THE WORLD’S FIRST DATA CURRENCY
+                  </span>
                 </h4>
 
                 <div className="entry-content">
-                  <p>
-                    REDUCTION IN INFRASTRUCTURE PROVISIONING TIME BY 70%
-                    RESULTING IN SIGNIFICANT ANNUAL COST-SAVINGS
-                  </p>
-                  <p>
+                  {/* <p>
                     {" "}
                     <button
                       className="download-casestudy"
@@ -63,7 +62,51 @@ function ViewCaseStudy() {
                     >
                       Download CaseStudy PDF
                     </button>
+                  </p> */}
+                  <h3 className="sidebar-title">
+                    <span style={{ color: "#ff8050" }}>CLIENT PROFILE</span>
+                  </h3>
+                  <p>
+                    <b>
+                      Our client aims to provide the medium of exchange for the
+                      transaction layer of the Internet through the introduction
+                      of their digital system.
+                    </b>
                   </p>
+                  <p>
+                    Through their smart data technology and innovative
+                    Blockchain protocols, they are working towards solving and
+                    shaping the future of Web3.
+                  </p>
+                  <h3 className="sidebar-title">
+                    <span style={{ color: "#ff8050" }}>BUSINESS SCENARIO</span>
+                  </h3>
+
+                  <p>
+                    After initial set of meetings with the client, we could gain
+                    an understanding on existing business scenarios at their
+                    end:
+                  </p>
+                  <ul>
+                    <li>
+                      No existing infrastructure management process with limited
+                      consideration on infrastructure landscaping.
+                    </li>
+                    <li>
+                      Skill-gap in existing team for catering to their business
+                      objectives.
+                    </li>
+                    <li>
+                      Need to roll-out quicker feature- releases for sustaining
+                      early-mover advantage for their disruptive offering.
+                    </li>
+                    <li>Spilling costs.</li>
+                    <li>
+                      Lack of availability of skilled resources in DevOps, Test
+                      Automation and for supporting investor needs.
+                    </li>
+                  </ul>
+
                   <h3 className="sidebar-title">
                     <span style={{ color: "#ff8050" }}>PROWERSE APPROACH</span>
                   </h3>
@@ -96,34 +139,7 @@ function ViewCaseStudy() {
                       through an ITIL- certified Prowerse engineer
                     </li>
                   </ul>
-                  <h3 className="sidebar-title">
-                    <span style={{ color: "#ff8050" }}>BUSINESS SCENARIO</span>
-                  </h3>
 
-                  <p>
-                    After initial set of meetings with the client, we could gain
-                    an understanding on existing business scenarios at their
-                    end:
-                  </p>
-                  <ul>
-                    <li>
-                      No existing infrastructure management process with limited
-                      consideration on infrastructure landscaping.
-                    </li>
-                    <li>
-                      Skill-gap in existing team for catering to their business
-                      objectives.
-                    </li>
-                    <li>
-                      Need to roll-out quicker feature- releases for sustaining
-                      early-mover advantage for their disruptive offering.
-                    </li>
-                    <li>Spilling costs.</li>
-                    <li>
-                      Lack of availability of skilled resources in DevOps, Test
-                      Automation and for supporting investor needs.
-                    </li>
-                  </ul>
                   <h3 className="sidebar-title">
                     <span style={{ color: "#ff8050" }}>VALUE PROPOSITIONS</span>
                   </h3>

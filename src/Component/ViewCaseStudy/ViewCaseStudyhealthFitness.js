@@ -7,18 +7,6 @@ function ViewCaseStudy() {
     window.scrollTo(0, 0);
   }, []);
 
-  const handleDownload = () => {
-    // Replace 'your-pdf-file.pdf' with the actual path or URL of your PDF file
-    const pdfUrl = "/assets/img/casestudies/Prowerse Case Study-EB_v1.2.pdf";
-
-    // Trigger download
-    const link = document.createElement("a");
-    link.href = pdfUrl;
-    link.setAttribute("download", "Prowerse Case Study-EB_v1.2.pdf"); // You can specify the filename here
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  };
   return (
     <>
       <section id="hero-casestudy" className="d-flex align-items-center">
@@ -47,25 +35,48 @@ function ViewCaseStudy() {
               <article className="entry entry-single">
                 <h4 className="entry-title">
                   <span style={{ color: "#ff8050" }}>
-                    ABOUT HEALTH, WELNESS & FITNESS
+                    FOR AN HEALTH, WELNESS & FITNESS
                   </span>
                 </h4>
 
                 <div className="entry-content">
+                  <h3 className="sidebar-title">
+                    <span style={{ color: "#ff8050" }}>CLIENT PROFILE</span>
+                  </h3>
                   <p>
-                    Scaling MVP to market ready product offering by keeping
-                    product north star in sight and increasing marketable
-                    feature releases with 50% more agility
+                    <b>
+                      Our client offers a marketplace, a web and app platform
+                      for their customers to promote healthier and fitter
+                      lifestyle.
+                    </b>
                   </p>
                   <p>
-                    {" "}
-                    <button
-                      className="download-casestudy"
-                      onClick={handleDownload}
-                    >
-                      Download CaseStudy PDF
-                    </button>
+                    Their main customers are personal trainers, nutritionists,,
+                    etc. Mobile apps on iOS & Android caters to users from
+                    Norway, Sweden & Lithuania. Solution also offers platform
+                    for health professionals to enrol & offer services.
                   </p>
+                  <h3 className="sidebar-title">
+                    <span style={{ color: "#ff8050" }}>BUSINESS SCENARIO</span>
+                  </h3>
+
+                  <p>
+                    The initial MVP was developed by client himself as a lone
+                    contributor. The client wanted to progress the product
+                    journey from the existing MVP to a scalable product offering
+                    by:
+                  </p>
+                  <ul>
+                    <li>Setting up a product team.</li>
+                    <li>
+                      Reviewing and adjusting tech stacks in line with final
+                      version of business requirement.
+                    </li>
+                    <li>
+                      Setting up a product development team for native apps
+                      development and continuous delivery cycle for the same.
+                    </li>
+                  </ul>
                   <h3 className="sidebar-title">
                     <span style={{ color: "#ff8050" }}>PROWERSE APPROACH</span>
                   </h3>
@@ -99,45 +110,25 @@ function ViewCaseStudy() {
                       implemented.
                     </li>
                   </ul>
-                  <h3 className="sidebar-title">
-                    <span style={{ color: "#ff8050" }}>BUSINESS SCENARIO</span>
-                  </h3>
 
-                  <p>
-                    The initial MVP was developed by client himself as a lone
-                    contributor. The client wanted to progress the product
-                    journey from the existing MVP to a scalable product offering
-                    by:
-                  </p>
-                  <ul>
-                    <li>Setting up a product team.</li>
-                    <li>
-                      Reviewing and adjusting tech stacks in line with final
-                      version of business requirement.
-                    </li>
-                    <li>
-                      Setting up a product development team for native apps
-                      development and continuous delivery cycle for the same.
-                    </li>
-                  </ul>
                   <h3 className="sidebar-title">
                     <span style={{ color: "#ff8050" }}>VALUE PROPOSITIONS</span>
                   </h3>
-                 
+
                   <ul>
                     <li>
-                    Rapid productization and reduced GO-TO-MARKET time by 20%.
+                      Rapid productization and reduced GO-TO-MARKET time by 20%.
                     </li>
                     <li>
-                    Cost Reduction: Reduced business expenses by about 30%
+                      Cost Reduction: Reduced business expenses by about 30%
                     </li>
                     <li>
-                    Scaled product development team to deliver as many feature on top of bare bones CII
+                      Scaled product development team to deliver as many feature
+                      on top of bare bones CII
                     </li>
                     <li>
-                    Enabling client to focus on market expansion strategy.
+                      Enabling client to focus on market expansion strategy.
                     </li>
-                   
                   </ul>
                 </div>
 
@@ -245,7 +236,9 @@ function ViewCaseStudy() {
                 </h3>
                 <div className="sidebar-item recent-posts">
                   <p>
-                  Development results are great and skills of the developers are effective. Communication as an aspect is given high regard. Overall good value for money.
+                    Development results are great and skills of the developers
+                    are effective. Communication as an aspect is given high
+                    regard. Overall good value for money.
                   </p>
                 </div>
                 {/* <!-- End sidebar recent posts--> */}

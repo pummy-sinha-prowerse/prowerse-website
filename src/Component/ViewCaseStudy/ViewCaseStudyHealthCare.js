@@ -48,24 +48,46 @@ function ViewCaseStudy() {
               <article className="entry entry-single">
                 <h4 className="entry-title">
                   <span style={{ color: "#ff8050" }}>
-                    ABOUT AFRICAN VENTURE IN HEALTH CARE
+                    FOR AN AFRICAN VENTURE IN HEALTHCARE
                   </span>
                 </h4>
 
                 <div className="entry-content">
+                  <h3 className="sidebar-title">
+                    <span style={{ color: "#ff8050" }}>CLIENT PROFILE</span>
+                  </h3>
                   <p>
-                    SIGNIFICANT REDUCTION IN MVP ROLL OUT TIMELINES THROUGH
-                    PORTABLE WEB APPS (PWA'S) AND ABOUT 45% REDUCTION IN COSTS
+                    <b>
+                      Our client aims to reach every African household with
+                      bouquet of comprehensive healthcare services.
+                    </b>
                   </p>
                   <p>
-                    {" "}
-                    <button
-                      className="download-casestudy"
-                      onClick={handleDownload}
-                    >
-                      Download CaseStudy PDF
-                    </button>
+                    Our solution aims to tackle lack of availability of medical
+                    services in the region through our machine learning enabled
+                    diseases prediction services, helping users preempt serious
+                    medical situation in time.
                   </p>
+
+                  <h3 className="sidebar-title">
+                    <span style={{ color: "#ff8050" }}>BUSINESS SCENARIO</span>
+                  </h3>
+
+                  <p>
+                    After understanding client requirements through initial
+                    meetings, we convened upon developing ML algorithm for
+                    disease prediction, setting-up end-to-end product
+                    development life cycle. Rapid feature deliveries as well was
+                    expected from Prowerse to make MVP more appealing to early
+                    adopters.
+                  </p>
+                  <p>
+                    We knew that client was on a tight budget with limited
+                    timeline and was then dealing with multiple freelancers with
+                    negligible control and coordination between them and that
+                    with our client.
+                  </p>
+
                   <h3 className="sidebar-title">
                     <span style={{ color: "#ff8050" }}>PROWERSE APPROACH</span>
                   </h3>
@@ -99,24 +121,6 @@ function ViewCaseStudy() {
                       objective.
                     </li>
                   </ul>
-                  <h3 className="sidebar-title">
-                    <span style={{ color: "#ff8050" }}>BUSINESS SCENARIO</span>
-                  </h3>
-
-                  <p>
-                    After understanding client requirements through initial
-                    meetings, we convened upon developing ML algorithm for
-                    disease prediction, setting-up end-to-end product
-                    development life cycle. Rapid feature deliveries as well was
-                    expected from Prowerse to make MVP more appealing to early
-                    adopters.
-                  </p>
-                  <p>
-                    We knew that client was on a tight budget with limited
-                    timeline and was then dealing with multiple freelancers with
-                    negligible control and coordination between them and that
-                    with our client.
-                  </p>
 
                   <h3 className="sidebar-title">
                     <span style={{ color: "#ff8050" }}>VALUE PROPOSITIONS</span>

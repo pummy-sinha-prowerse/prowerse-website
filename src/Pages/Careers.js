@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import Footer from "./Footer";
 import { Link } from "react-router-dom";
 // import Count from "../Component/Count";
+import JoinUsForm from "./../Component/JoinUsForm/JoinUsForm";
 
 function Careers() {
   useEffect(() => {
@@ -10,14 +11,14 @@ function Careers() {
   const [currentSlide, setCurrentSlide] = useState(0);
   const images = [
     [
-      "assets/img/portfolio/portfolio-1.jpg",
-      "assets/img/portfolio/portfolio-2.jpg",
-      "assets/img/portfolio/portfolio-3.jpg",
+      "prowerse-website/assets/img/portfolio/portfolio-1.jpg",
+      "prowerse-website/assets/img/portfolio/portfolio-2.jpg",
+      "prowerse-website/assets/img/portfolio/portfolio-3.jpg",
     ],
     [
-      "assets/img/portfolio/portfolio-4.jpg",
-      "assets/img/portfolio/portfolio-5.jpg",
-      "assets/img/portfolio/portfolio-6.png",
+      "prowerse-website/assets/img/portfolio/portfolio-4.jpg",
+      "prowerse-website/assets/img/portfolio/portfolio-5.jpg",
+      "prowerse-website/assets/img/portfolio/portfolio-6.png",
     ],
   ];
 
@@ -183,13 +184,11 @@ function Careers() {
 
             <div className="row" style={{ marginTop: "20px" }}>
               <div className="job-list__wrapper mb-6">
-                <h3 className="mb-4">Development</h3>
-
                 {/* <!-- Job Card --> */}
 
                 {/* <!-- Job Card --> */}
               </div>
-              <div className="col-md-6 card-first">
+              <div className="col-md-6">
                 <Link
                   to="/job-description-python"
                   className="card p-0 mb-3 border-0"
@@ -325,7 +324,7 @@ function Careers() {
                         <i className="bi bi-cpu"></i>
                         {/* </span>{" "} */}
                         <span className="position position-title">
-                          DevOps Enginee
+                          DevOps Engineer
                         </span>
                       </span>
 
@@ -343,40 +342,43 @@ function Careers() {
                 </Link>
               </div>
               {/* card-last */}
-              <div className="col-md-6 mt-4 mt-md-0">
-                <Link
-                  to="/job-description-rust"
-                  className="card p-0 mb-3 border-0"
-                  data-aos="fade-up"
-                  data-aos-delay="100"
-                >
-                  <div
-                    className="icon-box"
+              <div className="row last-row-career">
+                <div className="col-md-6 mt-4 mt-md-0">
+                  <Link
+                    to="/job-description-rust"
+                    className="card p-0 mb-3 border-0"
                     data-aos="fade-up"
                     data-aos-delay="100"
                   >
-                    <span className="row justify-content-between align-items-center">
-                      <span className="col-md-5 color--heading">
-                        {/* <span className="badge badge-circle text-white mr-3"> */}
-                        <i className="bi bi-braces"></i>
-                        {/* </span>{" "} */}
-                        <span className="position position-title">
-                          Rust Engineer
+                    <div
+                      className="icon-box"
+                      data-aos="fade-up"
+                      data-aos-delay="100"
+                    >
+                      <span className="row justify-content-between align-items-center">
+                        <span className="col-md-5 color--heading">
+                          {/* <span className="badge badge-circle text-white mr-3"> */}
+                          <i className="bi bi-braces"></i>
+                          {/* </span>{" "} */}
+                          <span className="position position-title">
+                            Rust Engineer
+                          </span>
+                        </span>
+
+                        <span className="col-5 col-md-3 my-3 my-sm-0 color--text">
+                          <i className="fas fa-clock mr-1"></i>3+ years
+                          Experience
+                        </span>
+
+                        <span className="col-5 col-md-3 my-3 my-sm-0 color--text">
+                          <i className="fas fa-clock mr-1"></i> Ahmedabad
                         </span>
                       </span>
 
-                      <span className="col-5 col-md-3 my-3 my-sm-0 color--text">
-                        <i className="fas fa-clock mr-1"></i>3+ years Experience
-                      </span>
-
-                      <span className="col-5 col-md-3 my-3 my-sm-0 color--text">
-                        <i className="fas fa-clock mr-1"></i> Ahmedabad
-                      </span>
-                    </span>
-
-                    <h4>{/* <Link to="/job-description">Python</Link> */}</h4>
-                  </div>
-                </Link>
+                      <h4>{/* <Link to="/job-description">Python</Link> */}</h4>
+                    </div>
+                  </Link>
+                </div>
               </div>
             </div>
           </div>
@@ -458,6 +460,8 @@ function Careers() {
           </div>
         </div>
       </section>
+
+      <JoinUsForm />
       {/* <!-- End Portfolio Section --> */}
 
       {/* <!-- ======= Footer ======= --> */}

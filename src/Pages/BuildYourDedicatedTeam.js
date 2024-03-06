@@ -14,12 +14,12 @@ function BuildYourDedicatedTeam() {
               <h1>#BuildYourOwnTeam</h1>
               {/* <h2>Software Development. Delivered.</h2> */}
               <h5>
-                {/* In the realm of tech services, we're not just providers; we're
-                architects of solutions. From code intricacies to system
-                scalability, our tech services embody precision and
-                adaptability. Whether it's troubleshooting challenges or
-                envisioning future enhancements, we're your partners in
-                navigating the ever-evolving landscape of technology. */}
+                Hire skilled engineers from our rich pool of individuals at
+                reasonable prices. Avail on-demand, dedicated engineers through
+                our strong, hand-picked inhouse team of Business Analysts,
+                Software Engineers, Automation QAs, DevOps, service-support
+                executives, etc. We support various businesses in growing their
+                IT teams with fast ramp-up time, keeping costs in check.
               </h5>
               {/* <a href="#about" className="btn-get-started scrollto">
                 Get Started
@@ -124,7 +124,7 @@ function BuildYourDedicatedTeam() {
                 data-aos="fade-up"
                 data-aos-delay="100"
               >
-                <h6>
+                {/* <h6>
                   Hire skilled engineers from our rich pool of individuals at
                   reasonable prices. Avail on-demand, dedicated engineers
                   through our strong, hand-picked inhouse team of Business
@@ -132,13 +132,15 @@ function BuildYourDedicatedTeam() {
                   service-support executives, etc. We support various businesses
                   in growing their IT teams with fast ramp-up time, keeping
                   costs in check.
-                </h6>
+                </h6> */}
               </div>
             </div>
           </div>
           {/* <p>VALUE FOR YOU…!!!</p> */}
           <div className="row">
-            <h3 className="value-box icon-box  aos-init aos-animate ">VALUE FOR YOU…!!!</h3>
+            <h3 className="value-box icon-box  aos-init aos-animate ">
+              VALUE FOR YOU…!!!
+            </h3>
             <div className="col-md-3">
               <div
                 className="icon-box aos-init aos-animate buid-your-team-box"
@@ -382,7 +384,7 @@ function BuildYourDedicatedTeam() {
               </div>
             </div>
           </div> */}
-          <div className="row"  style={{ marginTop: "20px" }}>
+          <div className="row" style={{ marginTop: "20px" }}>
             <div className="col-12 mt-5 "></div>
             <div className="col-12 col-md-6 col-lg-4">
               <div className="core-expertise-box bg-white position-relative">
