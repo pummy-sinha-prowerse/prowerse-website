@@ -1,21 +1,27 @@
+
 /**
 * Template Name: Presento
 * Updated: Sep 18 2023 with Bootstrap v5.3.2
 * Template URL: https://bootstrapmade.com/presento-bootstrap-corporate-template/
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
+#FFFFFF - white
+#E6E7E8 - silver
+#373435 - black
+#FA994B - orange
 */
 
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Ubuntu", sans-serif !important;
   color: #444444;
 }
 
 a {
-  color: #e03a3c;
+  color: #FA994B;
   text-decoration: none !important;
 }
 
@@ -30,11 +36,12 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Raleway", sans-serif;
+  font-family: "Ubuntu", sans-serif;
 }
 li .active a {
-  color: #e03a3c !important;
+  color: #FA994B !important;
 }
+
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
@@ -45,7 +52,7 @@ li .active a {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #e03a3c;
+  background: #FA994B;
   width: 40px;
   height: 40px;
   border-radius: 4px;
@@ -105,11 +112,11 @@ li .active a {
 }
 
 #header .logo a span {
-  color: #e03a3c;
+  color: #FA994B;
 }
 
 #header .logo img {
-  max-height: 30px;
+  max-height: 65px;
 }
 
 /*--------------------------------------------------------------
@@ -127,7 +134,7 @@ li .active a {
   font-weight: 600;
   display: inline-block;
   text-decoration: none;
-  background-image: linear-gradient(to bottom right, coral, #e03a3c) !important;
+  background-image: linear-gradient(to bottom right, coral, #FA994B) !important;
 }
 
 .get-started-btn:hover {
@@ -170,7 +177,7 @@ li .active a {
   align-items: center;
   justify-content: space-between;
   padding: 10px 0 10px 30px;
-  font-family: "Raleway", sans-serif;
+  font-family: "Ubuntu", sans-serif;
   font-size: 15px;
   font-weight: 600;
   color: #111111;
@@ -189,7 +196,7 @@ li .active a {
 .navbar .active,
 .navbar .active:focus,
 .navbar li:hover > a {
-  color: #e03a3c;
+  color: #FA994B;
 }
 
 .navbar .dropdown ul {
@@ -223,7 +230,7 @@ li .active a {
 .navbar .dropdown ul a:hover,
 .navbar .dropdown ul .active:hover,
 .navbar .dropdown ul li:hover > a {
-  color: #e03a3c;
+  color: #FA994B;
 }
 
 .navbar .dropdown:hover > ul {
@@ -322,7 +329,7 @@ li .active a {
 .navbar-mobile a:hover,
 .navbar-mobile .active,
 .navbar-mobile li:hover > a {
-  color: #e03a3c;
+  color: #FA994B;
 }
 
 .navbar-mobile .getstarted,
@@ -357,7 +364,7 @@ li .active a {
 .navbar-mobile .dropdown ul a:hover,
 .navbar-mobile .dropdown ul .active:hover,
 .navbar-mobile .dropdown ul li:hover > a {
-  color: #e03a3c;
+  color: #FA994B;
 }
 
 .navbar-mobile .dropdown > .dropdown-active {
@@ -396,15 +403,16 @@ li .active a {
 #hero h2 {
   color: #fff;
   margin: 10px 0 0 0;
-  font-size: 24px;
+  font-size: 30px;
 }
 #hero h5 {
   color: #fff;
   margin-top: 10px;
+  font-size: 22px;
 }
 
 #hero .btn-get-started {
-  font-family: "Raleway", sans-serif;
+  font-family: "Ubuntu", sans-serif;
   font-weight: 500;
   font-size: 16px;
   letter-spacing: 1px;
@@ -414,8 +422,8 @@ li .active a {
   transition: 0.5s;
   margin-top: 30px;
   color: #fff;
-  background: #e03a3c;
-  border: 2px solid #e03a3c;
+  background: #FA994B;
+  border: 2px solid #FA994B;
 }
 
 #hero .btn-get-started:hover {
@@ -474,15 +482,16 @@ li .active a {
 #hero-about h2 {
   color: #fff;
   margin: 10px 0 0 0;
-  font-size: 24px;
+  font-size: 30px;
 }
 #hero-about h5 {
   color: #fff;
   margin-top: 10px;
+  font-size: 22px;
 }
 
 #hero-about .btn-get-started {
-  font-family: "Raleway", sans-serif;
+  font-family: "Ubuntu", sans-serif;
   font-weight: 500;
   font-size: 16px;
   letter-spacing: 1px;
@@ -492,8 +501,8 @@ li .active a {
   transition: 0.5s;
   margin-top: 30px;
   color: #fff;
-  background: #e03a3c;
-  border: 2px solid #e03a3c;
+  background: #FA994B;
+  border: 2px solid #FA994B;
 }
 
 #hero-about .btn-get-started:hover {
@@ -549,21 +558,22 @@ li .active a {
   margin: 0;
   font-size: 48px;
   font-weight: 700;
-  color: #ff7f4f;
+  color: #FA994B;
 }
 
 #hero-career h2 {
   color: #fff;
   margin: 10px 0 0 0;
-  font-size: 24px;
+  font-size: 30px;
 }
 #hero-career h5 {
   color: #fff;
   margin-top: 10px;
+  font-size: 22px;
 }
 
 #hero-career .btn-get-started {
-  font-family: "Raleway", sans-serif;
+  font-family: "Ubuntu", sans-serif;
   font-weight: 500;
   font-size: 16px;
   letter-spacing: 1px;
@@ -573,8 +583,8 @@ li .active a {
   transition: 0.5s;
   margin-top: 30px;
   color: #fff;
-  background: #e03a3c;
-  border: 2px solid #e03a3c;
+  background: #FA994B;
+  border: 2px solid #FA994B;
 }
 
 #hero-career .btn-get-started:hover {
@@ -680,7 +690,7 @@ Build your dedicated team
 }
 .value-box {
   background: none !important;
-  color: #ff7f51;
+  color: #FA994B;
   text-align: center;
 }
 .heading-value {
@@ -698,7 +708,7 @@ Build your dedicated team
   height: 5px;
   left: 0;
   bottom: 0;
-  background: #e03a3c;
+  background: #FA994B;
   border-radius: 2px;
   left: calc(50% - 25px);
 }
@@ -876,7 +886,7 @@ section {
 .breadcrumbs ol li + li::before {
   display: inline-block;
   padding-right: 10px;
-  color: #e03a3c;
+  color: #FA994B;
   content: "/";
 }
 
@@ -893,11 +903,11 @@ section {
   height: 12px;
   background-color: #fff;
   opacity: 1;
-  border: 1px solid #e03a3c;
+  border: 1px solid #FA994B;
 }
 
 .clients .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #e03a3c;
+  background-color: #FA994B;
 }
 
 .clients .swiper-slide img {
@@ -943,7 +953,7 @@ section {
   font-size: 13px;
   display: inline-flex;
   align-items: center;
-  border: 2px solid #e03a3c;
+  border: 2px solid #FA994B;
   text-decoration: none;
 }
 
@@ -953,8 +963,8 @@ section {
 }
 
 .about .content .about-btn:hover {
-  background: #e35052;
-  background: #e03a3c;
+  background: #FA994B;
+  background: #FA994B;
 }
 
 .about .icon-boxes .icon-box {
@@ -963,7 +973,7 @@ section {
 
 .about .icon-boxes .icon-box i {
   font-size: 40px;
-  color: #e03a3c;
+  color: #FA994B;
   margin-bottom: 10px;
 }
 
@@ -1001,10 +1011,10 @@ section {
   line-height: 0;
   transition: all 0.4s ease-out 0s;
   background-color: rgba(232, 69, 69, 0.05);
-  color: #ff7f50;
+  color: #FA994B;
 }
 .about-box .icon-box:hover i {
-  background-color: #f16147;
+  background-color: #FA994B;
   color: #ffffff;
 }
 .about-box .icon-box .icon {
@@ -1060,7 +1070,7 @@ section {
   transform: translateX(-50%);
   font-size: 24px;
   background: #fff;
-  color: #e03a3c;
+  color: #FA994B;
   border-radius: 50px;
   border: 2px solid #fff;
   box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.1);
@@ -1079,7 +1089,7 @@ section {
 .counts .count-box p {
   padding: 0;
   margin: 0;
-  font-family: "Raleway", sans-serif;
+  font-family: "Ubuntu", sans-serif;
   font-size: 14px;
 }
 
@@ -1114,14 +1124,14 @@ section {
 }
 
 .tabs .nav-link:hover {
-  color: #e03a3c !important;
+  color: #FA994B !important;
 }
 
 .tabs .nav-link.active {
   /* background: #e03a3c !important; */
   color: #fff !important;
-  border-color: #e03a3c !important;
-  background-image: linear-gradient(to bottom right, coral, #e03a3c) !important;
+  border-color: #FA994B !important;
+  background-image: linear-gradient(to bottom right, coral, #FA994B) !important;
 }
 
 @media (max-width: 768px) {
@@ -1163,7 +1173,7 @@ section {
 .tabs .tab-pane ul i {
   font-size: 20px;
   padding-right: 4px;
-  color: #e03a3c;
+  color: #FA994B;
 }
 
 .tabs .tab-pane p:last-child {
@@ -1206,10 +1216,11 @@ section {
 #service-about h5 {
   color: #fff;
   margin-top: 10px;
+  font-size: 22px;
 }
 
 #service-about .btn-get-started {
-  font-family: "Raleway", sans-serif;
+  font-family: "Ubuntu", sans-serif;
   font-weight: 500;
   font-size: 16px;
   letter-spacing: 1px;
@@ -1219,8 +1230,8 @@ section {
   transition: 0.5s;
   margin-top: 30px;
   color: #fff;
-  background: #e03a3c;
-  border: 2px solid #e03a3c;
+  background: #FA994B;
+  border: 2px solid #FA994B;
 }
 
 #service-about .btn-get-started:hover {
@@ -1265,7 +1276,7 @@ section {
 
 .services .icon-box i {
   float: left;
-  color: #ff7f50;
+  color: #FA994B;
   font-size: 40px;
   line-height: 0;
 }
@@ -1287,7 +1298,7 @@ section {
 }
 
 .services .icon-box .icon-box:hover h4 a {
-  color: #e03a3c;
+  color: #FA994B;
 }
 
 .services .icon-box p {
@@ -1338,7 +1349,7 @@ section {
 }
 
 #service-product-engg .btn-get-started {
-  font-family: "Raleway", sans-serif;
+  font-family: "Ubuntu", sans-serif;
   font-weight: 500;
   font-size: 16px;
   letter-spacing: 1px;
@@ -1348,8 +1359,8 @@ section {
   transition: 0.5s;
   margin-top: 30px;
   color: #fff;
-  background: #e03a3c;
-  border: 2px solid #e03a3c;
+  background: #FA994B;
+  border: 2px solid #FA994B;
 }
 
 #service-product-engg .btn-get-started:hover {
@@ -1409,7 +1420,7 @@ section {
 .portfolio #portfolio-flters li:hover,
 .portfolio #portfolio-flters li.filter-active {
   color: #fff;
-  background: #e03a3c;
+  background: #FA994B;
 }
 
 .portfolio #portfolio-flters li:last-child {
@@ -1525,14 +1536,14 @@ section {
   height: 12px;
   background-color: #fff;
   opacity: 1;
-  border: 1px solid #e03a3c;
+  border: 1px solid #FA994B;
 }
 
 .portfolio-details
   .portfolio-details-slider
   .swiper-pagination
   .swiper-pagination-bullet-active {
-  background-color: #e03a3c;
+  background-color: #FA994B;
 }
 
 .portfolio-details .portfolio-info {
@@ -1704,7 +1715,7 @@ section {
 }
 
 .pricing .box ul i {
-  color: #e03a3c;
+  color: #FA994B;
   font-size: 18px;
   padding-right: 4px;
 }
@@ -1727,7 +1738,7 @@ section {
   transition: none;
   font-size: 14px;
   font-weight: 400;
-  font-family: "Raleway", sans-serif;
+  font-family: "Ubuntu", sans-serif;
   font-weight: 600;
   transition: 0.3s;
   border: 2px solid rgba(255, 255, 255, 0.3);
@@ -1738,7 +1749,7 @@ section {
 }
 
 .pricing .featured {
-  background-image: linear-gradient(to bottom right, coral, #e03a3c) !important;
+  background-image: linear-gradient(to bottom right, coral, #FA994B) !important;
   /* background: #e03a3c; */
 }
 
@@ -1761,7 +1772,7 @@ section {
 .faq .faq-list a {
   display: block;
   position: relative;
-  font-family: #e03a3c;
+  font-family: #FA994B;
   font-size: 18px;
   line-height: 24px;
   font-weight: 400;
@@ -1790,7 +1801,7 @@ section {
 }
 
 .faq .faq-list a.collapsed:hover {
-  color: #e03a3c;
+  color: #FA994B;
 }
 
 .faq .faq-list a.collapsed .icon-show {
@@ -1836,7 +1847,7 @@ section {
   border-radius: 50px;
   width: 36px;
   height: 36px;
-  background: #e03a3c;
+  background: #FA994B;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -1863,13 +1874,15 @@ section {
   margin-bottom: 5px;
   font-size: 18px;
   color: #111111;
+  text-align: center;
 }
 
 .team .member .member-info span {
   display: block;
   font-size: 13px;
   font-weight: 400;
-  color: #fff;
+  color: #010101;
+  text-align: center;
 }
 
 .team .member .member-info p {
@@ -1955,8 +1968,8 @@ section {
 }
 
 .call-to-action .cta-btn:hover {
-  background: #e03a3c;
-  border: 2px solid #e03a3c;
+  background: #FA994B;
+  border: 2px solid #FA994B;
   border-radius: 50px;
 }
 
@@ -2061,15 +2074,16 @@ section {
 #hero-contact h2 {
   color: #fff;
   margin: 10px 0 0 0;
-  font-size: 24px;
+  font-size: 30px;
 }
 #hero-contact h5 {
   color: #fff;
   margin-top: 10px;
+  font-size: 22px;
 }
 
 #hero-contact .btn-get-started {
-  font-family: "Raleway", sans-serif;
+  font-family: "Ubuntu", sans-serif;
   font-weight: 500;
   font-size: 16px;
   letter-spacing: 1px;
@@ -2079,8 +2093,8 @@ section {
   transition: 0.5s;
   margin-top: 30px;
   color: #fff;
-  background: #e03a3c;
-  border: 2px solid #e03a3c;
+  background: #FA994B;
+  border: 2px solid #FA994B;
 }
 
 #hero-contact .btn-get-started:hover {
@@ -2120,7 +2134,7 @@ section {
 
 .contact .info-box i {
   font-size: 32px;
-  color: #e03a3c;
+  color: #FA994B;
   border-radius: 50%;
   padding: 8px;
   border: 2px dotted #f8d4d5;
@@ -2212,7 +2226,7 @@ section {
 }
 
 .contact .php-email-form button[type="submit"] {
-  background: #e03a3c;
+  background: #FA994B;
   border: 0;
   padding: 10px 32px;
   color: #fff;
@@ -2230,7 +2244,7 @@ section {
   left: 0rem;
   width: 300px;
   height: 200px;
-  background: linear-gradient(to left, #ff7f509e, #e1393b);
+  background: linear-gradient(to left, #ff7f509e, #FA994B);
   content: "";
 }
 .our-office .card-first {
@@ -2244,7 +2258,7 @@ section {
   width: 300px;
   z-index: -1;
   height: 200px;
-  background: linear-gradient(to left, #e1393b, #ff7f509e);
+  background: linear-gradient(to left, #FA994B, #ff7f509e);
   content: "";
 }
 .our-office .card-last {
@@ -2428,7 +2442,7 @@ section {
 
 .our-office .icon-box i {
   float: left;
-  color: #e03a3c;
+  color: #FA994B;
   font-size: 40px;
   line-height: 0;
 }
@@ -2451,7 +2465,7 @@ section {
 }
 
 .our-office .icon-box .icon-box:hover h4 a {
-  color: #e03a3c;
+  color: #FA994B;
 }
 
 .our-office .icon-box p {
@@ -2497,15 +2511,16 @@ section {
 #hero-blog h2 {
   color: #fff;
   margin: 10px 0 0 0;
-  font-size: 24px;
+  font-size: 30px;
 }
 #hero-blog h5 {
   color: #fff;
   margin-top: 10px;
+  font-size: 22px;
 }
 
 #hero-blog .btn-get-started {
-  font-family: "Raleway", sans-serif;
+  font-family: "Ubuntu", sans-serif;
   font-weight: 500;
   font-size: 16px;
   letter-spacing: 1px;
@@ -2515,8 +2530,8 @@ section {
   transition: 0.5s;
   margin-top: 30px;
   color: #fff;
-  background: #e03a3c;
-  border: 2px solid #e03a3c;
+  background: #FA994B;
+  border: 2px solid #FA994B;
 }
 
 #hero-blog .btn-get-started:hover {
@@ -2575,7 +2590,7 @@ section {
 }
 
 .blog .entry .entry-title a:hover {
-  color: #e03a3c;
+  color: #FA994B;
 }
 
 .blog .entry .entry-meta {
@@ -2620,7 +2635,7 @@ section {
 
 .blog .entry .entry-content .read-more a {
   display: inline-block;
-  background: #e03a3c;
+  background: #FA994B;
   color: #fff;
   padding: 6px 20px;
   transition: 0.3s;
@@ -2684,7 +2699,7 @@ section {
 }
 
 .blog .entry .entry-footer a:hover {
-  color: #e03a3c;
+  color: #FA994B;
 }
 
 .blog .entry .entry-footer .cats {
@@ -2793,7 +2808,7 @@ section {
 }
 
 .blog .blog-comments .comment h5 a:hover {
-  color: #e03a3c;
+  color: #FA994B;
 }
 
 .blog .blog-comments .comment h5 .reply {
@@ -2894,7 +2909,7 @@ section {
 
 .blog .blog-pagination li.active,
 .blog .blog-pagination li:hover {
-  background: #e03a3c;
+  background: #FA994B;
 }
 
 .blog .blog-pagination li.active a,
@@ -2945,7 +2960,7 @@ section {
   font-size: 16px;
   padding: 0 15px;
   margin: -1px;
-  background: #e03a3c;
+  background: #FA994B;
   color: #fff;
   transition: 0.3s;
   border-radius: 0 4px 4px 0;
@@ -2975,7 +2990,7 @@ section {
 }
 
 .blog .sidebar .categories ul a:hover {
-  color: #e03a3c;
+  color: #FA994B;
 }
 
 .blog .sidebar .categories ul a span {
@@ -3005,7 +3020,7 @@ section {
 }
 
 .blog .sidebar .recent-posts h4 a:hover {
-  color: #e03a3c;
+  color: #FA994B;
 }
 
 .blog .sidebar .recent-posts time {
@@ -3041,8 +3056,8 @@ section {
 
 .blog .sidebar .tags ul a:hover {
   color: #fff;
-  border: 1px solid #e03a3c;
-  background: #e03a3c;
+  border: 1px solid #FA994B;
+  background: #FA994B;
 }
 
 .blog .sidebar .tags ul a span {
@@ -3055,7 +3070,7 @@ section {
 ---------------------------------------------------------------*/
 
 .widgetContainer {
-  background: linear-gradient(to left, #e1393b, #ff7f509e);
+  background: linear-gradient(to left, #FA994B, #ff7f509e);
 }
 .contact-bar h3 {
   float: left;
@@ -3107,7 +3122,7 @@ section {
   transition: all 0.3s;
   width: 100%;
   border: 0;
-  background: linear-gradient(to left, #ff7f509e, #e1393b);
+  background: linear-gradient(to left, #ff7f509e, #FA994B);
   /* background-color: rgb(0, 153, 218); */
   color: #fff;
   text-transform: uppercase;
@@ -3150,14 +3165,14 @@ section {
 }
 
 #footer .footer-top .footer-contact h3 span {
-  color: #e03a3c;
+  color: #FA994B;
 }
 
 #footer .footer-top .footer-contact p {
   font-size: 14px;
   line-height: 24px;
   margin-bottom: 0;
-  font-family: "Raleway", sans-serif;
+  font-family: "Ubuntu", sans-serif;
 }
 
 #footer .footer-top h4 {
@@ -3173,7 +3188,7 @@ section {
   display: block;
   width: 20px;
   height: 2px;
-  background: #e03a3c;
+  background: #FA994B;
   bottom: 0;
   left: 0;
 }
@@ -3253,7 +3268,7 @@ section {
   background: none;
   font-size: 16px;
   padding: 0 20px;
-  background: linear-gradient(to left, #e1393b, #ff7f509e);
+  background: linear-gradient(to left, #FA994B, #ff7f509e);
   color: #fff;
   transition: 0.3s;
   border-radius: 0 4px 4px 0;
@@ -3285,7 +3300,7 @@ section {
 }
 
 #footer .social-links a:hover {
-  background: #e03a3c;
+  background: #FA994B;
   color: #fff;
   text-decoration: none;
 }
@@ -3519,7 +3534,7 @@ ul.hire-team-process li:first-child {
 .dashed-circle {
   width: 200px;
   height: 200px;
-  border: 2px dotted #ff7f50;
+  border: 2px dotted #FA994B;
   border-radius: 50%;
   display: inline-block;
 }
@@ -3553,7 +3568,7 @@ ul.hire-team-process li:after {
   top: 25%;
   right: -17.25%;
   width: 35%;
-  border-bottom: 2px dotted #ff7f50;
+  border-bottom: 2px dotted #FA994B;
 }
 
 ul.hire-team-process li:last-child:after {
@@ -3815,7 +3830,7 @@ ul.hire-team-process li:last-child:after {
       white 0%,
       white 30%,
       rgb(255 127 80) 30%,
-      rgb(225 57 59) 70%,
+      #FA994B,
       white 70%,
       white 100%
     );
@@ -3833,7 +3848,7 @@ ul.hire-team-process li:last-child:after {
       white 0%,
       white 30%,
       rgb(255 127 80) 30%,
-      rgb(225 57 59) 70%,
+      #FA994B,
       white 70%,
       white 100%
     );
@@ -3906,7 +3921,7 @@ ul.hire-team-process li:last-child:after {
   left: 0rem;
   width: 257px;
   height: 111px;
-  background: linear-gradient(to left, #ff7f509e, #e1393b);
+  background: linear-gradient(to left, #ff7f509e, #FA994B);
   content: "";
 }
 .card-last {
@@ -3920,7 +3935,7 @@ ul.hire-team-process li:last-child:after {
   width: 257px;
   z-index: -1;
   height: 111px;
-  background: linear-gradient(to left, #e1393b, #ff7f509e);
+  background: linear-gradient(to left, #FA994B, #ff7f509e);
   content: "";
 }
 /* ------------------------------------------------------------------- 
@@ -3956,15 +3971,16 @@ casestudy
 #hero-casestudy h2 {
   color: #fff;
   margin: 10px 0 0 0;
-  font-size: 24px;
+  font-size: 30px;
 }
 #hero-casestudy h5 {
   color: #fff;
   margin-top: 10px;
+  font-size: 22px;
 }
 
 #hero-casestudy .btn-get-started {
-  font-family: "Raleway", sans-serif;
+  font-family: "Ubuntu", sans-serif;
   font-weight: 500;
   font-size: 16px;
   letter-spacing: 1px;
@@ -3974,8 +3990,8 @@ casestudy
   transition: 0.5s;
   margin-top: 30px;
   color: #fff;
-  background: #e03a3c;
-  border: 2px solid #e03a3c;
+  background: #FA994B;
+  border: 2px solid #FA994B;
 }
 
 #hero-casestudy .btn-get-started:hover {
@@ -4074,7 +4090,7 @@ casestudy
   transform: translate(0, -50%);
 }
 .inner-cols:hover:before {
-  background: linear-gradient(to left, #e1393b, #ff7f509e);
+  background: linear-gradient(to left, #FA994B, #ff7f509e);
 
   transition: all 0.2s;
 }
@@ -4124,7 +4140,7 @@ casestudy
   overflow: hidden;
 }
 .download-casestudy {
-  background: #e03a3c;
+  background: #FA994B;
   border: 0;
   padding: 10px 32px;
   color: #fff;
