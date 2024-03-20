@@ -5,8 +5,8 @@ import { Link } from "react-router-dom";
 function Post2() {
   return (
     <>
-      <section id="hero-blog" className="d-flex align-items-center">
-        <div className="container" data-aos="zoom-out" data-aos-delay="100">
+      <section className="d-flex align-items-center">
+        {/* <div className="container" data-aos="zoom-out" data-aos-delay="100">
           <div className="row">
             <div className="col-xl-6">
               <h1>#Blog</h1>
@@ -18,7 +18,7 @@ function Post2() {
               </h5>
             </div>
           </div>
-        </div>
+        </div> */}
       </section>
 
       {/* <!-- ======= Blog Single Section ======= --> */}
@@ -29,7 +29,7 @@ function Post2() {
               <article className="entry entry-single">
                 <div className="entry-img">
                   <img
-                    src="prowerse-website/assets/img/blog/blog-2.png"
+                    src="assets/img/blog/blog-2.png"
                     alt=""
                     class="img-fluid"
                   />
@@ -155,18 +155,16 @@ function Post2() {
                         Looking for
                         <br /> Certified &amp; <br />
                         Experienced <br />
-                        <span class="red-text">Developers</span>
+                        <span class="red-text">Developers ?</span>
                       </h3>
                       <ul>
                         <li>50+ Experts</li>
                         <li>Flexible Engagement</li>
                         <li>NDA Protection</li>
-                        <li>100% Satisfaction</li>
                         <li>24X7 Support</li>
-                        <li>Moneyback Guarantee</li>
                       </ul>
                       <div class="contact-bttn">
-                        <Link to="/contact">Contact Now!</Link>
+                        <Link to="/contact">Let't Talk</Link>
                       </div>
                     </div>
                   </div>
@@ -193,7 +191,7 @@ function Post2() {
                 <div className="sidebar-item recent-posts">
                   <div className="post-item clearfix">
                     <img
-                      src="prowerse-website/assets/img/blog/blog-1.png"
+                      src="assets/img/blog/blog-1.png"
                       alt=""
                     />
                     <h4>
@@ -206,7 +204,7 @@ function Post2() {
 
                   <div className="post-item clearfix">
                     <img
-                      src="prowerse-website/assets/img/blog/blog-2.png"
+                      src="assets/img/blog/blog-2.png"
                       alt=""
                     />
                     <h4>
@@ -219,7 +217,7 @@ function Post2() {
 
                   <div className="post-item clearfix">
                     <img
-                      src="prowerse-website/assets/img/blog/blog-3.png"
+                      src="assets/img/blog/blog-3.png"
                       alt=""
                     />
                     <h4>
