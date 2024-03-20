@@ -38,7 +38,7 @@ function JobDescription() {
                     </li>
 
                     <li className="d-flex align-items-center">
-                      Location: Ahmedabad
+                      Location: Hybrid
                     </li>
                   </ul>
                 </div>
@@ -138,18 +138,16 @@ function JobDescription() {
                         Looking for
                         <br /> Certified &amp; <br />
                         Experienced <br />
-                        <span class="red-text">Developers</span>
+                        <span class="red-text">Developers ?</span>
                       </h3>
                       <ul>
                         <li>50+ Experts</li>
                         <li>Flexible Engagement</li>
                         <li>NDA Protection</li>
-                        <li>100% Satisfaction</li>
                         <li>24X7 Support</li>
-                        <li>Moneyback Guarantee</li>
                       </ul>
                       <div class="contact-bttn">
-                        <Link to="/contact">Contact Now!</Link>
+                        <Link to="/contact">Let's Talk</Link>
                       </div>
                     </div>
                   </div>

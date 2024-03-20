@@ -7,23 +7,23 @@ function BuildYourDedicatedTeam() {
   }, []);
   return (
     <>
-      <section id="service-about" className="d-flex align-items-center">
+      <section id="service-build-your-dedicated" className="d-flex align-items-center">
         <div className="container" data-aos="zoom-out" data-aos-delay="100">
           <div className="row">
             <div className="col-xl-6">
               <h1>#BuildYourOwnTeam</h1>
-              {/* <h2>Software Development. Delivered.</h2> */}
+              <br />
               <h5>
-                {/* In the realm of tech services, we're not just providers; we're
-                architects of solutions. From code intricacies to system
-                scalability, our tech services embody precision and
-                adaptability. Whether it's troubleshooting challenges or
-                envisioning future enhancements, we're your partners in
-                navigating the ever-evolving landscape of technology. */}
+                Hire skilled engineers from our rich pool of individuals at
+                reasonable prices. Avail on-demand, dedicated engineers through
+                our strong, hand-picked inhouse team of Business Analysts,
+                Software Engineers, Automation QAs, DevOps, service-support
+                executives, etc.
               </h5>
-              {/* <a href="#about" className="btn-get-started scrollto">
-                Get Started
-              </a> */}
+              <h5>
+                We support various businesses in growing their IT teams with
+                fast ramp-up time, keeping costs in check.
+              </h5>
             </div>
           </div>
         </div>
@@ -53,7 +53,7 @@ function BuildYourDedicatedTeam() {
                   <i class="bx bxl-dribbble"></i>
                 </div>
                 <h4>{/* <a href="">Lorem Ipsum</a> */}</h4>
-                <p>Hire dedicated engineers on a full time basis.</p>
+                <p>Hire dedicated engineers on a full-time basis.</p>
               </div>
             </div>
 
@@ -114,86 +114,25 @@ function BuildYourDedicatedTeam() {
 
       <section id="services" className="services section-bg">
         <div className="container aos-init aos-animate" data-aos="fade-up">
-          <div className="section-title text-center position-relative pb-3 mx-auto">
+          {/* <div className="section-title text-center position-relative pb-3 mx-auto">
             <h2>BUILD YOUR DEDICATED TEAM</h2>
-          </div>
+          </div> */}
           <div className="row">
             <div className="col-lg-12 col-md-12">
-              <div
+              {/* <div
                 className="heading-value icon-box  aos-init aos-animate"
                 data-aos="fade-up"
                 data-aos-delay="100"
               >
-                <h6>
-                  Hire skilled engineers from our rich pool of individuals at
-                  reasonable prices. Avail on-demand, dedicated engineers
-                  through our strong, hand-picked inhouse team of Business
-                  Analysts, Software Engineers, Automation QAs, DevOps,
-                  service-support executives, etc. We support various businesses
-                  in growing their IT teams with fast ramp-up time, keeping
-                  costs in check.
-                </h6>
-              </div>
+              </div> */}
             </div>
           </div>
           {/* <p>VALUE FOR YOU…!!!</p> */}
           <div className="row">
-            <h3 className="value-box icon-box  aos-init aos-animate ">VALUE FOR YOU…!!!</h3>
-            <div className="col-md-3">
-              <div
-                className="icon-box aos-init aos-animate buid-your-team-box"
-                data-aos="fade-up"
-                data-aos-delay="100"
-              >
-                <i className="bi bi-card-list"></i>
-                {/* <h4>
-                  <a href="#">Lorem Ipsum</a>
-                </h4> */}
-                <p>
-                  ACCESS TO A WIDE RANGE OF EXPERIENCED IT ENGINEERS WITH
-                  DIVERSE SKILL SETS.
-                </p>
-              </div>
-            </div>
-            <div className="col-md-3 mt-4 mt-md-0">
-              <div
-                className="icon-box aos-init aos-animate buid-your-team-box"
-                data-aos="fade-up"
-                data-aos-delay="200"
-              >
-                <i className="bi bi-card-checklist"></i>
+            <h3 className="value-box icon-box  aos-init aos-animate ">
+              VALUE FOR YOU…!!!
+            </h3>
 
-                <p>RIGHT TO CHOOSE TEAM AS PER YOUR SET CRITERIA.</p>
-              </div>
-            </div>
-            <div className="col-md-3 mt-4 mt-md-0">
-              <div
-                className="icon-box aos-init aos-animate buid-your-team-box"
-                data-aos="fade-up"
-                data-aos-delay="200"
-              >
-                <i className="bi bi-fast-forward"></i>
-                {/* <h4>
-                  <a href="#">Dolor Sitema</a>
-                </h4> */}
-                <p>FAST RAMP-UP, RAMP-DOWN TIME.</p>
-              </div>
-            </div>
-            <div className="col-md-3 mt-4 mt-md-0">
-              <div
-                className="icon-box aos-init aos-animate buid-your-team-box"
-                data-aos="fade-up"
-                data-aos-delay="400"
-              >
-                <i className="bi bi-binoculars"></i>
-                {/* <h4>
-                  <a href="#">Nemo Enim</a>
-                </h4> */}
-                <p>
-                  DEDICATED PROJECT MANAGER AS SINGLE POINT OF DELIVERY CONTACT.
-                </p>
-              </div>
-            </div>
             <div className="col-md-3 mt-4 mt-md-0">
               <div
                 className="icon-box aos-init aos-animate buid-your-team-box"
@@ -201,12 +140,10 @@ function BuildYourDedicatedTeam() {
                 data-aos-delay="500"
               >
                 <i className="bi bi-transparency"></i>
-                {/* <h4>
-                  <a href="#">Magni Dolore</a>
-                </h4> */}
+
                 <p>
                   TRANSPARENT ENGAGEMENT MODELS WITH COMPREHENSIVE REPORTING
-                  SYSTEM.
+                  SYSTEM
                 </p>
               </div>
             </div>
@@ -220,7 +157,11 @@ function BuildYourDedicatedTeam() {
                 {/* <h4>
                   <a href="#">Eiusmod Tempor</a>
                 </h4> */}
-                <p>TRUSTED IP PROTECTION MECHANISMS.</p>
+                <p>
+                  {" "}
+                  ACCESS TO A WIDE RANGE OF EXPERIENCED IT ENGINEERS WITH
+                  DIVERSE SKILL SETS{" "}
+                </p>
               </div>
             </div>
             <div className="col-md-3 mt-4 mt-md-0">
@@ -233,7 +174,7 @@ function BuildYourDedicatedTeam() {
                 {/* <h4>
                   <a href="#">Magni Dolore</a>
                 </h4> */}
-                <p>DIRECT COMMUNICATION CHANNELS THROUGH VARIOUS MODES.</p>
+                <p>DIRECT COMMUNICATION CHANNELS THROUGH VARIOUS MODES</p>
               </div>
             </div>
             <div className="col-md-3 mt-4 mt-md-0">
@@ -243,8 +184,54 @@ function BuildYourDedicatedTeam() {
                 data-aos-delay="600"
               >
                 <i className="bi bi-calendar4-week"></i>
-                <h4>{/* <a href="#">Eiusmod Tempor</a> */}</h4>
-                <p>ESCALATION MATRIX.</p>
+
+                <p>
+                  DEDICATED PROJECT MANAGER AS SINGLE POINT OF DELIVERY CONTACT
+                </p>
+              </div>
+            </div>
+            <div className="col-md-3">
+              <div
+                className="icon-box aos-init aos-animate buid-your-team-box"
+                data-aos="fade-up"
+                data-aos-delay="100"
+              >
+                <i className="bi bi-card-list"></i>
+
+                <p>TRUSTED IP PROTECTION MECHANISMS</p>
+              </div>
+            </div>
+            <div className="col-md-3 mt-4 mt-md-0">
+              <div
+                className="icon-box aos-init aos-animate buid-your-team-box"
+                data-aos="fade-up"
+                data-aos-delay="200"
+              >
+                <i className="bi bi-card-checklist"></i>
+
+                <p>RIGHT TO CHOOSE TEAM AS PER YOUR SET CRITERIA</p>
+              </div>
+            </div>
+            <div className="col-md-3 mt-4 mt-md-0">
+              <div
+                className="icon-box aos-init aos-animate buid-your-team-box"
+                data-aos="fade-up"
+                data-aos-delay="200"
+              >
+                <i className="bi bi-fast-forward"></i>
+
+                <p>FAST RAMP-UP, RAMP-DOWN TIME</p>
+              </div>
+            </div>
+            <div className="col-md-3 mt-4 mt-md-0">
+              <div
+                className="icon-box aos-init aos-animate buid-your-team-box"
+                data-aos="fade-up"
+                data-aos-delay="400"
+              >
+                <i className="bi bi-binoculars"></i>
+
+                <p>ESCALATION MATRIX</p>
               </div>
             </div>
           </div>
@@ -382,14 +369,17 @@ function BuildYourDedicatedTeam() {
               </div>
             </div>
           </div> */}
-          <div className="row"  style={{ marginTop: "20px" }}>
+          <div className="row" style={{ marginTop: "20px" }}>
             <div className="col-12 mt-5 "></div>
-            <div className="col-12 col-md-6 col-lg-4">
+            <div
+              className="col-12 col-md-6 col-lg-4"
+              style={{ marginTop: "20px" }}
+            >
               <div className="core-expertise-box bg-white position-relative">
                 <div className="core-inner-box primary-bg-color">
                   <div className="button-wrap-1 example">
                     <a href className="clicker text-style">
-                      Full Time
+                      Full-Time
                     </a>
                     <div className="circle"></div>
                   </div>
@@ -403,12 +393,15 @@ function BuildYourDedicatedTeam() {
                 </h5>
               </div>
             </div>
-            <div className="col-12 col-md-6 col-lg-4">
+            <div
+              className="col-12 col-md-6 col-lg-4"
+              style={{ marginTop: "20px" }}
+            >
               <div className="core-expertise-box bg-white position-relative">
                 <div className="core-inner-box yellow-bg-color">
                   <div className="button-wrap-1 example">
                     <a href className="clicker text-style">
-                      Part Time
+                      Part-Time
                     </a>
                     <div className="circle"></div>
                   </div>
@@ -422,12 +415,15 @@ function BuildYourDedicatedTeam() {
                 </h5>
               </div>
             </div>
-            <div className="col-12 col-md-6 col-lg-4">
+            <div
+              className="col-12 col-md-6 col-lg-4"
+              style={{ marginTop: "20px" }}
+            >
               <div className="core-expertise-box bg-white position-relative">
                 <div className="core-inner-box lightBlue-bg-color">
                   <div className="button-wrap-1 example">
                     <a href className="clicker text-style-2">
-                      Hourly Basic
+                      Hourly Basis
                     </a>
                     <div className="circle"></div>
                   </div>
@@ -437,6 +433,67 @@ function BuildYourDedicatedTeam() {
                   Starts with 40 hours
                 </h5>
                 <p></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Whats Next */}
+      <section id="services" className="services section-bg">
+        <div className="container" data-aos="fade-up">
+          <div className="section-title text-center position-relative pb-3 mx-auto">
+            <h2>What's Next ?</h2>
+            {/* <p>Software Development Outsourcing</p> */}
+          </div>
+
+          <div className="row" style={{ marginTop: "20px" }}>
+            <div className="col-md-6">
+              <div className="icon-box" data-aos="fade-up" data-aos-delay="100">
+                <i className="bi bi-briefcase"></i>
+                <h4>
+                  <a href="#">Share Requirements</a>
+                </h4>
+                <p className="service-fill">
+                  Our team will analyze project requirements and select the most
+                  apt developers best suited for tech stack.
+                </p>
+              </div>
+            </div>
+            <div className="col-md-6 mt-4 mt-md-0">
+              <div className="icon-box" data-aos="fade-up" data-aos-delay="200">
+                <i className="bi bi-card-checklist"></i>
+                <h4>
+                  <a href="#">Discuss Project Details</a>
+                </h4>
+                <p className="service-fill">
+                  Our team will reach out to discuss project related queries and
+                  to offer the best solution for given business scenario.
+                </p>
+              </div>
+            </div>
+            <div className="col-md-6">
+              <div className="icon-box" data-aos="fade-up" data-aos-delay="100">
+                <i className="bi bi-briefcase"></i>
+                <h4>
+                  <a href="#">Review Engagement Terms</a>
+                </h4>
+                <p className="service-fill">
+                  Based on the details provided, you can choose the engagement
+                  model & timelines for project execution.
+                </p>
+              </div>
+            </div>
+            <div className="col-md-6 mt-4 mt-md-0">
+              <div className="icon-box" data-aos="fade-up" data-aos-delay="200">
+                <i className="bi bi-card-checklist"></i>
+                <h4>
+                  <a href="#">Let's create another success-story</a>
+                </h4>
+                <p className="service-fill">
+                  We mutually agree on a timeline and costing, define milestones
+                  and move forward to creating another success-story
+                </p>
               </div>
             </div>
           </div>

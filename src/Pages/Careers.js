@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import Footer from "./Footer";
 import { Link } from "react-router-dom";
 // import Count from "../Component/Count";
+import JoinUsForm from "./../Component/JoinUsForm/JoinUsForm";
 
 function Careers() {
   useEffect(() => {
@@ -17,7 +18,7 @@ function Careers() {
     [
       "assets/img/portfolio/portfolio-4.jpg",
       "assets/img/portfolio/portfolio-5.jpg",
-      "assets/img/portfolio/portfolio-6.png",
+      "assets/img/portfolio/portfolio-6.jpeg",
     ],
   ];
 
@@ -30,32 +31,18 @@ function Careers() {
   const prevSlide = () => {
     setCurrentSlide(currentSlide === 0 ? totalSlides - 1 : currentSlide - 1);
   };
-  // const images = [
-  //   "assets/img/portfolio/portfolio-1.jpg",
-  //   "/assets/img/portfolio/portfolio-2.jpg",
-  //   "/assets/img/portfolio/portfolio-3.jpg",
-  //   "/assets/img/portfolio/portfolio-1.jpg",
-  //   "/assets/img/portfolio/portfolio-2.jpg",
-  //   "/assets/img/portfolio/portfolio-3.jpg",
-  // ];
-  // const nextSlide = () => {
-  //   setCurrentSlide(currentSlide === images.length - 1 ? 0 : currentSlide + 1);
-  // };
 
-  // const prevSlide = () => {
-  //   setCurrentSlide(currentSlide === 0 ? images.length - 1 : currentSlide - 1);
-  // };
   return (
     <>
       <section id="hero-career" className="d-flex align-items-center">
         <div className="container" data-aos="zoom-out" data-aos-delay="100">
           <div className="row">
-            <div className="col-xl-6">
+            <div className="col-xl-8">
               <br />
               <br />
               <br />
               <br />
-              <h1>Become a Part of Prowerse Family</h1>
+              <h1>Become a Part of Prowerse Family...</h1>
               <br />
               <br />
               <br />
@@ -64,11 +51,12 @@ function Careers() {
               <br />
 
               <h5>
-                We are fast-driven professionals who are not afraid to think out
-                of the box and pursue excellence. A career with Prowerse will
-                motivate you to aspire high and perform your best without any
-                obstructions from the hierarchy.
+                We are a team of fast-driven professionals who are not afraid to think out
+                of the box and pursue excellence. 
               </h5>
+              <h5>A career with Prowerse will
+                motivate you to aspire high and perform your best without any
+                obstructions from the hierarchy.</h5>
               {/* <a href="#about" className="btn-get-started scrollto">
                 Get Started
               </a> */}
@@ -173,218 +161,7 @@ function Careers() {
           <div className="section-title text-center position-relative pb-3 mx-auto">
             <h2>Find Your Place</h2>
           </div> */}
-
-        <section id="services" className="services ">
-          <div className="container" data-aos="fade-up">
-            <div className="section-title text-center position-relative pb-3 mx-auto">
-              <h2>Find Your Place</h2>
-              {/* <p>Software Development Outsourcing</p> */}
-            </div>
-
-            <div className="row" style={{ marginTop: "20px" }}>
-              <div className="job-list__wrapper mb-6">
-                <h3 className="mb-4">Development</h3>
-
-                {/* <!-- Job Card --> */}
-
-                {/* <!-- Job Card --> */}
-              </div>
-              <div className="col-md-6 card-first">
-                <Link
-                  to="/job-description-python"
-                  className="card p-0 mb-3 border-0"
-                  data-aos="fade-up"
-                  data-aos-delay="100"
-                >
-                  <div
-                    className="icon-box"
-                    data-aos="fade-up"
-                    data-aos-delay="100"
-                  >
-                    <span className="row justify-content-between align-items-center">
-                      <span className="col-md-4 color--heading">
-                        {/* <span className="badge badge-circle text-white mr-3"> */}
-                        <i className="bi bi-filetype-py"></i>
-                        {/* </span>{" "} */}
-                        <span className="position position-title">
-                          Python Engineer
-                        </span>
-                      </span>
-                      <span className="col-5 col-md-3 my-3 my-sm-0 color--text">
-                        <i className="fas fa-clock mr-1"></i>3+ years Experience
-                      </span>
-
-                      <span className="col-5 col-md-3 my-3 my-sm-0 color--text">
-                        <i className="fas fa-clock mr-1"></i>Ahmedabad
-                      </span>
-
-                      {/* <span className="col-6 col-md-2 my-3 my-sm-0 color--text">
-                        <i className="fas fa-map-marker-alt mr-1"></i> India,
-                        In
-                      </span> */}
-                    </span>
-
-                    <h4>{/* <Link to="/job-description">Python</Link> */}</h4>
-                  </div>
-                </Link>
-              </div>
-              <div className="col-md-6">
-                <Link
-                  to="/job-description-business-executive"
-                  className="card p-0 mb-3 border-0"
-                  data-aos="fade-up"
-                  data-aos-delay="100"
-                >
-                  <div
-                    className="icon-box"
-                    data-aos="fade-up"
-                    data-aos-delay="100"
-                  >
-                    <span className="row justify-content-between align-items-center">
-                      <span className="col-md-4 color--heading">
-                        {/* <span className="badge badge-circle text-white mr-3"> */}
-                        <i className="bi bi-briefcase"></i>
-                        {/* </span>{" "} */}
-                        <span
-                          className="position position-title"
-                          style={{ marginTop: "-9px" }}
-                        >
-                          Business Development <br />
-                          Executive{" "}
-                        </span>
-                      </span>
-                      <span className="col-5 col-md-3 my-3 my-sm-0 color--text">
-                        <i className="fas fa-clock mr-1"></i>2+ years Experience
-                      </span>
-
-                      <span className="col-5 col-md-3 my-3 my-sm-0 color--text">
-                        <i className="fas fa-clock mr-1"></i>Ahmedabad
-                      </span>
-
-                      {/* <span className="col-6 col-md-2 my-3 my-sm-0 color--text">
-                        <i className="fas fa-map-marker-alt mr-1"></i> India,
-                        In
-                      </span> */}
-                    </span>
-
-                    <h4>{/* <Link to="/job-description">Python</Link> */}</h4>
-                  </div>
-                </Link>
-              </div>
-              <div className="col-md-6">
-                <Link
-                  to="/job-description-automation"
-                  className="card p-0 mb-3 border-0"
-                  data-aos="fade-up"
-                  data-aos-delay="100"
-                >
-                  <div
-                    className="icon-box"
-                    data-aos="fade-up"
-                    data-aos-delay="100"
-                  >
-                    <span className="row justify-content-between align-items-center">
-                      <span className="col-md-5 color--heading">
-                        {/* <span className="badge badge-circle text-white mr-3"> */}
-                        <i className="bi bi-server"></i>
-                        {/* </span>{" "} */}
-                        <span className="position position-title">
-                          Test Automation Engineer
-                        </span>
-                      </span>
-
-                      <span className="col-5 col-md-3 my-3 my-sm-0 color--text">
-                        <i className="fas fa-clock mr-1"></i> 4-5 years
-                        Experience
-                      </span>
-
-                      <span className="col-5 col-md-3 my-3 my-sm-0 color--text">
-                        <i className="fas fa-clock mr-1"></i> Ahmedabad
-                      </span>
-                    </span>
-
-                    <h4>{/* <Link to="/job-description">Python</Link> */}</h4>
-                  </div>
-                </Link>
-              </div>
-              <div className="col-md-6">
-                <Link
-                  to="/job-description-devops"
-                  className="card p-0 mb-3 border-0"
-                  data-aos="fade-up"
-                  data-aos-delay="100"
-                >
-                  <div
-                    className="icon-box"
-                    data-aos="fade-up"
-                    data-aos-delay="100"
-                  >
-                    <span className="row justify-content-between align-items-center">
-                      <span className="col-md-5 color--heading">
-                        {/* <span className="badge badge-circle text-white mr-3"> */}
-                        <i className="bi bi-cpu"></i>
-                        {/* </span>{" "} */}
-                        <span className="position position-title">
-                          DevOps Enginee
-                        </span>
-                      </span>
-
-                      <span className="col-5 col-md-3 my-3 my-sm-0 color--text">
-                        <i className="fas fa-clock mr-1"></i>3+ years Experience
-                      </span>
-
-                      <span className="col-5 col-md-3 my-3 my-sm-0 color--text">
-                        <i className="fas fa-clock mr-1"></i> Ahmedabad
-                      </span>
-                    </span>
-
-                    <h4>{/* <Link to="/job-description">Python</Link> */}</h4>
-                  </div>
-                </Link>
-              </div>
-              {/* card-last */}
-              <div className="col-md-6 mt-4 mt-md-0">
-                <Link
-                  to="/job-description-rust"
-                  className="card p-0 mb-3 border-0"
-                  data-aos="fade-up"
-                  data-aos-delay="100"
-                >
-                  <div
-                    className="icon-box"
-                    data-aos="fade-up"
-                    data-aos-delay="100"
-                  >
-                    <span className="row justify-content-between align-items-center">
-                      <span className="col-md-5 color--heading">
-                        {/* <span className="badge badge-circle text-white mr-3"> */}
-                        <i className="bi bi-braces"></i>
-                        {/* </span>{" "} */}
-                        <span className="position position-title">
-                          Rust Engineer
-                        </span>
-                      </span>
-
-                      <span className="col-5 col-md-3 my-3 my-sm-0 color--text">
-                        <i className="fas fa-clock mr-1"></i>3+ years Experience
-                      </span>
-
-                      <span className="col-5 col-md-3 my-3 my-sm-0 color--text">
-                        <i className="fas fa-clock mr-1"></i> Ahmedabad
-                      </span>
-                    </span>
-
-                    <h4>{/* <Link to="/job-description">Python</Link> */}</h4>
-                  </div>
-                </Link>
-              </div>
-            </div>
-          </div>
-        </section>
-      </main>
-      {/* <!-- End #main --> */}
-      {/* <!-- ======= Portfolio Section ======= --> */}
-      <section id="portfolio" class="portfolio">
+  <section id="portfolio" class="portfolio">
         <div className="container" data-aos="fade-up">
           <div className="section-title text-center position-relative pb-3 mx-auto">
             <h2>Life at Prowerse</h2>
@@ -455,6 +232,232 @@ function Careers() {
                 ))}
               </div>
             </div> */}
+          </div>
+        </div>
+      </section>
+
+        <section id="services" className="services ">
+          <div className="container" data-aos="fade-up">
+            <div className="section-title text-center position-relative pb-3 mx-auto">
+              <h2>Find Your Place</h2>
+              {/* <p>Software Development Outsourcing</p> */}
+            </div>
+
+            <div className="row" style={{ marginTop: "20px" }}>
+              <div className="job-list__wrapper mb-6">
+                {/* <!-- Job Card --> */}
+
+                {/* <!-- Job Card --> */}
+              </div>
+              <div className="col-md-6">
+                <Link
+                  to="/job-description-python"
+                  className="card p-0 mb-3 border-0"
+                  data-aos="fade-up"
+                  data-aos-delay="100"
+                >
+                  <div
+                    className="icon-box"
+                    data-aos="fade-up"
+                    data-aos-delay="100"
+                  >
+                    <span className="row justify-content-between align-items-center">
+                      <span className="col-md-4 color--heading">
+                        {/* <span className="badge badge-circle text-white mr-3"> */}
+                        <i className="bi bi-filetype-py"></i>
+                        {/* </span>{" "} */}
+                        <span className="position position-title">
+                          Python Engineer
+                        </span>
+                      </span>
+                      <span className="col-5 col-md-3 my-3 my-sm-0 color--text">
+                        <i className="fas fa-clock mr-1"></i>3+ years Experience
+                      </span>
+
+                      <span className="col-5 col-md-3 my-3 my-sm-0 color--text">
+                        <i className="fas fa-clock mr-1"></i>Hybrid
+                      </span>
+
+                      {/* <span className="col-6 col-md-2 my-3 my-sm-0 color--text">
+                        <i className="fas fa-map-marker-alt mr-1"></i> India,
+                        In
+                      </span> */}
+                    </span>
+
+                    <h4>{/* <Link to="/job-description">Python</Link> */}</h4>
+                  </div>
+                </Link>
+              </div>
+              <div className="col-md-6">
+                <Link
+                  to="/job-description-rust"
+                  className="card p-0 mb-3 border-0"
+                  data-aos="fade-up"
+                  data-aos-delay="100"
+                >
+                  <div
+                    className="icon-box"
+                    data-aos="fade-up"
+                    data-aos-delay="100"
+                  >
+                    <span className="row justify-content-between align-items-center">
+                      <span className="col-md-4 color--heading">
+                        {/* <span className="badge badge-circle text-white mr-3"> */}
+                        <i className="bi bi-briefcase"></i>
+                        {/* </span>{" "} */}
+                        <span className="position position-title">
+                          Rust Engineer
+                        </span>
+                      </span>
+                      <span className="col-5 col-md-3 my-3 my-sm-0 color--text">
+                        <i className="fas fa-clock mr-1"></i>3+ years Experience
+                      </span>
+
+                      <span className="col-5 col-md-3 my-3 my-sm-0 color--text">
+                        <i className="fas fa-clock mr-1"></i>Hybrid
+                      </span>
+
+                      {/* <span className="col-6 col-md-2 my-3 my-sm-0 color--text">
+                        <i className="fas fa-map-marker-alt mr-1"></i> India,
+                        In
+                      </span> */}
+                    </span>
+
+                    <h4>{/* <Link to="/job-description">Python</Link> */}</h4>
+                  </div>
+                </Link>
+              </div>
+              <div className="col-md-6">
+                <Link
+                  to="/job-description-automation"
+                  className="card p-0 mb-3 border-0"
+                  data-aos="fade-up"
+                  data-aos-delay="100"
+                >
+                  <div
+                    className="icon-box"
+                    data-aos="fade-up"
+                    data-aos-delay="100"
+                  >
+                    <span className="row justify-content-between align-items-center">
+                      <span className="col-md-5 color--heading">
+                        {/* <span className="badge badge-circle text-white mr-3"> */}
+                        <i className="bi bi-server"></i>
+                        {/* </span>{" "} */}
+                        <span className="position position-title">
+                          Test Automation Engineer
+                        </span>
+                      </span>
+
+                      <span className="col-5 col-md-3 my-3 my-sm-0 color--text">
+                        <i className="fas fa-clock mr-1"></i> 4-5 years
+                        Experience
+                      </span>
+
+                      <span className="col-5 col-md-3 my-3 my-sm-0 color--text">
+                        <i className="fas fa-clock mr-1"></i> Hybrid
+                      </span>
+                    </span>
+
+                    <h4>{/* <Link to="/job-description">Python</Link> */}</h4>
+                  </div>
+                </Link>
+              </div>
+              <div className="col-md-6">
+                <Link
+                  to="/job-description-devops"
+                  className="card p-0 mb-3 border-0"
+                  data-aos="fade-up"
+                  data-aos-delay="100"
+                >
+                  <div
+                    className="icon-box"
+                    data-aos="fade-up"
+                    data-aos-delay="100"
+                  >
+                    <span className="row justify-content-between align-items-center">
+                      <span className="col-md-5 color--heading">
+                        {/* <span className="badge badge-circle text-white mr-3"> */}
+                        <i className="bi bi-cpu"></i>
+                        {/* </span>{" "} */}
+                        <span className="position position-title">
+                          DevOps Engineer
+                        </span>
+                      </span>
+
+                      <span className="col-5 col-md-3 my-3 my-sm-0 color--text">
+                        <i className="fas fa-clock mr-1"></i>3+ years Experience
+                      </span>
+
+                      <span className="col-5 col-md-3 my-3 my-sm-0 color--text">
+                        <i className="fas fa-clock mr-1"></i> Hybrid
+                      </span>
+                    </span>
+
+                    <h4>{/* <Link to="/job-description">Python</Link> */}</h4>
+                  </div>
+                </Link>
+              </div>
+              {/* card-last */}
+              {/* <div className="row last-row-career">
+                <div className="col-md-6 mt-4 mt-md-0">
+                  <Link
+                    to="/job-description-rust"
+                    className="card p-0 mb-3 border-0"
+                    data-aos="fade-up"
+                    data-aos-delay="100"
+                  >
+                    <div
+                      className="icon-box"
+                      data-aos="fade-up"
+                      data-aos-delay="100"
+                    >
+                      <span className="row justify-content-between align-items-center">
+                        <span className="col-md-5 color--heading">
+                          <i className="bi bi-braces"></i>
+                          <span className="position position-title">
+                            Rust Engineer
+                          </span>
+                        </span>
+
+                        <span className="col-5 col-md-3 my-3 my-sm-0 color--text">
+                          <i className="fas fa-clock mr-1"></i>3+ years
+                          Experience
+                        </span>
+
+                        <span className="col-5 col-md-3 my-3 my-sm-0 color--text">
+                          <i className="fas fa-clock mr-1"></i> Ahmedabad
+                        </span>
+                      </span>
+                    </div>
+                  </Link>
+                </div>
+              </div> */}
+            </div>
+          </div>
+        </section>
+      </main>
+      {/* <!-- End #main --> */}
+      {/* <!-- ======= Portfolio Section ======= --> */}
+    
+
+      <JoinUsForm />
+
+      <section class="follow-us_new">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <h3>
+                Follow us and stay connected for more updates on LinkedIn
+              </h3>
+              <a
+                href="https://www.linkedin.com/company/prowerse/mycompany/"
+                target="_blank"
+                class="btn btn-lg btn-linkedin_new"
+              >
+                <i class="bx bxl-linkedin"></i> Follow on LinkedIn
+              </a>
+            </div>
           </div>
         </div>
       </section>

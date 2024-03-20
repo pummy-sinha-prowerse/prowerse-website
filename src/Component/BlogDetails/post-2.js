@@ -16,9 +16,6 @@ function Post2() {
                 dolorum debitis veritatis natus dolores. Quasi ratione sint. Sit
                 quaerat ipsum dolorem.
               </h5>
-              {/* <a href="#about" className="btn-get-started scrollto">
-                Get Started
-              </a> */}
             </div>
           </div>
         </div>
@@ -51,9 +48,7 @@ function Post2() {
                     </li>
                     <li className="d-flex align-items-center">
                       <i className="bi bi-clock"></i>{" "}
-                      {/* <a href="blog-single.html"> */}
                       <time datetime="2020-01-01">Sept 17, 2023</time>
-                      {/* </a> */}
                     </li>
                   </ul>
                 </div>
@@ -119,12 +114,14 @@ function Post2() {
                     executed in the correct order.
                   </p>
                   <p>
-                  <span style={{ textDecoration: "underline" }}>Which one is better?</span>{" "} Majority IaC tools will automatically
-                    provision the desired infrastructure. This is declarative
-                    approach. If changes are made to the desired state, IaC tool
-                    will apply those changes. Whereas an imperative tool will
-                    require strategy to identify how those changes should be
-                    applied.
+                    <span style={{ textDecoration: "underline" }}>
+                      Which one is better?
+                    </span>{" "}
+                    Majority IaC tools will automatically provision the desired
+                    infrastructure. This is declarative approach. If changes are
+                    made to the desired state, IaC tool will apply those
+                    changes. Whereas an imperative tool will require strategy to
+                    identify how those changes should be applied.
                   </p>
                   <p>
                     <span style={{ fontWeight: "bold" }}>Benefits</span> - With
@@ -145,61 +142,8 @@ function Post2() {
                     <li>Great tooling helps to focus on what is required</li>
                   </ul>
                 </div>
-
-                {/* <div class="entry-footer">
-                  <i class="bi bi-folder"></i>
-                  <ul class="cats">
-                    <li>
-                      <a href="#">Business</a>
-                    </li>
-                  </ul>
-
-                  <i class="bi bi-tags"></i>
-                  <ul class="tags">
-                    <li>
-                      <a href="#">Creative</a>
-                    </li>
-                    <li>
-                      <a href="#">Tips</a>
-                    </li>
-                    <li>
-                      <a href="#">Marketing</a>
-                    </li>
-                  </ul>
-                </div> */}
               </article>
-              {/* <!-- End blog entry --> */}
-
-              {/* <div className="blog-author d-flex align-items-center">
-                <img
-                  src="assets/img/blog/blog-author.jpg"
-                  className="rounded-circle float-left"
-                  alt=""
-                />
-                <div>
-                  <h4>Jane Smith</h4>
-                  <div className="social-links">
-                    <a href="https://twitters.com/#">
-                      <i className="bi bi-twitter"></i>
-                    </a>
-                    <a href="https://facebook.com/#">
-                      <i className="bi bi-facebook"></i>
-                    </a>
-                    <a href="https://instagram.com/#">
-                      <i className="biu bi-instagram"></i>
-                    </a>
-                  </div>
-                  <p>
-                    Itaque quidem optio quia voluptatibus dolorem dolor. Modi
-                    eum sed possimus accusantium. Quas repellat voluptatem
-                    officia numquam sint aspernatur voluptas. Esse et
-                    accusantium ut unde voluptas.
-                  </p>
-                </div>
-              </div> */}
-              {/* <!-- End blog author bio --> */}
             </div>
-            {/* <!-- End blog entries list --> */}
 
             <div className="col-lg-4">
               <div className="sidebar">
@@ -222,48 +166,28 @@ function Post2() {
                         <li>Moneyback Guarantee</li>
                       </ul>
                       <div class="contact-bttn">
-                        <Link to="/contact">
-                          Contact Now!
-                        </Link>
+                        <Link to="/contact">Contact Now!</Link>
                       </div>
                     </div>
                   </div>
                 </div>
-                {/* <h3 className="sidebar-title">Search</h3> */}
-                <div className="sidebar-item search-form">
-                  {/* <form action="">
-                    <input type="text" />
-                    <button type="submit">
-                      <i className="bi bi-search"></i>
-                    </button>
-                  </form> */}
-                </div>
-                {/* <!-- End sidebar search formn--> */}
+
+                <div className="sidebar-item search-form"></div>
 
                 <h3 className="sidebar-title">Categories</h3>
                 <div className="sidebar-item categories">
                   <ul>
                     <li>
-                      <Link to="/blog-product">
-                        Product Engineering
-                        {/* <span>(1)</span> */}
-                      </Link>
+                      <Link to="/blog-product">Product Engineering</Link>
                     </li>
                     <li>
-                      <Link to="/blog-infra">
-                        Infrastructure
-                        {/* <span>(1)</span> */}
-                      </Link>
+                      <Link to="/blog-infra">Infrastructure</Link>
                     </li>
                     <li>
-                      <Link to="/blog-cloud">
-                        Cloud
-                        {/* <span>(1)</span> */}
-                      </Link>
+                      <Link to="/blog-cloud">Cloud</Link>
                     </li>
                   </ul>
                 </div>
-                {/* <!-- End sidebar categories--> */}
 
                 <h3 className="sidebar-title">Recent Posts</h3>
                 <div className="sidebar-item recent-posts">
@@ -299,52 +223,14 @@ function Post2() {
                       alt=""
                     />
                     <h4>
-                      <Link to="/blog-cloud">Hybrid Cloud - What, Why & How?</Link>
+                      <Link to="/blog-cloud">
+                        Hybrid Cloud - What, Why & How?
+                      </Link>
                     </h4>
                     <time datetime="2020-01-01">Oct 25, 2022</time>
                   </div>
                 </div>
                 {/* <!-- End sidebar recent posts--> */}
-
-                {/* <h3 class="sidebar-title">Tags</h3>
-                <div class="sidebar-item tags">
-                  <ul>
-                    <li>
-                      <a href="#">App</a>
-                    </li>
-                    <li>
-                      <a href="#">IT</a>
-                    </li>
-                    <li>
-                      <a href="#">Business</a>
-                    </li>
-                    <li>
-                      <a href="#">Mac</a>
-                    </li>
-                    <li>
-                      <a href="#">Design</a>
-                    </li>
-                    <li>
-                      <a href="#">Office</a>
-                    </li>
-                    <li>
-                      <a href="#">Creative</a>
-                    </li>
-                    <li>
-                      <a href="#">Studio</a>
-                    </li>
-                    <li>
-                      <a href="#">Smart</a>
-                    </li>
-                    <li>
-                      <a href="#">Tips</a>
-                    </li>
-                    <li>
-                      <a href="#">Marketing</a>
-                    </li>
-                  </ul>
-                </div> */}
-                {/* <!-- End sidebar tags--> */}
               </div>
               {/* <!-- End sidebar --> */}
             </div>

@@ -24,7 +24,7 @@ export default function Navbar() {
       >
         <div className="container d-flex align-items-center">
           <Link to="/" className="logo me-auto">
-            <img src="assets/img/prowerse.png" alt="logo" />
+            <img src="assets/img/Prowerse.png" alt="logo" />
           </Link>
           <nav
             id="navbar"
@@ -40,7 +40,7 @@ export default function Navbar() {
                     to="/"
                     onClick={toggleMenu}
                   >
-                    Company Insights
+                    About Us
                   </CustomLink>
                 </li>
                 <li>
@@ -54,20 +54,25 @@ export default function Navbar() {
                 </li>
 
                 <li class="dropdown has-dropdown">
-                  <CustomLinkDropDown
+                  <CustomLink
+                    className="nav-link scrollto"
+                    to="/service"
+                    onClick={toggleMenu}
+                  >
+                    Services
+                  </CustomLink>
+                  {/* <CustomLinkDropDown
                     className="nav-link scrollto"
                     to="/service"
                   >
                     <span>Services</span>{" "}
                     <i class="bi bi-chevron-down" onClick={toggleDropMenu}></i>
-                  </CustomLinkDropDown>
+                  </CustomLinkDropDown> */}
 
-                          <ul
+                  {/* <ul
                             className={`${
                               isMenuOpenDrop && isMenuOpen ? "dropdown-active" : ""
                             }`}
-                            // class="dd-box-shadow dropdown-active"
-                            // {(isMenuOpenDrop && isMenuOpen ) {onClick={toggleDropMenu}} }
                           >
                             <li>
                               <CustomLink
@@ -77,13 +82,11 @@ export default function Navbar() {
                               >
                                 Build Your Own Team
                               </CustomLink>
-                              {/* <a href="/buildyourteam">Build Your Own Team</a> */}
                             </li>
                             <li>
                               <CustomLink className="nav-link scrollto" to="/product" onClick={toggleMenu}> 
                                 Product Engineering
                               </CustomLink>
-                              {/* <a href="/product">Product Engineering</a> */}
                             </li>
                             <li>
                               <a href="#" onClick={toggleMenu}>Test Automation</a>
@@ -91,7 +94,7 @@ export default function Navbar() {
                             <li>
                               <a href="#" onClick={toggleMenu}>DevOps</a>
                             </li>
-                          </ul>
+                          </ul> */}
                 </li>
                 <li>
                   <CustomLink
@@ -107,13 +110,15 @@ export default function Navbar() {
               <ul>
                 <li>
                   <CustomLink className="nav-link scrollto" to="/">
-                    Company Insights
+                    About Us
                   </CustomLink>
                 </li>
-                
 
                 <li class="dropdown has-dropdown">
-                  <CustomLink className="nav-link scrollto" to="/service">
+                <CustomLink className="nav-link scrollto" to="/service">
+                Services
+                  </CustomLink>
+                  {/* <CustomLink className="nav-link scrollto" to="/service">
                     <span>Services</span>{" "}
                     <i
                       class="bi bi-chevron-down"
@@ -121,14 +126,12 @@ export default function Navbar() {
                         isMenuOpenDrop && isMenuOpen ? toggleDropMenu : null
                       }
                     ></i>
-                  </CustomLink>
+                  </CustomLink> */}
 
-                  <ul
+                  {/* <ul
                     className={`${
                       isMenuOpenDrop && isMenuOpen ? "dropdown-active" : ""
                     }`}
-                    // class="dd-box-shadow dropdown-active"
-                    // {(isMenuOpenDrop && isMenuOpen ) {onClick={toggleDropMenu}} }
                   >
                     <li>
                       <CustomLink
@@ -137,13 +140,11 @@ export default function Navbar() {
                       >
                         Build Your Own Team
                       </CustomLink>
-                      {/* <a href="/buildyourteam">Build Your Own Team</a> */}
                     </li>
                     <li>
                       <CustomLink className="nav-link scrollto" to="/product">
                         Product Engineering
                       </CustomLink>
-                      {/* <a href="/product">Product Engineering</a> */}
                     </li>
                     <li>
                       <a href="#">Test Automation</a>
@@ -151,11 +152,14 @@ export default function Navbar() {
                     <li>
                       <a href="#">DevOps</a>
                     </li>
-                  </ul>
+                  </ul> */}
                 </li>
                 <li>
-                  <CustomLink className="nav-link scrollto" to="/build-your-dedicated-team">
-                  Build Your Dedicated Team
+                  <CustomLink
+                    className="nav-link scrollto"
+                    to="/build-your-dedicated-team"
+                  >
+                    Build Your Dedicated Team
                   </CustomLink>
                 </li>
                 <li>

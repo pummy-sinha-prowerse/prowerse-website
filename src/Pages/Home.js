@@ -3,23 +3,6 @@ import Footer from "./Footer";
 import { Link } from "react-router-dom";
 import Count from "../Component/Count";
 import Counter from "../Component/Counter";
-
-// const Counter = ({ counterNumber, maxCount, sharedStop }) => {
-//   const [count, setCount] = useState(0);
-
-//   useEffect(() => {
-//     const intervalId = setInterval(() => {
-//       // Increment the count by 1, but check if it exceeds the maximum value
-//       setCount((prevCount) =>
-//         prevCount < maxCount && !sharedStop ? prevCount + 1 : prevCount
-//       );
-//     }, 10);
-
-//     return () => clearInterval(intervalId);
-//   }, [maxCount, sharedStop]);
-
-//   return <div>{count}+</div>;
-// };
 const Home = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -31,7 +14,7 @@ const Home = () => {
         label: "Years of Industry Experience",
         number: "15",
         duration: "5",
-        type: "",
+        type: "+",
         icon: "bi bi-emoji-smile",
       },
       {
@@ -45,19 +28,11 @@ const Home = () => {
       {
         id: "003",
         label: "Projects Executed",
-        number: "100",
+        number: "200",
         duration: "5",
         type: "+",
         icon: "bi bi-headset",
       },
-      // {
-      //   id: "004",
-      //   label: "Reduction In Your IT Budgets",
-      //   number: "50 - 70",
-      //   duration: "5",
-      //   type: "%",
-      //   icon: "bi bi-people",
-      // },
     ],
   };
   const datawithdash = {
@@ -72,17 +47,6 @@ const Home = () => {
       },
     ],
   };
-  // const maxCount = 110;
-  // const [sharedStop, setSharedStop] = useState(false);
-
-  // useEffect(() => {
-  //   // Set a timeout to stop both counters after a certain time (e.g., 5 seconds)
-  //   const timeoutId = setTimeout(() => {
-  //     setSharedStop(true);
-  //   }, 6000);
-
-  //   return () => clearTimeout(timeoutId);
-  // }, []);
   return (
     <>
       {/* <!-- ======= Hero Section ======= --> */}
@@ -91,17 +55,19 @@ const Home = () => {
           <div className="row">
             <div className="col-xl-6">
               <h1>#RightFirstTime</h1>
+              <br />
               <h2>Software Development. Delivered.</h2>
+              <br />
+              <br />
               <h5>
                 The development of reliable and scalable software solutions for
-                any OS, browser and device. Reduced implementation costs and
-                timely delivery with organized development process, modern
-                methodologies, competencies in cutting-edge technologies, and a
-                rich pool of developers.
+                any OS, browser and device.
               </h5>
-              {/* <a href="#about" className="btn-get-started scrollto">
-                Get Started
-              </a> */}
+              <h5>
+                Reduced implementation costs and timely delivery with organized
+                development process, modern methodologies, competencies in
+                cutting-edge technologies, and a rich pool of developers.
+              </h5>
             </div>
           </div>
         </div>
@@ -123,7 +89,10 @@ const Home = () => {
                         className="purecounter"
                       ></span>
                       <Count key={count.id} data={count} />
-                      <p>{count.label}</p>
+                      <p>
+                        {count.text}
+                        {count.label}
+                      </p>
                     </div>
                   </div>
                 </>
@@ -140,7 +109,10 @@ const Home = () => {
                         className="purecounter"
                       ></span>
                       <Counter key={count.id} data={count} />
-                      <p>{count.label}</p>
+                      <p>
+                        {count.text}
+                        {count.label}
+                      </p>
                     </div>
                   </div>
                 </>
@@ -164,10 +136,24 @@ const Home = () => {
                     Programming, Prowerse ensures a timely delivery of the
                     project.
                   </p>
-                  <Link to="/about" className="about-btn">
+                  <p>
+                    Being a boutique product engineering company with great
+                    experience but fresh to the core, we work as a one-stop
+                    service provider, supporting businesses to get a competitive
+                    edge in the market through their digital offerings.
+                  </p>
+                  {/* <Link to="/about" className="about-btn">
                     <span>About us</span>{" "}
                     <i className="bx bx-chevron-right"></i>
-                  </Link>
+                  </Link> */}
+                  {/* <h3>Why Choose Us</h3>
+                  <p>
+                    Prowerse is a boutique product engineering company with
+                    great experience but fresh to the core. We work as a
+                    one-stop service provider, supporting businesses to get a
+                    competitve edge in the market through their digital
+                    offerings.
+                  </p> */}
                 </div>
               </div>
               <div className="col-xl-7 d-flex align-items-stretch">
@@ -240,7 +226,13 @@ const Home = () => {
         {/* <!-- ======= Tabs Section ======= --> */}
         <section id="tabs" className="tabs">
           <div className="container" data-aos="fade-up">
-            <ul className="nav nav-tabs row d-flex">
+            <div className="section-title text-center position-relative pb-3 mx-auto">
+              <h2>WHY CHOOSE US ?</h2>
+            </div>
+            <ul
+              className="nav nav-tabs row d-flex"
+              style={{ marginTop: "44px" }}
+            >
               <li className="nav-item col-3">
                 <a
                   className="nav-link active show"
@@ -297,39 +289,48 @@ const Home = () => {
                     data-aos="fade-up"
                     data-aos-delay="100"
                   >
-                    <h3>Why Choose Us</h3>
+                    {/* <h3>Why Choose Us</h3>
                     <p className="fst-italic">
                       Prowerse is a boutique product engineering company with
                       great experience but fresh to the core. We work as a
                       one-stop service provider, supporting businesses to get a
                       competitve edge in the market through their digital
                       offerings.
-                    </p>
+                    </p> */}
                     <ul>
                       <li>
                         <i className="ri-check-double-line"></i>
-                        <b>Client-Centric Solutions:</b>Our listening appetite
+                        <b>Client-Centric Solutions: </b>Our listening appetite
                         and extensive experience with a diverse set of domains
                         translate into a deeper understanding of client needs.
-                        This allows us to engineer tailor-made solutions that
-                        exceed client expectations. The ability to anticipate
-                        domain-specific challenges enables the delivery of
-                        impactful software products, mitigating challenges
-                        encountered at various junctures of SDLC.
+                        <div>
+                          This allows us to engineer tailor-made solutions that
+                          exceed client expectations.
+                        </div>
+                        <div>
+                          The ability to anticipate domain-specific challenges
+                          enables the delivery of impactful software products,
+                          mitigating challenges encountered at various junctures
+                          of SDLC.
+                        </div>
                       </li>
+                      {/* <br /> */}
                       <li>
                         <i className="ri-check-double-line"></i>
-                        <b>Efficient Problem Solving:</b>Domain knowledge is a
+                        <b>Efficient Problem Solving: </b>Domain knowledge is a
                         powerful tool for effective problem-solving. Our
                         versatile experience empowers us to quickly identify
                         issues that may arise during product development and
-                        implementation. This allows for proactive issue
-                        resolution, minimizing downtime and ensuring customer
-                        delight.
+                        implementation.
+                        <div>
+                          This allows for proactive issue resolution, minimizing
+                          downtime and ensuring customer delight.
+                        </div>
                       </li>
+                      {/* <br /> */}
                       <li>
                         <i className="ri-check-double-line"></i>
-                        <b>Optimized Processes:</b>
+                        <b>Optimized Processes: </b>
                         Rich exposure to leading domains, industries,
                         technologies, and geographies empowers us to introduce
                         refined and optimized development processes. Along with
@@ -337,25 +338,26 @@ const Home = () => {
                         delivery quality, this also boosts the
                         cost-effectiveness and reliability of the solution
                         delivered.
+                        <div>
+                          Along with accelerating project timelines and
+                          enhancing the overall delivery quality, this also
+                          boosts the cost-effectiveness and reliability of the
+                          solution delivered.
+                        </div>
                       </li>
                     </ul>
-                    {/* <p>
-                      Ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                      Duis aute irure dolor in reprehenderit in voluptate velit
-                      esse cillum dolore eu fugiat nulla pariatur. Excepteur
-                      sint occaecat cupidatat non proident, sunt in culpa qui
-                      officia deserunt mollit anim id est laborum
-                    </p> */}
                   </div>
                   <div
                     className="col-lg-6 order-1 order-lg-2 text-center"
                     data-aos="fade-up"
                     data-aos-delay="200"
                   >
+                    {/* prowerse-website */}
                     <img
-                      src="prowerse-website/assets/img/tabs-1.jpg"
+                      src="assets/img/whychosseus/about-us.jpg"
                       alt=""
                       className="img-fluid"
+                      style={{ marginTop: 10 }}
                     />
                   </div>
                 </div>
@@ -363,18 +365,13 @@ const Home = () => {
               <div className="tab-pane" id="tab-2">
                 <div className="row">
                   <div className="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
-                    <h3>Why Choose Us</h3>
+                    {/* <h3>Why Choose Us</h3>
                     <p>
                       Prowerse is a boutique product engineering company with
                       great experience but fresh to the core. We work as a
                       one-stop service provider, supporting businesses to get a
                       competitve edge in the market through their digital
                       offerings.
-                    </p>
-                    {/* <p className="fst-italic">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua.
                     </p> */}
                     <ul>
                       <li>
@@ -425,9 +422,10 @@ const Home = () => {
                   </div>
                   <div className="col-lg-6 order-1 order-lg-2 text-center">
                     <img
-                      src="prowerse-website/assets/img/tabs-2.jpg"
+                      src="assets/img/whychosseus/journey.jpg"
                       alt=""
                       className="img-fluid"
+                      style={{ marginTop: 10 }}
                     />
                   </div>
                 </div>
@@ -435,14 +433,14 @@ const Home = () => {
               <div className="tab-pane" id="tab-3">
                 <div className="row">
                   <div className="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
-                    <h3>Why Choose Us</h3>
+                    {/* <h3>Why Choose Us</h3>
                     <p>
                       Prowerse is a boutique product engineering company with
                       great experience but fresh to the core. We work as a
                       one-stop service provider, supporting businesses to get a
                       competitve edge in the market through their digital
                       offerings.
-                    </p>
+                    </p> */}
                     <ul>
                       <li>
                         <i className="ri-check-double-line"></i>We tailor{" "}
@@ -450,18 +448,27 @@ const Home = () => {
                         offerings accurately fit your needs and business
                         objectives.
                       </li>
+                      {/* <br /> */}
                       <li>
                         <i className="ri-check-double-line"></i>We go beyond{" "}
                         <b>one-size-fits-all practices</b> and delve into the
                         intricacies of your requirements to meet your expected
-                        service standards. Customised approach as per the nature
-                        of your business helps us address your vision. Working
-                        with a start-up or small business is different from
-                        working with an enterprise. Refining an idea into an
-                        MVP/prototype or rapid productization for early adopters
-                        are a few cases that we have mastered over several
-                        executions.
+                        service standards.
+                        <div>
+                          Customised approach as per the nature of your business
+                          helps us address your vision.
+                        </div>
+                        <div>
+                          Working with a start-up or small business is different
+                          from working with an enterprise.{" "}
+                        </div>
+                        <div>
+                          Refining an idea into an MVP/prototype or rapid
+                          productization for early adopters are a few cases that
+                          we have mastered over several executions.
+                        </div>
                       </li>
+                      {/* <br /> */}
                       <li>
                         <i className="ri-check-double-line"></i>
                         <b>Embedding seamlessly</b> in your existing set-up and
@@ -469,6 +476,7 @@ const Home = () => {
                         success, working as a natural extension of your team and
                         amplifying your overall delivery capabilities.
                       </li>
+                      {/* <br /> */}
                       <li>
                         <i className="ri-check-double-line"></i>As your
                         strategic partners and invested collaborators, we work
@@ -479,9 +487,10 @@ const Home = () => {
                   </div>
                   <div className="col-lg-6 order-1 order-lg-2 text-center">
                     <img
-                      src="prowerse-website/assets/img/tabs-3.jpg"
+                      src="assets/img/whychosseus/progress.jpg"
                       alt=""
                       className="img-fluid"
+                      style={{ marginTop: 10 }}
                     />
                   </div>
                 </div>
@@ -489,14 +498,14 @@ const Home = () => {
               <div className="tab-pane" id="tab-4">
                 <div className="row">
                   <div className="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
-                    <h3>Why Choose Us</h3>
+                    {/* <h3>Why Choose Us</h3>
                     <p>
                       Prowerse is a boutique product engineering company with
                       great experience but fresh to the core. We work as a
                       one-stop service provider, supporting businesses to get a
                       competitve edge in the market through their digital
                       offerings.
-                    </p>
+                    </p> */}
 
                     <ul>
                       <li>
@@ -504,6 +513,8 @@ const Home = () => {
                         <b>Strong core team</b> with deep knowledge and
                         experience in their respective domains.
                       </li>
+                      <br />
+                      <br />
                       <li>
                         <i className="ri-check-double-line"></i>{" "}
                         <b>State-of-the-art tools and techniques:</b> Our choice
@@ -511,6 +522,8 @@ const Home = () => {
                         done keeping superior performance and efficiency in
                         mind.
                       </li>
+                      <br />
+                      <br />
                       <li>
                         <i className="ri-check-double-line"></i> Our
                         collaborative ethos implies that we share in both wins
@@ -518,6 +531,8 @@ const Home = () => {
                         you the assurance that{" "}
                         <b>"we are there whenever you need someone"</b>.
                       </li>
+                      <br />
+                      <br />
                       <li>
                         <i className="ri-check-double-line"></i> With a{" "}
                         <b>vision of mutual growth</b>, our people bring a
@@ -528,9 +543,10 @@ const Home = () => {
                   </div>
                   <div className="col-lg-6 order-1 order-lg-2 text-center">
                     <img
-                      src="prowerse-website/assets/img/tabs-4.jpg"
+                      src="assets/img/whychosseus/people.jpg"
                       alt=""
                       className="img-fluid"
+                      style={{ marginTop: 10 }}
                     />
                   </div>
                 </div>
@@ -619,32 +635,30 @@ const Home = () => {
         <section id="team" className="team">
           <div className="container" data-aos="fade-up">
             <div className="section-title text-center position-relative pb-3 mx-auto">
-              <h2>CaseStudy</h2>
+              <h2>Few of our Case Studies</h2>
             </div>
             <div className="sub-section-title">
-              <p>
+              {/* <p>
                 CASE STUDIES OF HOW OUR CLIENTS HAVE EXPERIENCED{" "}
                 COMPETITIVE ADVANTAGE
-              </p>
+              </p> */}
             </div>
 
-            <div className="row">
+            <div className="row" style={{ marginTop: "44px" }}>
               <div
                 className="case-studies-banner row mr0 aos-init aos-animate"
                 data-aos="fade-up"
               >
-                <div className="item col-lg-4 col-sm-6 aos-init aos-animat">
+                <div className="item col-lg-6 col-sm-6 aos-init aos-animat">
                   <div className="inner-cols banner1">
                     <div className="banner-col-content">
-                      <div className="col-logo">
-                        {/* <img
-                          src="prowerse-website/assets/img/casestudies/logo4.png"
-                          alt=""
-                        /> */}
-                      </div>
+                      <div className="col-logo"></div>
                       <p className="para">
                         REDUCTION IN INFRASTRUCTURE PROVISIONING TIME BY 70%
                         RESULTING IN SIGNIFICANT ANNUAL COST-SAVINGS
+                      </p>
+                      <p className="para domainPara">
+                        DOMAIN - <span>Crypto</span>
                       </p>
                       <Link to="/blockchain" className="red-btn circle-btn">
                         View Case Study{" "}
@@ -652,19 +666,17 @@ const Home = () => {
                     </div>
                   </div>
                 </div>
-                <div className="item col-lg-4 col-sm-6 aos-init aos-animat">
+                <div className="item col-lg-6 col-sm-6 aos-init aos-animat">
                   <div className="inner-cols banner2">
                     <div className="banner-col-content">
-                      <div className="col-logo">
-                        {/* <img
-                          src="prowerse-website/assets/img/casestudies/logo4.png"
-                          alt=""
-                        /> */}
-                      </div>
+                      <div className="col-logo"></div>
                       <p className="para">
                         SIGNIFICANT REDUCTION IN MVP ROLL OUT TIMELINES THROUGH
                         PORTABLE WEB APPS (PWA'S) AND ABOUT 45% REDUCTION IN
                         COSTS
+                      </p>
+                      <p className="para domainPara">
+                        DOMAIN - <span>Healthcare</span>
                       </p>
                       <Link to="/healthcare" className="red-btn circle-btn">
                         {" "}
@@ -673,21 +685,48 @@ const Home = () => {
                     </div>
                   </div>
                 </div>
-                <div className="item col-lg-4 col-sm-6 aos-init aos-animat">
+                <div
+                  className="item col-lg-6 col-sm-6 aos-init aos-animat"
+                  style={{ marginTop: 26 }}
+                >
                   <div className="inner-cols banner3">
                     <div className="banner-col-content">
-                      <div className="col-logo">
-                        {/* <img
-                          src="prowerse-website/assets/img/casestudies/entirebody_logo.png"
-                          alt=""
-                        /> */}
-                      </div>
+                      <div className="col-logo"></div>
                       <p className="para">
                         Scaling MVP to market- ready product offering by keeping
                         product north star in sight and increasing marketable
                         feature releases with 50% more agility
                       </p>
-                      <Link to="/health-wealth-fitness" className="red-btn circle-btn">
+                      <p className="para domainPara">
+                        DOMAIN - <span>Health, Wellness & Fitness</span>
+                      </p>
+                      <Link
+                        to="/health-wealth-fitness"
+                        className="red-btn circle-btn"
+                      >
+                        {" "}
+                        View Case Study{" "}
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  className="item col-lg-6 col-sm-6 aos-init aos-animat"
+                  style={{ marginTop: 26 }}
+                >
+                  <div className="inner-cols banner4">
+                    <div className="banner-col-content">
+                      <div className="col-logo"></div>
+                      <p className="para">
+                        Enhancement In Client's Transnational strategy with
+                        annual cost - saving of about 40%
+                      </p>
+                      <p className="para domainPara">
+                        DOMAIN - <span>Insurance </span>
+                      </p>
+
+                      <Link to="/insurance" className="red-btn circle-btn">
                         {" "}
                         View Case Study{" "}
                       </Link>
@@ -698,425 +737,128 @@ const Home = () => {
             </div>
           </div>
         </section>
-        {/* <!-- ======= Portfolio Section ======= --> */}
-        {/* <section id="portfolio" className="portfolio">
-          <div className="container" data-aos="fade-up">
-            <div className="section-title">
-              <h2>Portfolio</h2>
-              <p>
-                Magnam dolores commodi suscipit. Necessitatibus eius consequatur
-                ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam
-                quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.
-              </p>
-            </div>
 
-            <div className="row" data-aos="fade-up" data-aos-delay="100">
-              <div className="col-lg-12 d-flex justify-content-center">
-                <ul id="portfolio-flters">
-                  <li data-filter="*" className="filter-active">
-                    All
-                  </li>
-                  <li data-filter=".filter-app">App</li>
-                  <li data-filter=".filter-card">Card</li>
-                  <li data-filter=".filter-web">Web</li>
-                </ul>
-              </div>
-            </div>
-
-            <div
-              className="row portfolio-container"
-              data-aos="fade-up"
-              data-aos-delay="200"
-            >
-              <div className="col-lg-4 col-md-6 portfolio-item filter-app">
-                <div className="portfolio-wrap">
-                  <img
-                    src="assets/img/portfolio/portfolio-1.jpg"
-                    className="img-fluid"
-                    alt=""
-                  />
-                  <div className="portfolio-info">
-                    <h4>App 1</h4>
-                    <p>App</p>
-                    <div className="portfolio-links">
-                      <a
-                        href="assets/img/portfolio/portfolio-1.jpg"
-                        data-gallery="portfolioGallery"
-                        className="portfolio-lightbox"
-                        title="App 1"
-                      >
-                        <i className="bx bx-plus"></i>
-                      </a>
-                      <a href="portfolio-details.html" title="More Details">
-                        <i className="bx bx-link"></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div className="col-lg-4 col-md-6 portfolio-item filter-web">
-                <div className="portfolio-wrap">
-                  <img
-                    src="assets/img/portfolio/portfolio-2.jpg"
-                    className="img-fluid"
-                    alt=""
-                  />
-                  <div className="portfolio-info">
-                    <h4>Web 3</h4>
-                    <p>Web</p>
-                    <div className="portfolio-links">
-                      <a
-                        href="assets/img/portfolio/portfolio-2.jpg"
-                        data-gallery="portfolioGallery"
-                        className="portfolio-lightbox"
-                        title="Web 3"
-                      >
-                        <i className="bx bx-plus"></i>
-                      </a>
-                      <a href="portfolio-details.html" title="More Details">
-                        <i className="bx bx-link"></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div className="col-lg-4 col-md-6 portfolio-item filter-app">
-                <div className="portfolio-wrap">
-                  <img
-                    src="assets/img/portfolio/portfolio-3.jpg"
-                    className="img-fluid"
-                    alt=""
-                  />
-                  <div className="portfolio-info">
-                    <h4>App 2</h4>
-                    <p>App</p>
-                    <div className="portfolio-links">
-                      <a
-                        href="assets/img/portfolio/portfolio-3.jpg"
-                        data-gallery="portfolioGallery"
-                        className="portfolio-lightbox"
-                        title="App 2"
-                      >
-                        <i className="bx bx-plus"></i>
-                      </a>
-                      <a href="portfolio-details.html" title="More Details">
-                        <i className="bx bx-link"></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div className="col-lg-4 col-md-6 portfolio-item filter-card">
-                <div className="portfolio-wrap">
-                  <img
-                    src="assets/img/portfolio/portfolio-4.jpg"
-                    className="img-fluid"
-                    alt=""
-                  />
-                  <div className="portfolio-info">
-                    <h4>Card 2</h4>
-                    <p>Card</p>
-                    <div className="portfolio-links">
-                      <a
-                        href="assets/img/portfolio/portfolio-4.jpg"
-                        data-gallery="portfolioGallery"
-                        className="portfolio-lightbox"
-                        title="Card 2"
-                      >
-                        <i className="bx bx-plus"></i>
-                      </a>
-                      <a href="portfolio-details.html" title="More Details">
-                        <i className="bx bx-link"></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div className="col-lg-4 col-md-6 portfolio-item filter-web">
-                <div className="portfolio-wrap">
-                  <img
-                    src="assets/img/portfolio/portfolio-5.jpg"
-                    className="img-fluid"
-                    alt=""
-                  />
-                  <div className="portfolio-info">
-                    <h4>Web 2</h4>
-                    <p>Web</p>
-                    <div className="portfolio-links">
-                      <a
-                        href="assets/img/portfolio/portfolio-5.jpg"
-                        data-gallery="portfolioGallery"
-                        className="portfolio-lightbox"
-                        title="Web 2"
-                      >
-                        <i className="bx bx-plus"></i>
-                      </a>
-                      <a href="portfolio-details.html" title="More Details">
-                        <i className="bx bx-link"></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div className="col-lg-4 col-md-6 portfolio-item filter-app">
-                <div className="portfolio-wrap">
-                  <img
-                    src="assets/img/portfolio/portfolio-6.jpg"
-                    className="img-fluid"
-                    alt=""
-                  />
-                  <div className="portfolio-info">
-                    <h4>App 3</h4>
-                    <p>App</p>
-                    <div className="portfolio-links">
-                      <a
-                        href="assets/img/portfolio/portfolio-6.jpg"
-                        data-gallery="portfolioGallery"
-                        className="portfolio-lightbox"
-                        title="App 3"
-                      >
-                        <i className="bx bx-plus"></i>
-                      </a>
-                      <a href="portfolio-details.html" title="More Details">
-                        <i className="bx bx-link"></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div className="col-lg-4 col-md-6 portfolio-item filter-card">
-                <div className="portfolio-wrap">
-                  <img
-                    src="assets/img/portfolio/portfolio-7.jpg"
-                    className="img-fluid"
-                    alt=""
-                  />
-                  <div className="portfolio-info">
-                    <h4>Card 1</h4>
-                    <p>Card</p>
-                    <div className="portfolio-links">
-                      <a
-                        href="assets/img/portfolio/portfolio-7.jpg"
-                        data-gallery="portfolioGallery"
-                        className="portfolio-lightbox"
-                        title="Card 1"
-                      >
-                        <i className="bx bx-plus"></i>
-                      </a>
-                      <a href="portfolio-details.html" title="More Details">
-                        <i className="bx bx-link"></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div className="col-lg-4 col-md-6 portfolio-item filter-card">
-                <div className="portfolio-wrap">
-                  <img
-                    src="assets/img/portfolio/portfolio-8.jpg"
-                    className="img-fluid"
-                    alt=""
-                  />
-                  <div className="portfolio-info">
-                    <h4>Card 3</h4>
-                    <p>Card</p>
-                    <div className="portfolio-links">
-                      <a
-                        href="assets/img/portfolio/portfolio-8.jpg"
-                        data-gallery="portfolioGallery"
-                        className="portfolio-lightbox"
-                        title="Card 3"
-                      >
-                        <i className="bx bx-plus"></i>
-                      </a>
-                      <a href="portfolio-details.html" title="More Details">
-                        <i className="bx bx-link"></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div className="col-lg-4 col-md-6 portfolio-item filter-web">
-                <div className="portfolio-wrap">
-                  <img
-                    src="assets/img/portfolio/portfolio-9.jpg"
-                    className="img-fluid"
-                    alt=""
-                  />
-                  <div className="portfolio-info">
-                    <h4>Web 3</h4>
-                    <p>Web</p>
-                    <div className="portfolio-links">
-                      <a
-                        href="assets/img/portfolio/portfolio-9.jpg"
-                        data-gallery="portfolioGallery"
-                        className="portfolio-lightbox"
-                        title="Web 3"
-                      >
-                        <i className="bx bx-plus"></i>
-                      </a>
-                      <a href="portfolio-details.html" title="More Details">
-                        <i className="bx bx-link"></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section> */}
-        {/* <!-- ======= Testimonials Section ======= --> */}
-        {/* <section id="testimonials" className="testimonials">
-          <div className="container" data-aos="fade-up">
-            <div className="section-title">
-              <h2>Testimonials</h2>
-              <p>
-                Magnam dolores commodi suscipit. Necessitatibus eius consequatur
-                ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam
-                quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.
-              </p>
-            </div>
-
-            <div
-              className="testimonials-slider swiper"
-              data-aos="fade-up"
-              data-aos-delay="100"
-            >
-              <div className="swiper-wrapper">
-                <div className="swiper-slide">
-                  <div className="testimonial-wrap">
-                    <div className="testimonial-item">
-                      <img
-                        src="assets/img/testimonials/testimonials-1.jpg"
-                        className="testimonial-img"
-                        alt=""
-                      />
-                      <h3>Saul Goodman</h3>
-                      <h4>Ceo &amp; Founder</h4>
-                      <p>
-                        <i className="bx bxs-quote-alt-left quote-icon-left"></i>
-                        Proin iaculis purus consequat sem cure digni ssim donec
-                        porttitora entum suscipit rhoncus. Accusantium quam,
-                        ultricies eget id, aliquam eget nibh et. Maecen aliquam,
-                        risus at semper.
-                        <i className="bx bxs-quote-alt-right quote-icon-right"></i>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="swiper-slide">
-                  <div className="testimonial-wrap">
-                    <div className="testimonial-item">
-                      <img
-                        src="assets/img/testimonials/testimonials-2.jpg"
-                        className="testimonial-img"
-                        alt=""
-                      />
-                      <h3>Sara Wilsson</h3>
-                      <h4>Designer</h4>
-                      <p>
-                        <i className="bx bxs-quote-alt-left quote-icon-left"></i>
-                        Export tempor illum tamen malis malis eram quae irure
-                        esse labore quem cillum quid cillum eram malis quorum
-                        velit fore eram velit sunt aliqua noster fugiat irure
-                        amet legam anim culpa.
-                        <i className="bx bxs-quote-alt-right quote-icon-right"></i>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="swiper-slide">
-                  <div className="testimonial-wrap">
-                    <div className="testimonial-item">
-                      <img
-                        src="assets/img/testimonials/testimonials-3.jpg"
-                        className="testimonial-img"
-                        alt=""
-                      />
-                      <h3>Jena Karlis</h3>
-                      <h4>Store Owner</h4>
-                      <p>
-                        <i className="bx bxs-quote-alt-left quote-icon-left"></i>
-                        Enim nisi quem export duis labore cillum quae magna enim
-                        sint quorum nulla quem veniam duis minim tempor labore
-                        quem eram duis noster aute amet eram fore quis sint
-                        minim.
-                        <i className="bx bxs-quote-alt-right quote-icon-right"></i>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="swiper-slide">
-                  <div className="testimonial-wrap">
-                    <div className="testimonial-item">
-                      <img
-                        src="assets/img/testimonials/testimonials-4.jpg"
-                        className="testimonial-img"
-                        alt=""
-                      />
-                      <h3>Matt Brandon</h3>
-                      <h4>Freelancer</h4>
-                      <p>
-                        <i className="bx bxs-quote-alt-left quote-icon-left"></i>
-                        Fugiat enim eram quae cillum dolore dolor amet nulla
-                        culpa multos export minim fugiat minim velit minim dolor
-                        enim duis veniam ipsum anim magna sunt elit fore quem
-                        dolore labore illum veniam.
-                        <i className="bx bxs-quote-alt-right quote-icon-right"></i>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="swiper-slide">
-                  <div className="testimonial-wrap">
-                    <div className="testimonial-item">
-                      <img
-                        src="assets/img/testimonials/testimonials-5.jpg"
-                        className="testimonial-img"
-                        alt=""
-                      />
-                      <h3>John Larson</h3>
-                      <h4>Entrepreneur</h4>
-                      <p>
-                        <i className="bx bxs-quote-alt-left quote-icon-left"></i>
-                        Quis quorum aliqua sint quem legam fore sunt eram irure
-                        aliqua veniam tempor noster veniam enim culpa labore
-                        duis sunt culpa nulla illum cillum fugiat esse veniam
-                        culpa fore nisi cillum quid.
-                        <i className="bx bxs-quote-alt-right quote-icon-right"></i>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="swiper-pagination"></div>
-            </div>
-          </div>
-        </section> */}
         <section className="testimonial-section">
           <div className="large-container">
             <div
               className="section-title text-center position-relative pb-3 mx-auto"
               data-aos="fade-up"
             >
-              {/* <span class="title">Testimonial</span> */}
-              <h2>What Our core client say ?</h2>
+              <h2>WHAT OUR CORE CLIENTS SAY ?</h2>
             </div>
             <div className="container" data-aos="fade-up">
               <div className="row gy-4">
                 <div
+                  className="col-xl-8 col-md-6 inner-box"
+                  data-aos="fade-up"
+                  data-aos-delay="100"
+                >
+                  <p className="testimonial-text">
+                    Development results are great and skills of the developers
+                    are effective. Communication as an aspect is given high
+                    regard. Overall good value for money.
+                  </p>
+                  <p>
+                    <h6>
+                      {" "}
+                      Product company in Health, Fitness & Nutrition domain,
+                      Norway
+                    </h6>
+                  </p>
+                </div>
+                <div
+                  className="col-xl-4 col-md-6 inner-box"
+                  data-aos="fade-up"
+                  data-aos-delay="100"
+                >
+                  <img
+                    src="assets/img/testimonials/testimonial-1.png"
+                    alt="Nature"
+                    classname="responsive testimonail-img"
+                  />
+                </div>
+
+                <div
+                  className="col-xl-4 col-md-6 inner-box"
+                  data-aos="fade-up"
+                  data-aos-delay="100"
+                >
+                  <img
+                    src="assets/img/testimonials/testimonial-2.jpg"
+                    alt="Nature"
+                    classname="responsive testimonail-img"
+                  />
+                </div>
+                <div
+                  className="col-xl-8 col-md-6 inner-box"
+                  data-aos="fade-up"
+                  data-aos-delay="100"
+                >
+                  <p className="testimonial-text">
+                    The core project team has remained the same since last 25
+                    months which is a great testament to Prowerse management.
+                    They are our go to partners for new requirements due to the
+                    transparent and loyal relationship maintained through
+                    various ups and downs.
+                  </p>
+                  <p>
+                    <h6>Swiss Blockchain solutions company working in Web3</h6>
+                  </p>
+                </div>
+
+                <div
+                  className="col-xl-8 col-md-6 inner-box"
+                  data-aos="fade-up"
+                  data-aos-delay="100"
+                >
+                  <p className="testimonial-text">
+                    DevOps is their forte. Bring what you got. AWS, Azure, GCP.
+                    Strong technical acumen. In other terms, it's like a tennis
+                    player with qualities of Fed, Rafa and Novak.
+                  </p>
+                  <p>
+                    <h6>CTO, Sports event management firm, Prague, Czechia</h6>
+                  </p>
+                </div>
+                <div
+                  className="col-xl-4 col-md-6 inner-box"
+                  data-aos="fade-up"
+                  data-aos-delay="100"
+                >
+                  <img
+                    src="assets/img/testimonials/dedicatedteam.png"
+                    alt="Nature"
+                    classname="responsive testimonail-img"
+                  />
+                </div>
+
+                <div
+                  className="col-xl-4 col-md-6 inner-box"
+                  data-aos="fade-up"
+                  data-aos-delay="100"
+                >
+                  <img
+                    src="assets/img/testimonials/staffaugmentation.png"
+                    alt="Nature"
+                    classname="responsive testimonail-img"
+                  />
+                </div>
+                <div
+                  className="col-xl-8 col-md-6 inner-box"
+                  data-aos="fade-up"
+                  data-aos-delay="100"
+                >
+                  <p className="testimonial-text">
+                    Prowerse is best suited for an emerging brands eying quality
+                    deliveries at optimum costs. Glad we found them. Can't speak
+                    higher of any other brand.
+                  </p>
+                  <p>
+                    <h6>Diana, Event Management firm from Durban, SA</h6>
+                  </p>
+                </div>
+
+                {/* <div
                   className="col-xl-6 col-md-6 inner-box"
                   data-aos="fade-up"
                   data-aos-delay="100"
@@ -1134,26 +876,6 @@ const Home = () => {
                         </h6>
                       </p>
                     </div>
-
-                    {/* <h2 className="title">
-                      <a href="blog-details.html">
-                        The importance of effective product engineering strategy
-                      </a>
-                    </h2> */}
-
-                    {/* <div className="d-flex align-items-center">
-                      <img
-                        src="assets/img/blog/pradyuman-zala.jpg"
-                        alt=""
-                        className="img-fluid post-author-img flex-shrink-0"
-                      />
-                      <div className="post-meta">
-                        <p className="post-author">Pradyuman Zala</p>
-                        <p className="post-date">
-                          <time dateTime="2022-01-01">Aug 06, 2021</time>
-                        </p>
-                      </div>
-                    </div> */}
                   </article>
                 </div>
 
@@ -1219,7 +941,7 @@ const Home = () => {
                       </p>
                     </div>
                   </article>
-                </div>
+                </div> */}
               </div>
               {/* <!-- End recent posts list --> */}
             </div>
@@ -1229,7 +951,7 @@ const Home = () => {
         <section id="team" className="team">
           <div className="container" data-aos="fade-up">
             <div className="section-title text-center position-relative pb-3 mx-auto">
-              <h2>Team</h2>
+              <h2>Founding Team</h2>
             </div>
             <div className="sub-section-title">
               <p>
@@ -1245,7 +967,7 @@ const Home = () => {
                 <div className="member" data-aos="fade-up" data-aos-delay="100">
                   <div className="member-img">
                     <img
-                      src="prowerse-website/assets/img/team/pradyuman-zala.jpg"
+                      src="\assets/img/team/prady.png"
                       className="img-fluid"
                       alt=""
                     />
@@ -1256,101 +978,78 @@ const Home = () => {
                       >
                         <i className="bi bi-linkedin"></i>
                       </a>
-                      {/* <a href="">
-                      <i className="bi bi-twitter"></i>
-                    </a>
-                    <a href="">
-                      <i className="bi bi-facebook"></i>
-                    </a>
-                    <a href="">
-                      <i className="bi bi-instagram"></i>
-                    </a> */}
                     </div>
                   </div>
                   <div className="member-info">
-                    <h4>Pradyuman Zala</h4>
-                    <span>Founder & Technology Evangelist</span>
+                    <h4>Prady</h4>
+                    <span>Technology & Delivery</span>
+                  </div>
+                </div>
+              </div>
+              <div className="col-lg-3 col-md-6 d-flex align-items-stretch">
+                <div className="member" data-aos="fade-up" data-aos-delay="100">
+                  <div className="member-img">
+                    {/* src="prowerse-website/assets/img/team/prady.jpg" */}
+                    <img
+                      src="assets/img/team/mohit.png"
+                      className="img-fluid"
+                      alt=""
+                      style={{height: 352}}
+                    />
+                    <div className="social">
+                      <a
+                        href="https://www.linkedin.com/in/mohit-p-jain/"
+                        target="_blank"
+                      >
+                        <i className="bi bi-linkedin"></i>
+                      </a>
+                    </div>
+                  </div>
+                  <div className="member-info">
+                    <h4>Mohit</h4>
+                    <span>Sales & Marketing</span>
+                  </div>
+                </div>
+              </div>
+              <div className="col-lg-3 col-md-6 d-flex align-items-stretch">
+                <div className="member" data-aos="fade-up" data-aos-delay="100">
+                  <div className="member-img">
+                    {/* src="prowerse-website/assets/img/team/prady.jpg" */}
+                    <img
+                      src="assets/img/team/hardik.png"
+                      className="img-fluid"
+                      alt=""
+                    />
+                    <div className="social">
+                      <a
+                        href="https://www.linkedin.com/in/hardik-pathak-01000597/"
+                        target="_blank"
+                      >
+                        <i className="bi bi-linkedin"></i>
+                      </a>
+                    </div>
+                  </div>
+                  <div className="member-info">
+                    <h4>Hardik</h4>
+                    <span>People & Culture</span>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </section>
-        {/* <section id="pricing" className="pricing section-bg">
-          <div className="container" data-aos="fade-up">
-            <div className="section-title text-center position-relative pb-3 mx-auto">
-              <h2>Software Product Development</h2>
-            </div>
-            <div className="sub-section-title">
-              <p>
-                Crafting innovative solutions through meticulous code and
-                creative design, software product development transforms ideas
-                into tangible, user-centric realities, pushing the boundaries of
-                technological possibilities
-              </p>
-            </div>
-            <div className="row">
-              <div className="col-lg-4 col-md-6">
-                <div className="box" data-aos="fade-up" data-aos-delay="100">
-                  <h3>Enterprise Applications</h3>
-                  <p>
-                    Enterprise Applications are large-scale software packages
-                    that support business processes, information flows,
-                    reporting, and data analytics in complex organizations.
-                    Prowerse focuses on Simplicity, Maintainability,
-                    Reusability, Decoupling of Technology and Functionality.
-                    Prowerse's proven approach of breaking large-scale
-                    application in to the small.
-                  </p>
-                </div>
-              </div>
 
-              <div className="col-lg-4 col-md-6 mt-4 mt-md-0">
-                <div
-                  className="box featured"
-                  data-aos="fade-up"
-                  data-aos-delay="200"
-                >
-                  <h3>Mobile Applications</h3>
-                  <p>
-                    Prowerse brings to life product ideas of native,
-                    cross-platform, and hybrid mobile applications, targeting
-                    smartphones and tablets. Be it e-commerce experience or
-                    geo-tracking of users, Prowerse has delivered such examples
-                    with ease of use. Prowerse can participate from concept
-                    screen sketching till seamless deployments of Apps to the
-                    respective app stores.
-                  </p>
-                </div>
-              </div>
-
-              <div className="col-lg-4 col-md-6 mt-4 mt-lg-0">
-                <div className="box" data-aos="fade-up" data-aos-delay="300">
-                  <h3>Web Applications</h3>
-                  <p>
-                    Prowerse provides flexible and seamless website development
-                    services. Prowerse's approach to design attractive and
-                    customer-friendly web designs has helped many businesses to
-                    enlarge digital footprint. Prowerse is proud of excellent
-                    team of designers & developers, which can collaborate with
-                    you during the journey of concept to website hosting.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section> */}
         <section id="recent-posts" className="recent-posts">
           {/* <!--  Section Title --> */}
           <div
             className="container section-title text-center position-relative pb-3 mx-auto"
             data-aos="fade-up"
           >
-            <h2>Recent Posts</h2>
+            <h2>Blogs</h2>
           </div>
           <div className="sub-section-title">
             <p>
-              Explore the latest updates and insights through our hub of recent
+              Explore the latest updates and insights through our hub of
               posts and blogs.
             </p>
           </div>
@@ -1365,7 +1064,7 @@ const Home = () => {
                 <article>
                   <div className="post-img">
                     <img
-                      src="prowerse-website/assets/img/blog/blog-1.png"
+                      src="assets/img/blog/blog-1.png"
                       alt=""
                       className="img-fluid"
                     />
@@ -1378,20 +1077,6 @@ const Home = () => {
                       The importance of effective product engineering strategy
                     </Link>
                   </h2>
-
-                  {/* <div className="d-flex align-items-center">
-                    <img
-                      src="assets/img/blog/pradyuman-zala.jpg"
-                      alt=""
-                      className="img-fluid post-author-img flex-shrink-0"
-                    />
-                    <div className="post-meta">
-                      <p className="post-author">Pradyuman Zala</p>
-                      <p className="post-date">
-                        <time dateTime="2022-01-01">Aug 06, 2021</time>
-                      </p>
-                    </div>
-                  </div> */}
                 </article>
               </div>
 
@@ -1403,7 +1088,7 @@ const Home = () => {
                 <article>
                   <div className="post-img">
                     <img
-                      src="prowerse-website/assets/img/blog/blog-2.png"
+                      src="assets/img/blog/blog-2.png"
                       alt=""
                       className="img-fluid"
                     />
@@ -1416,20 +1101,6 @@ const Home = () => {
                       Infrastructure As Code and it's Relevance
                     </Link>
                   </h2>
-
-                  {/* <div className="d-flex align-items-center">
-                    <img
-                      src="assets/img/blog/pradyuman-zala.jpg"
-                      alt=""
-                      className="img-fluid post-author-img flex-shrink-0"
-                    />
-                    <div className="post-meta">
-                      <p className="post-author">Pradyuman Zala</p>
-                      <p className="post-date">
-                        <time dateTime="2022-01-01">July 29, 2021</time>
-                      </p>
-                    </div>
-                  </div> */}
                 </article>
               </div>
               {/* <!-- End post list item --> */}
@@ -1442,7 +1113,7 @@ const Home = () => {
                 <article>
                   <div className="post-img">
                     <img
-                      src="prowerse-website/assets/img/blog/blog-3.png"
+                      src="assets/img/blog/blog-3.png"
                       alt=""
                       className="img-fluid"
                     />
@@ -1455,20 +1126,6 @@ const Home = () => {
                       Hybrid Cloud - What, Why & How?
                     </Link>
                   </h2>
-
-                  {/* <div className="d-flex align-items-center">
-                    <img
-                      src="assets/img/blog/pradyuman-zala.jpg"
-                      alt=""
-                      className="img-fluid post-author-img flex-shrink-0"
-                    />
-                    <div className="post-meta">
-                      <p className="post-author">Pradyuman Zala</p>
-                      <p className="post-date">
-                        <time dateTime="2022-01-01">July 06, 2021</time>
-                      </p>
-                    </div>
-                  </div> */}
                 </article>
               </div>
               {/* <!-- End post list item --> */}
@@ -1481,7 +1138,7 @@ const Home = () => {
       {/* <!-- End #main --> */}
       {/* <!-- Call-to-action Section - Home Page --> */}
       <section id="call-to-action" className="call-to-action">
-        <img src="prowerse-website/assets/img/cta-bg.jpg" alt="" />
+        <img src="assets/img/cta-bg.jpg" alt="" />
 
         <div className="container">
           <div
@@ -1499,7 +1156,7 @@ const Home = () => {
                   digital environment.
                 </p>
                 <Link className="cta-btn" to="/contact">
-                  Call To Action
+                  Let's Talk
                 </Link>
               </div>
             </div>

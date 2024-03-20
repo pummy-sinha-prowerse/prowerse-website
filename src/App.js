@@ -1,6 +1,6 @@
 // import logo from "./logo.svg";
 import "./App.css";
-import React from "react";
+import React, { useEffect,useState } from "react";
 import About from "./Pages/About";
 import Navbar from "./Pages/NavBar";
 import { Route, Routes } from "react-router-dom";
@@ -18,6 +18,7 @@ import BuildYourTeam from "./Pages/BuildYourTeam";
 import ViewCaseStudyBlockChain from "./Component/ViewCaseStudy/ViewCaseStudyBlockChain";
 import ViewCaseStudyHealthCare from "./Component/ViewCaseStudy/ViewCaseStudyHealthCare";
 import ViewCaseStudyhealthFitness from "./Component/ViewCaseStudy/ViewCaseStudyhealthFitness";
+import ViewCaseStudyInsurance from "./Component/ViewCaseStudy/ViewCaseStudyInsurance";
 
 import BuildYourDedicatedTeam from "./Pages/BuildYourDedicatedTeam";
 import JobDescriptionBusiness from "./Component/JobDescription/job-description-business-executive";
@@ -33,9 +34,44 @@ import PostResume from "./Pages/post-resume";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 function App() {
+  const [scriptLoaded, setScriptLoaded] = useState(false);
+
+  useEffect(() => {
+    const loadScript = () => {
+      if (!window.HubSpotConversations) {
+        const script = document.createElement("script");
+        script.async = true;
+        script.defer = true;
+        script.src = `http://js.hs-scripts.com/8492701.js`;
+        script.onload = () => setScriptLoaded(true);
+        document.body.appendChild(script);
+      } else {
+        setScriptLoaded(true);
+      }
+    };
+
+    loadScript();
+
+    return () => {
+      // Cleanup if needed
+    };
+  }, []);
+
+  useEffect(() => {
+    if (scriptLoaded) {
+      // Load the HubSpot Chat Widget
+      if (window.HubSpotConversations) {
+        window.HubSpotConversations.widget.load();
+      } else {
+        console.error("HubSpot Conversations widget still not found.");
+      }
+    }
+  }, [scriptLoaded]);
+
   return (
     // <div className="App">
     <>
+
       <Navbar />
       {/* <header id="header" className={`fixed-top d-flex align-items-center  ${isMenuOpen ? 'header-scrolled' : ''}`}>
         <div className="container d-flex align-items-center">
@@ -66,7 +102,11 @@ function App() {
         <Route path="/buildyourteam" element={<BuildYourTeam />} />
         <Route path="/blockchain" element={<ViewCaseStudyBlockChain />} />
         <Route path="/healthcare" element={<ViewCaseStudyHealthCare />} />
-        <Route path="/health-wealth-fitness" element={<ViewCaseStudyhealthFitness />} />
+        <Route
+          path="/health-wealth-fitness"
+          element={<ViewCaseStudyhealthFitness />}
+        />
+        <Route path="/insurance" element={<ViewCaseStudyInsurance />} />
 
         <Route
           path="/build-your-dedicated-team"
@@ -91,10 +131,7 @@ function App() {
           path="/job-description-python"
           element={<JobDescriptionPython />}
         />
-        <Route
-          path="/job-description-rust"
-          element={<JobDescriptionRust />}
-        />
+        <Route path="/job-description-rust" element={<JobDescriptionRust />} />
       </Routes>
     </>
     // </div>

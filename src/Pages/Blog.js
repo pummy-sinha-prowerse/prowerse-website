@@ -8,6 +8,7 @@ function Blog() {
   }, []);
   return (
     <>
+      {/* <!-- ======= Header Section ======= --> */}
       <section id="hero" className="d-flex align-items-center">
         <div className="container" data-aos="zoom-out" data-aos-delay="100">
           <div className="row">
@@ -20,9 +21,6 @@ function Blog() {
                 empowering you to stay ahead in the dynamic world of information
                 and technology.
               </h5>
-              {/* <a href="#about" className="btn-get-started scrollto">
-                Get Started
-              </a> */}
             </div>
           </div>
         </div>
@@ -155,14 +153,14 @@ function Blog() {
       </section>
       {/* <!-- End Blog Section --> */}
 
-      {/* Table section start */}
+      {/* Benefits section start */}
       <section id="pricing" className="pricing section-bg dedicated-teams">
         <div className="container" data-aos="fade-up">
           <div className="section-title text-center position-relative pb-3 mx-auto">
             <h2>BENEFITS OF OUR DEDICATED TEAMS MODEL</h2>
           </div>
 
-          <div className="row" style={{marginTop: "20px"}}>
+          <div className="row" style={{ marginTop: "20px" }}>
             <div className="col-lg-6 col-md-6">
               <div className="box" data-aos="fade-up" data-aos-delay="100">
                 <h3>
@@ -236,22 +234,12 @@ function Blog() {
                     </p>
                   </div>
                 </div>
-                {/* <h3>Mobile Applications</h3>
-                <p>
-                  Prowerse brings to life product ideas of native,
-                  cross-platform, and hybrid mobile applications, targeting
-                  smartphones and tablets. Be it e-commerce experience or
-                  geo-tracking of users, Prowerse has delivered such examples
-                  with ease of use. Prowerse can participate from concept screen
-                  sketching till seamless deployments of Apps to the respective
-                  app stores.
-                </p> */}
               </div>
             </div>
           </div>
         </div>
       </section>
-      {/* Table section end */}
+      {/* Benefits section end */}
 
       {/* <!-- ======= Footer ======= --> */}
       <Footer />

@@ -169,59 +169,8 @@ function Post3() {
                     maintains hardware in private data center computers.
                   </p>
                 </div>
-
-                {/* <div class="entry-footer">
-                  <i class="bi bi-folder"></i>
-                  <ul class="cats">
-                    <li>
-                      <a href="#">Business</a>
-                    </li>
-                  </ul>
-
-                  <i class="bi bi-tags"></i>
-                  <ul class="tags">
-                    <li>
-                      <a href="#">Creative</a>
-                    </li>
-                    <li>
-                      <a href="#">Tips</a>
-                    </li>
-                    <li>
-                      <a href="#">Marketing</a>
-                    </li>
-                  </ul>
-                </div> */}
               </article>
               {/* <!-- End blog entry --> */}
-
-              {/* <div className="blog-author d-flex align-items-center">
-                <img
-                  src="assets/img/blog/blog-author.jpg"
-                  className="rounded-circle float-left"
-                  alt=""
-                />
-                <div>
-                  <h4>Jane Smith</h4>
-                  <div className="social-links">
-                    <a href="https://twitters.com/#">
-                      <i className="bi bi-twitter"></i>
-                    </a>
-                    <a href="https://facebook.com/#">
-                      <i className="bi bi-facebook"></i>
-                    </a>
-                    <a href="https://instagram.com/#">
-                      <i className="biu bi-instagram"></i>
-                    </a>
-                  </div>
-                  <p>
-                    Itaque quidem optio quia voluptatibus dolorem dolor. Modi
-                    eum sed possimus accusantium. Quas repellat voluptatem
-                    officia numquam sint aspernatur voluptas. Esse et
-                    accusantium ut unde voluptas.
-                  </p>
-                </div>
-              </div> */}
-              {/* <!-- End blog author bio --> */}
             </div>
             {/* <!-- End blog entries list --> */}
 
@@ -251,37 +200,20 @@ function Post3() {
                     </div>
                   </div>
                 </div>
-                {/* <h3 className="sidebar-title">Search</h3> */}
-                <div className="sidebar-item search-form">
-                  {/* <form action="">
-                    <input type="text" />
-                    <button type="submit">
-                      <i className="bi bi-search"></i>
-                    </button>
-                  </form> */}
-                </div>
+                <div className="sidebar-item search-form"></div>
                 {/* <!-- End sidebar search formn--> */}
 
                 <h3 className="sidebar-title">Categories</h3>
                 <div className="sidebar-item categories">
                   <ul>
                     <li>
-                      <Link to="/blog-product">
-                        Product Engineering
-                        {/* <span>(1)</span> */}
-                      </Link>
+                      <Link to="/blog-product">Product Engineering</Link>
                     </li>
                     <li>
-                      <Link to="/blog-infra">
-                        Infrastructure
-                        {/* <span>(1)</span> */}
-                      </Link>
+                      <Link to="/blog-infra">Infrastructure</Link>
                     </li>
                     <li>
-                      <Link to="/blog-cloud">
-                        Cloud
-                        {/* <span>(1)</span> */}
-                      </Link>
+                      <Link to="/blog-cloud">Cloud</Link>
                     </li>
                   </ul>
                 </div>
@@ -330,44 +262,6 @@ function Post3() {
                 </div>
                 {/* <!-- End sidebar recent posts--> */}
 
-                {/* <h3 class="sidebar-title">Tags</h3>
-                <div class="sidebar-item tags">
-                  <ul>
-                    <li>
-                      <a href="#">App</a>
-                    </li>
-                    <li>
-                      <a href="#">IT</a>
-                    </li>
-                    <li>
-                      <a href="#">Business</a>
-                    </li>
-                    <li>
-                      <a href="#">Mac</a>
-                    </li>
-                    <li>
-                      <a href="#">Design</a>
-                    </li>
-                    <li>
-                      <a href="#">Office</a>
-                    </li>
-                    <li>
-                      <a href="#">Creative</a>
-                    </li>
-                    <li>
-                      <a href="#">Studio</a>
-                    </li>
-                    <li>
-                      <a href="#">Smart</a>
-                    </li>
-                    <li>
-                      <a href="#">Tips</a>
-                    </li>
-                    <li>
-                      <a href="#">Marketing</a>
-                    </li>
-                  </ul>
-                </div> */}
                 {/* <!-- End sidebar tags--> */}
               </div>
               {/* <!-- End sidebar --> */}

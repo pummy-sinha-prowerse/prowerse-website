@@ -23,21 +23,19 @@ function ViewCaseStudy() {
   return (
     <>
       <section id="hero-casestudy" className="d-flex align-items-center">
-        <div className="container" data-aos="zoom-out" data-aos-delay="100">
+        {/* <div className="container" data-aos="zoom-out" data-aos-delay="100">
           <div className="row">
             <div className="col-xl-6">
               <h1>#Case Studies</h1>
-              <h5>
+              <h5 style={{ color: "#000000" }}>
                 Prowerse provides software development and mobile app
                 development services that are driven by the ambition to help you
                 derive maximum value from your IT investments.
               </h5>
-              {/* <a href="#about" className="btn-get-started scrollto">
-                Get Started
-              </a> */}
+              
             </div>
           </div>
-        </div>
+        </div> */}
       </section>
 
       {/* <!-- ======= Blog Single Section ======= --> */}
@@ -47,23 +45,56 @@ function ViewCaseStudy() {
             <div className="col-lg-8 entries">
               <article className="entry entry-single">
                 <h4 className="entry-title">
-                  <span style={{ color: "#ff8050" }}>ABOUT BLOCKCHAIN</span>
+                  <span style={{ color: "#ff8050" }}>
+                    FOR A BLOCKCHAIN SOLUTION COMPANY WITH THE VISION OF
+                    INTRODUCING THE WORLD’S FIRST DATA CURRENCY
+                  </span>
                 </h4>
 
                 <div className="entry-content">
+                  <h3 className="sidebar-title">
+                    <span style={{ color: "#ff8050" }}>CLIENT PROFILE</span>
+                  </h3>
                   <p>
-                    REDUCTION IN INFRASTRUCTURE PROVISIONING TIME BY 70%
-                    RESULTING IN SIGNIFICANT ANNUAL COST-SAVINGS
+                    <b>
+                      Our client aims to disrupt the market through the
+                      introduction of their innovative digital system.
+                    </b>
                   </p>
                   <p>
-                    {" "}
-                    <button
-                      className="download-casestudy"
-                      onClick={handleDownload}
-                    >
-                      Download CaseStudy PDF
-                    </button>
+                    Through their smart data technology and innovative
+                    Blockchain protocols, they are working towards solving and
+                    shaping the future of Web3.
                   </p>
+                  <h3 className="sidebar-title">
+                    <span style={{ color: "#ff8050" }}>BUSINESS SCENARIO</span>
+                  </h3>
+
+                  <p>
+                    After initial set of meetings with the client, we could gain
+                    an understanding on existing business scenarios at their
+                    end:
+                  </p>
+                  <ul>
+                    <li>
+                      No existing infrastructure management process with limited
+                      consideration on infrastructure landscaping.
+                    </li>
+                    <li>
+                      Skill-gap in existing team for catering to their business
+                      objectives.
+                    </li>
+                    <li>
+                      Need to roll-out quicker feature- releases for sustaining
+                      early-mover advantage for their disruptive offering.
+                    </li>
+                    <li>Spilling costs.</li>
+                    <li>
+                      Lack of availability of skilled resources in DevOps, Test
+                      Automation and for supporting investor needs.
+                    </li>
+                  </ul>
+
                   <h3 className="sidebar-title">
                     <span style={{ color: "#ff8050" }}>PROWERSE APPROACH</span>
                   </h3>
@@ -96,60 +127,37 @@ function ViewCaseStudy() {
                       through an ITIL- certified Prowerse engineer
                     </li>
                   </ul>
+                </div>
+                <div
+                  className="widgetContainer"
+                  style={{ padding: "5px", color: "white" }}
+                >
                   <h3 className="sidebar-title">
-                    <span style={{ color: "#ff8050" }}>BUSINESS SCENARIO</span>
+                    <div className="contact-bar">
+                      <h3>VALUE PROPOSITIONS</h3>
+                    </div>
                   </h3>
-
-                  <p>
-                    After initial set of meetings with the client, we could gain
-                    an understanding on existing business scenarios at their
-                    end:
-                  </p>
-                  <ul>
-                    <li>
-                      No existing infrastructure management process with limited
-                      consideration on infrastructure landscaping.
-                    </li>
-                    <li>
-                      Skill-gap in existing team for catering to their business
-                      objectives.
-                    </li>
-                    <li>
-                      Need to roll-out quicker feature- releases for sustaining
-                      early-mover advantage for their disruptive offering.
-                    </li>
-                    <li>Spilling costs.</li>
-                    <li>
-                      Lack of availability of skilled resources in DevOps, Test
-                      Automation and for supporting investor needs.
-                    </li>
-                  </ul>
-                  <h3 className="sidebar-title">
-                    <span style={{ color: "#ff8050" }}>VALUE PROPOSITIONS</span>
-                  </h3>
-
                   <ul>
                     <li>
                       Rapid productization and enhanced process efficiency
-                      helped client retain their early-mover advantage.
+                      helped client retain their early-mover advantage
                     </li>
                     <li>
                       Cost reduction: facilitating disposable infrastructure for
                       individual test instances itself resulted in 40% annual
-                      cost-reduction.
+                      cost-reduction
                     </li>
                     <li>
                       Access to skilled resources, enabling client to fill their
-                      existing resource gap.
+                      existing resource gap
                     </li>
 
                     <li>
                       Availability of team working round-the-clock for
-                      addressing business and investors needs.
+                      addressing business and investors needs
                     </li>
                   </ul>
                 </div>
-
                 {/* <div class="entry-footer">
                   <i class="bi bi-folder"></i>
                   <ul class="cats">
@@ -207,18 +215,18 @@ function ViewCaseStudy() {
 
             <div className="col-lg-4">
               <div className="sidebar">
-                <div id="text-11" class="widgetContainer widget_text">
+                <div id="text-11" className="widgetContainer widget_text">
                   {" "}
-                  <div class="textwidget">
-                    <div class="contact-bar">
-                      <h3>REQUEST INFORMATION</h3>
+                  <div className="textwidget">
+                    <div className="contact-bar">
+                      <h3>TO KNOW MORE ABOUT OUR CLIENT</h3>
                       <p className="text-inner">
                         To start a dialogue with our consultant, please complete
                         our contact form and we shall get in touch with you
                         shortly.
                       </p>
-                      <div class="contact-bttn">
-                        <Link to="/contact">Contact Now!</Link>
+                      <div className="contact-bttn">
+                        <Link to="/contact">Let's Talk</Link>
                       </div>
                     </div>
                   </div>

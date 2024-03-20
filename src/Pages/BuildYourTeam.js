@@ -11,19 +11,9 @@ function BuildYourTeam() {
         <div className="container" data-aos="zoom-out" data-aos-delay="100">
           <div className="row">
             <div className="col-xl-6">
-              <h1>#BuildYourOwnTeam</h1>
-              {/* <h2>Software Development. Delivered.</h2> */}
+              <h1>#BuildYourOwnTeam</h1>image.file
               <h5>
-                {/* In the realm of tech services, we're not just providers; we're
-                architects of solutions. From code intricacies to system
-                scalability, our tech services embody precision and
-                adaptability. Whether it's troubleshooting challenges or
-                envisioning future enhancements, we're your partners in
-                navigating the ever-evolving landscape of technology. */}
               </h5>
-              {/* <a href="#about" className="btn-get-started scrollto">
-                Get Started
-              </a> */}
             </div>
           </div>
         </div>

@@ -9,7 +9,7 @@ function Footer() {
         <div className="footer-top">
           <div className="container">
             <div className="row">
-              <div className="col-lg-4 col-md-6 footer-contact">
+              <div className="col-lg-5 col-md-6 footer-contact">
                 <h3>
                   Prowerse<span></span>
                 </h3>
@@ -21,66 +21,54 @@ function Footer() {
                   <br />
                   <strong>Phone:</strong> +91-9537485017
                   <br />
-                  <strong>Email:</strong> info@prowerse.com
+                  <strong>Email:</strong> inquiry@prowerse.com
                   <br />
                 </p>
               </div>
 
-              <div className="col-lg-2 col-md-6 footer-links">
+              <div className="col-lg-4 col-md-6 footer-links">
                 <h4>Useful Links</h4>
                 <ul>
-                  <li>
+                  {/* <li>
                     <i className="bx bx-chevron-right"></i>{" "}
                     <Link to="/">Main Hub</Link>
-                  </li>
+                  </li> */}
                   <li>
                     <i className="bx bx-chevron-right"></i>{" "}
-                    <Link to="/about">Company Insights</Link>
+                    <Link to="/">About Us</Link>
                   </li>
                   <li>
                     <i className="bx bx-chevron-right"></i>{" "}
                     <Link to="/service">Services</Link>
                   </li>
-
+                  <li><i className="bx bx-chevron-right"></i>{" "}
+                  <Link to="/build-your-dedicated-team">Build Your Dedicated Team</Link>
+                  </li>
+                  
                   <li>
                     <i className="bx bx-chevron-right"></i>{" "}
                     <Link to="/careers">Careers</Link>
                   </li>
                   <li>
                     <i className="bx bx-chevron-right"></i>{" "}
-                    <Link to="/contact">Contact</Link>
+                    <Link to="/contact">Let's Talk</Link>
                   </li>
                 </ul>
               </div>
 
-              <div className="col-lg-3 col-md-6 footer-links">
-                <h4>Our Services</h4>
+              {/* <div className="col-lg-3 col-md-6 footer-links">
+               
                 <ul>
                   <li>
                     <i className="bx bx-chevron-right"></i>{" "}
-                    <Link to="/buildyourteam">Build Your Own Team</Link>
+                    
                   </li>
-                  <li>
-                    <i className="bx bx-chevron-right"></i>{" "}
-                    <Link to="/product">Product Engineering </Link>
-                  </li>
-                  <li>
-                    <i className="bx bx-chevron-right"></i>{" "}
-                    <Link to="#">DevOps</Link>
-                  </li>
-                  <li>
-                    <i className="bx bx-chevron-right"></i>{" "}
-                    <Link to="#">Test Automation</Link>
-                  </li>
-                  {/* <li>
-                    <i className="bx bx-chevron-right"></i>{" "}
-                    <a href="#">Graphic Design</a>
-                  </li> */}
+                 
                 </ul>
-              </div>
+              </div> */}
 
               <div className="col-lg-3 col-md-6 footer-newsletter">
-                <h4>Follow US:</h4>
+                <h4>Follow Us:</h4>
                 <p>
                   {" "}
                   <div className="social-links ">
@@ -90,6 +78,13 @@ function Footer() {
                     className="linkedin"
                   >
                     <i className="bx bxl-linkedin"></i>
+                  </Link>
+                  <Link
+                    to="https://github.com/prowerse-tech"
+                    target="_blank"
+                    className="linkedin"
+                  >
+                    <i className="bx bxl-github"></i>
                   </Link>
                   </div>
                 </p>
@@ -130,13 +125,13 @@ function Footer() {
             <a href="#" className="google-plus">
               <i className="bx bxl-skype"></i>
             </a> */}
-            <a
+            {/* <a
               href="https://www.linkedin.com/company/prowerse/mycompany/"
               target="_blank"
               className="linkedin"
             >
               <i className="bx bxl-linkedin"></i>
-            </a>
+            </a> */}
           </div>
         </div>
       </footer>

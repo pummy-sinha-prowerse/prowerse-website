@@ -15,15 +15,12 @@ function JobDescription() {
                 We strive to give you a full-fledged growing career driven with
                 passion.
               </h5>
-              {/* <a href="#about" className="btn-get-started scrollto">
-                Get Started
-              </a> */}
             </div>
           </div>
         </div>
       </section>
 
-      {/* <!-- ======= Blog Single Section ======= --> */}
+      {/* <!-- ======= Job Description Single Section ======= --> */}
       <section id="blog" class="blog">
         <div className="container" data-aos="fade-up">
           <div className="row">
@@ -38,7 +35,7 @@ function JobDescription() {
                     </li>
 
                     <li className="d-flex align-items-center">
-                      Location: Ahmedabad
+                      Location: Hybrid
                     </li>
                   </ul>
                 </div>
@@ -111,11 +108,9 @@ function JobDescription() {
                   </div>
                 </div>
               </article>
-              {/* <!-- End blog entry --> */}
-
-              {/* <!-- End blog author bio --> */}
+              {/* <!-- End job description entry --> */}
             </div>
-            {/* <!-- End blog entries list --> */}
+            {/* <!-- End job description list --> */}
 
             <div className="col-lg-4">
               <div className="sidebar">
@@ -127,82 +122,31 @@ function JobDescription() {
                         Looking for
                         <br /> Certified &amp; <br />
                         Experienced <br />
-                        <span class="red-text">Developers</span>
+                        <span class="red-text">Developers ?</span>
                       </h3>
                       <ul>
                         <li>50+ Experts</li>
                         <li>Flexible Engagement</li>
                         <li>NDA Protection</li>
-                        <li>100% Satisfaction</li>
+                   
                         <li>24X7 Support</li>
-                        <li>Moneyback Guarantee</li>
+                       
                       </ul>
                       <div class="contact-bttn">
-                        <Link to="/contact">Contact Now!</Link>
+                        <Link to="/contact">Let's Talk</Link>
                       </div>
                     </div>
                   </div>
                 </div>
-                {/* <h3 className="sidebar-title">Search</h3> */}
-                <div className="sidebar-item search-form">
-                  {/* <form action="">
-                    <input type="text" />
-                    <button type="submit">
-                      <i className="bi bi-search"></i>
-                    </button>
-                  </form> */}
-                </div>
-                {/* <!-- End sidebar search formn--> */}
-
-                {/* <!-- End sidebar recent posts--> */}
-
-                {/* <h3 class="sidebar-title">Tags</h3>
-                <div class="sidebar-item tags">
-                  <ul>
-                    <li>
-                      <a href="#">App</a>
-                    </li>
-                    <li>
-                      <a href="#">IT</a>
-                    </li>
-                    <li>
-                      <a href="#">Business</a>
-                    </li>
-                    <li>
-                      <a href="#">Mac</a>
-                    </li>
-                    <li>
-                      <a href="#">Design</a>
-                    </li>
-                    <li>
-                      <a href="#">Office</a>
-                    </li>
-                    <li>
-                      <a href="#">Creative</a>
-                    </li>
-                    <li>
-                      <a href="#">Studio</a>
-                    </li>
-                    <li>
-                      <a href="#">Smart</a>
-                    </li>
-                    <li>
-                      <a href="#">Tips</a>
-                    </li>
-                    <li>
-                      <a href="#">Marketing</a>
-                    </li>
-                  </ul>
-                </div> */}
-                {/* <!-- End sidebar tags--> */}
+                <div className="sidebar-item search-form"></div>
               </div>
               {/* <!-- End sidebar --> */}
             </div>
-            {/* <!-- End blog sidebar --> */}
+            {/* <!-- End job description sidebar --> */}
           </div>
         </div>
       </section>
-      {/* <!-- End Blog Single Section --> */}
+      {/* <!-- End job description Single Section --> */}
 
       {/* <!-- ======= Footer ======= --> */}
       <Footer />

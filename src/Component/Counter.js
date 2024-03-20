@@ -4,7 +4,7 @@ import React, { useEffect, useState } from "react";
 import "./Count.css";
 
 const Counter = (props) => {
-  const { type, number, duration } = props.data;
+  const { type, number, duration,text } = props.data;
 
   const [minCount, setMinCount] = useState("0");
   const [maxCount, setMaxCount] = useState("0");
@@ -23,7 +23,7 @@ const Counter = (props) => {
       let minIncrementTime = (totalMilSecDurMin / (minEnd - minStart)) * 1000;
       let minTimer = setInterval(() => {
         minStart += 1;
-        setMinCount(`${minStart}${type}`);
+        setMinCount(`${minStart}`);
         if (minStart === minEnd) clearInterval(minTimer);
       }, minIncrementTime);
 
@@ -52,7 +52,8 @@ const Counter = (props) => {
   return (
     <div className="Count">
       <h3>
-        {minCount}-{maxCount}
+        {/* <span style={{fontSize:'20px'}}></span> */}
+        {minCount} - {maxCount}
       </h3>
     </div>
   );

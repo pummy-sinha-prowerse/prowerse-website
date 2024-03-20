@@ -13,12 +13,14 @@ AWS.config.update({
 function PostResume() {
   const recaptcha = useRef(null);
   const [toEmail, setToEmail] = useState(process.env.REACT_APP_SOURCE);
-  const [subject, setSubject] = useState("subject");
-  const [message, setMessage] = useState("message");
-  const [resume, setResume] = useState(null);
-  const [Fileresume, setfileResume] = useState(null);
-
+  const [name, setName] = useState(""); // State for name field
+  const [email, setEmail] = useState(""); // State for email field
+  const [phoneNumber, setPhoneNumber] = useState(""); // State for phone number field
+  const [experience, setExperience] = useState(""); // State for experience field
   const ses = new AWS.SES({ apiVersion: process.env.REACT_APP_API_VERSION });
+
+
+  
 
   // const handleFileChange = (event) => {
   //   const file = event.target.files[0];
@@ -30,9 +32,8 @@ function PostResume() {
   // };
 
   const SubmitResume = (event) => {
-    console.log("resume", resume.name, resume.type, resume.webkitRelativePath);
-    const formData = new FormData();
-    formData.append("file", resume);
+    // const formData = new FormData();
+    // formData.append("file", resume);
     event.preventDefault();
     const captchaValue = recaptcha.current.getValue();
     // const attachmentPath = '/path/to/attachment.pdf'; // Replace with the path to your attachment
@@ -42,136 +43,139 @@ function PostResume() {
       alert("Please verify the reCAPTCHA!");
     } else {
       // make form submission
-      alert("Form submission successful!");
-    }
-
-    // --------------------------------
-    // aws send mail code
-    // ---------------------------------
-    // Read file content
-    const fileReader = new FileReader();
-    fileReader.onload = () => {
-      const fileData = fileReader.result;
-      // const pdfAttachment = fs.readFileSync("path/to/your/pdf/file.pdf");
-      // Define email parameters
-      console.log(process.env.REACT_APP_SOURCE);
+      const emailBody = `
+      Name: ${name}
+      Email: ${email}
+      Phone Number: ${phoneNumber}
+      Experience: ${experience}
+      `;
       const params = {
         Source: process.env.REACT_APP_SOURCE, // Replace with your verified email address in AWS SES
         Destination: {
           ToAddresses: [toEmail],
         },
-        // Attachments: [
-        //   {
-        //     Filename: resume.name,
-        //     Content: formData,
-        //     ContentType: "application/octet-stream",
-        //   },
-        // ],
-        // Attachments: [
-        //   {
-        //     FileName: resume.name,
-        //     // Content: Buffer.from('This is the attachment content.'),
-        //     Content: fileData,
-        //     ContentType: resume.type,
-        //   },
-        //   //   {
-        //   //     Filename: resume.name,
-        //   //     Content: fileData,
-        //   //     ContentType: resume.type,
-        // ],
-
         Message: {
+          Subject: {
+            Data: "RESUME APPLICATION FORM",
+            Charset: "UTF-8",
+          },
           Body: {
-            // Html: {
-            //   Charset: "UTF-8",
-            //   Data: JSON.stringify(message),
-            // },
             Text: {
-              Data: message,
+              Data: emailBody,
+              Charset: "UTF-8",
             },
           },
-          Subject: {
-            Data: subject,
-          },
         },
-        Attachments: [
-          {
-            Data: "https://en.wikipedia.org/wiki/Image#/media/File:Image_created_with_a_mobile_phone.png",
-            ContentType: "application/octet-stream",
-            Filename: "Image_created_with_a_mobile_phone.png",
-          },
-        ],
       };
-
-      // Add attachment
-      // const attachmentPath = "/path/to/attachment.pdf"; // Replace with the path to your attachment
-      // const attachmentName = "attachment.pdf"; // Replace with the name of your attachment
-
-      // // Read the attachment file
-      // const fileContent = fs.readFileSync(attachmentPath);
-
-      // // Add the attachment to the email
-      // params.Message.Body.Attachment = {
-      //   Data: "https://en.wikipedia.org/wiki/Image#/media/File:Image_created_with_a_mobile_phone.png",
-      //   ContentType: "application/octet-stream",
-      //   Filename: "Image_created_with_a_mobile_phone.png",
-      // };
-      // Send email
+      // alert("Your message has been sent. Thank you!");
       ses.sendEmail(params, (err, data) => {
         if (err) {
-          console.error("Error sending email:", err);
           alert("Failed to send email. Please try again later.");
         } else {
-          console.log("Email sent successfully:", data);
-          alert("Email sent successfully!");
+          alert("Your message has been sent. Thank you!");
           // Reset form fields after successful sending
-          setToEmail("");
-          setSubject("");
-          setMessage("");
-          setResume(null);
+          setName("");
+          setEmail("");
+          setPhoneNumber("");
+          setExperience("");
         }
       });
-    };
-
-    // Read file as base64 data
-    fileReader.readAsDataURL(resume);
-    // ---------------------------------
-
-    // smtpsjs email send mail
-    // ---------------------------------
-
-    // event.preventDefault();
-    // // event.prevenDefault();
-    // const confirMail = {
-    //     // Username:"pummy.sinha.prowerse@gmail.com",
-    //     // Password:"16EB80FAA7E74EF9126CE629ED1F7884F4A5",
-    //     // Host:"smtp.elasticemail.com",
-    //     SecureToken:"873c55dd-3a3f-4392-80eb-76a2013fe9b1",
-    //     Post:2525,
-    //     To:"pummy.sinha.prowerse@gmail.com",
-    //     From:"pummysinha02@gmail.com",
-    //     Subject:"This is subject",
-    //     Body:"And this is the body"
-    //     }
-    // console.log("pppppuuuummmyyyyy")
-    // console.log(window.Email,"-------window.Email")
-    // if(window.Email){
-    //     window.Email.send({
-    //         SecureToken:"873c55dd-3a3f-4392-80eb-76a2013fe9b1",
-    //         Post:2525,
-    //         To:"pummy.sinha.prowerse@gmail.com",
-    //         From : "pummysinha02@gmail.com",
-    //         Subject:"This is subject",
-    //         Body:"And this is the body",
-
-    //     }).then(
-    //       message => alert(message)
-    //     );}
-    // window.Email.send(confirMail).then(
-    //     message => alert(message)
-    //   );
+    }
   };
 
+  // const SubmitResume = (event) => {
+    // const formData = new FormData();
+    // formData.append("file", resume);
+    // event.preventDefault();
+    // const captchaValue = recaptcha.current.getValue();
+    // if (!captchaValue) {
+    //   alert("Please verify the reCAPTCHA!");
+    // } else {
+    //   // make form submission
+    //   alert("Form submission successful!");
+    // }
+    // console.log("resume", URL.createObjectURL(resume));
+
+    // --------------------------------
+    // aws send mail code
+    // ---------------------------------
+   
+    // Read the file as a data URL
+    // const reader = new FileReader();
+    // reader.readAsDataURL(resume);
+  //   try {
+  //     // Read the file as a data URL
+  //     const reader = new FileReader();
+  //     reader.readAsDataURL(resume);
+
+  //     reader.onload = async () => {
+  //       const fileDataUrl = reader.result;
+  //       const attachmentUrl = await uploadFileToServer(resume);
+  //       sendEmailWithAttachment(fileDataUrl);
+        
+  //     };
+  //   } catch (error) {
+  //     console.error('Error reading file:', error);
+  //     alert('Error reading file. Please try again later.');
+  //   }
+  
+   
+  // };
+  // const uploadFileToServer = async (file) => {
+  //   // Perform file upload to your server
+  //   // This is just a placeholder function, you need to implement the actual upload logic
+  //   // Return the URL of the uploaded file
+  //   return 'http://localhost:3000/uploads/' + encodeURIComponent(resume.name);
+  // };
+  // const sendEmailWithAttachment = async (attachmentDataUrl) => {
+  //   console.log("attachmentDataUrl",attachmentDataUrl)
+  //   const ses = new AWS.SES({
+  //     region: process.env.REACT_APP_REGION
+  //   });
+  //   const params = {
+  //     Destination: {
+  //       ToAddresses: [toEmail],
+  //     },
+  //     Message: {
+  //       Body: {
+  //         Text: {
+  //           Data: 'Here is the file you requested.'
+  //         }
+  //       },
+  //       Subject: {
+  //         Data: 'File attachment'
+  //       }
+  //     },
+  //     Source: process.env.REACT_APP_SOURCE,
+  //     ReplyToAddresses: [toEmail],
+  //     Message: {
+  //       Body: {
+  //         Text: {
+  //           Data: 'Here is the file you requested.'
+  //         }
+  //       },
+  //       Subject: {
+  //         Data: 'File attachment'
+  //       }
+  //     },
+  //     ReplyToAddresses: [toEmail],
+  //     Attachments: [
+  //       {
+  //         Filename: resume.name,
+  //         Content: attachmentDataUrl.split(';base64,')[1],
+  //         ContentType: resume.type
+  //       }
+  //     ]
+  //   };
+
+  //   try {
+  //     await ses.sendEmail(params).promise();
+  //     alert('Email sent successfully.');
+  //   } catch (error) {
+  //     console.error('Error sending email:', error);
+  //     alert('Error sending email. Please try again later.');
+  //   }
+  // };
   return (
     <>
       <section id="hero-contact" className="d-flex align-items-center">
@@ -179,6 +183,11 @@ function PostResume() {
           <div className="row">
             <div className="col-xl-6">
               <h1>#JOB APPLICATION</h1>
+              {/* {resume && (
+                <div>
+                  <img src={URL.createObjectURL(resume)} alt="Preview" />
+                </div>
+              )} */}
 
               <h5>
                 Prowerse is looking for smart, intelligent and awesome people to
@@ -207,8 +216,6 @@ function PostResume() {
           <div className="row" data-aos="fade-up" data-aos-delay="100">
             <div className="col-lg-12">
               <form
-                action="forms/contact.php"
-                method="post"
                 role="form"
                 className="php-email-form"
               >
@@ -221,6 +228,8 @@ function PostResume() {
                       id="name"
                       placeholder="Your Name"
                       required
+                      value={name} // Set value to the state variable
+                      onChange={(e) => setName(e.target.value)} // Update state variable on change
                     />
                   </div>
                   <div className="col form-group">
@@ -231,6 +240,8 @@ function PostResume() {
                       id="email"
                       placeholder="Your Email"
                       required
+                      value={email} // Set value to the state variable
+                      onChange={(e) => setEmail(e.target.value)} // Update state variable on change
                     />
                   </div>
                 </div>
@@ -243,6 +254,8 @@ function PostResume() {
                       id="subject"
                       placeholder="Phone Number"
                       required
+                      value={phoneNumber} // Set value to the state variable
+                      onChange={(e) => setPhoneNumber(e.target.value)} // Update state variable on change
                     />
                   </div>
                   <div className="col form-group">
@@ -251,8 +264,10 @@ function PostResume() {
                       className="form-control"
                       name="subject"
                       id="subject"
-                      placeholder="Select Experiencer"
+                      placeholder="Experiencer"
                       required
+                      value={experience} // Set value to the state variable
+                      onChange={(e) => setExperience(e.target.value)} // Update state variable on change
                     />
                   </div>
                 </div>
@@ -266,7 +281,7 @@ function PostResume() {
                       placeholder="Resume"
                       required
                     /> */}
-                    <div className="input-group custom-file-button">
+                    {/* <div className="input-group custom-file-button">
                       <label className="input-group-text" for="inputGroupFile">
                         Upload Resume
                       </label>
@@ -274,13 +289,13 @@ function PostResume() {
                         type="file"
                         className="form-control"
                         id="inputGroupFile"
-                        accept=".pdf,.doc,.docx"
+                        accept=".pdf,.doc,.docx,.png,.jpg"
                         onChange={(e) => setResume(e.target.files[0])}
                         // onChange={handleFileChange}
                       />
-                    </div>
-                    <br />
-                    <br />
+                    </div> */}
+                    {/* <br />
+                    <br /> */}
                     <div className="col form-group">
                       <span>Please confirm that you are human *</span>
 
@@ -292,13 +307,13 @@ function PostResume() {
                   </div>
                 </div>
 
-                <div className="my-3">
+                {/* <div className="my-3">
                   <div className="loading">Loading</div>
                   <div className="error-message"></div>
                   <div className="sent-message">
                     Your message has been sent. Thank you!
                   </div>
-                </div>
+                </div> */}
                 <div className="text-center">
                   <button type="submit" onClick={SubmitResume}>
                     Submit Application
